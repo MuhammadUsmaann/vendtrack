@@ -66,8 +66,9 @@
             </div>
         </div>
 
-        <div class="font-14 font-weight-700 font-black pt-4">Select Filters <img src="../assets/Stroke.png" alt=""></div>
-        
+        <div class="font-14 font-weight-700 font-black pt-4">Select Filters <img src="../assets/Stroke.png" alt="">
+        </div>
+
         <div class="row pt-2">
             <div class="col-sm-6 col-12 ">
                 <div class="row">
@@ -195,7 +196,7 @@ export default {
 
     data() {
         return {
-            ex4: [ 'orange darken-3'],
+            ex4: ['orange darken-3'],
             selectedcutomer: "Starbucks",
             selecteddistributers: "Starbucks",
 
@@ -300,6 +301,7 @@ export default {
     margin: 0 !important;
 }
 
+
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
     color: #4444;
@@ -325,7 +327,4 @@ export default {
     width: calc(97% - 2px);
     z-index: 1;
 }
-
-
-
 </style>

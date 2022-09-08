@@ -141,7 +141,7 @@
       </v-col>
     </b-row>
     <div class="font-20 font-weight-700 font-black mb-3">Warehouse Withdrawal</div>
-    <apexchart type="rangeBar" height="350" :options="barchartOptions" :series="barseries"></apexchart>
+    <apexchart type="rangeBar" height="350" :options="WarehouseOptions" :series="Warehousebarseries"></apexchart>
     <div class="font-20 font-weight-700 font-black mb-3">Distributor Top 10 Customers</div>
     <v-data-table :headers="distributorTopCutomerheaders" :items="distributorTopCutomer" class="elevation-1 mt-3"
       hide-default-footer>
@@ -318,11 +318,11 @@ export default {
     ],
 
     distributorMarketSegmentHeader: [
-      { text: 'Market Segment', value: 'MarketSegment',width:'20%' },
-      { text: 'YTD CS', value: 'YTDCS', align:'right',width:'15%'},
-      { text: 'PYTD CS', value: 'PYTDCS',align:'center',width:'27%' },
+      { text: 'Market Segment', value: 'MarketSegment',width:'30%' },
+      { text: 'YTD CS', value: 'YTDCS', align:'center',width:'20%'},
+      { text: 'PYTD CS', value: 'PYTDCS',align:'center',width:'15%' },
       { text: 'CHG CS', value: 'CHGCS', align:'center',width:'28%'},
-      { text: '% CHG', value: 'CHG', align:'center',width:'10%'},
+      { text: '% CHG', value: 'CHG', align:'center',width:'7%'},
     ],
     distributorMarketSegment: [
       {
@@ -444,6 +444,31 @@ export default {
       }]
     }],
     barchartOptions: {
+      colors: ["#FF7E1D","#873BD3" ],
+      chart: {
+        type: 'rangeBar',
+        height: 350
+      },
+      plotOptions: {
+        bar: {
+          horizontal: false
+        }
+      },
+    },
+    Warehousebarseries: [{
+      name: 'CYTD',
+      data: [{
+        x: 'Purchases',
+        y: [0, 10.090]
+      },
+      {
+        x: 'Sales',
+        y: [0, 8.000]
+      }],
+
+    }],
+    WarehouseOptions: {
+      colors: ["#FF7E1D", ],
       chart: {
         type: 'rangeBar',
         height: 350

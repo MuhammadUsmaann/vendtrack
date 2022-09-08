@@ -44,87 +44,87 @@
           </div>
           <b-row class="mx-n1 mt-3 inner-font-black inner-font-14 pb-5 ">
             <v-col cols="12" md="3" class="p-1 mb-2">
-              <b-form-checkbox v-model="checked" name="check-button" class="font-weight-500" switch>
+              <b-form-checkbox name="check-button" class="font-weight-500" switch>
                 Report Generator
               </b-form-checkbox>
             </v-col>
             <v-col cols="12" md="3" class="p-1 mb-2">
-              <b-form-checkbox v-model="checked" name="check-button" class="font-weight-500" switch>
+              <b-form-checkbox name="check-button" class="font-weight-500" switch>
                 Dashboard
               </b-form-checkbox>
             </v-col>
             <v-col cols="12" md="3" class="p-1 mb-2">
-              <b-form-checkbox v-model="checked" name="check-button" class="font-weight-500" switch>
+              <b-form-checkbox name="check-button" class="font-weight-500" switch>
                 Operator Target
               </b-form-checkbox>
             </v-col>
             <v-col cols="12" md="3" class="p-1 mb-2">
-              <b-form-checkbox v-model="checked" name="check-button" class="font-weight-500" switch>
+              <b-form-checkbox name="check-button" class="font-weight-500" switch>
                 Athena Review
               </b-form-checkbox>
             </v-col>
             <v-col cols="12" md="3" class="p-1 mb-2">
-              <b-form-checkbox v-model="checked" name="check-button" class="font-weight-500" switch>
+              <b-form-checkbox name="check-button" class="font-weight-500" switch>
                 Saved Reports
               </b-form-checkbox>
             </v-col>
             <v-col cols="12" md="3" class="p-1 mb-2">
-              <b-form-checkbox v-model="checked" name="check-button" class="font-weight-500" switch>
+              <b-form-checkbox name="check-button" class="font-weight-500" switch>
                 Rapid Reports
               </b-form-checkbox>
             </v-col>
             <v-col cols="12" md="3" class="p-1 mb-2">
-              <b-form-checkbox v-model="checked" name="check-button" class="font-weight-500" switch>
+              <b-form-checkbox name="check-button" class="font-weight-500" switch>
                 Rebate Calcuator
               </b-form-checkbox>
             </v-col>
             <v-col cols="12" md="3" class="p-1 mb-2">
-              <b-form-checkbox v-model="checked" name="check-button" class="font-weight-500" switch>
+              <b-form-checkbox name="check-button" class="font-weight-500" switch>
                 WOW
               </b-form-checkbox>
             </v-col>
             <v-col cols="12" md="3" class="p-1 mb-2">
-              <b-form-checkbox v-model="checked" name="check-button" class="font-weight-500" switch>
+              <b-form-checkbox name="check-button" class="font-weight-500" switch>
                 GAP Analysis
               </b-form-checkbox>
             </v-col>
             <v-col cols="12" md="3" class="p-1 mb-2">
-              <b-form-checkbox v-model="checked" name="check-button" class="font-weight-500" switch>
+              <b-form-checkbox name="check-button" class="font-weight-500" switch>
                 My VT
               </b-form-checkbox>
             </v-col>
             <v-col cols="12" md="3" class="p-1 mb-2">
-              <b-form-checkbox v-model="checked" name="check-button" class="font-weight-500" switch>
+              <b-form-checkbox name="check-button" class="font-weight-500" switch>
                 Warehouse Withdrawal
               </b-form-checkbox>
             </v-col>
             <v-col cols="12" md="3" class="p-1 mb-2">
-              <b-form-checkbox v-model="checked" name="check-button" class="font-weight-500" switch>
+              <b-form-checkbox name="check-button" class="font-weight-500" switch>
                 Trade Spend
               </b-form-checkbox>
             </v-col>
             <v-col cols="12" md="3" class="p-1 mb-2">
-              <b-form-checkbox v-model="checked" name="check-button" class="font-weight-500" switch>
+              <b-form-checkbox name="check-button" class="font-weight-500" switch>
                 Broker Scorecard
               </b-form-checkbox>
             </v-col>
             <v-col cols="12" md="3" class="p-1 mb-2">
-              <b-form-checkbox v-model="checked" name="check-button" class="font-weight-500" switch>
+              <b-form-checkbox name="check-button" class="font-weight-500" switch>
                 Client Tracking
               </b-form-checkbox>
             </v-col>
             <v-col cols="12" md="3" class="p-1 mb-2">
-              <b-form-checkbox v-model="checked" name="check-button" class="font-weight-500" switch>
+              <b-form-checkbox name="check-button" class="font-weight-500" switch>
                 Hermes
               </b-form-checkbox>
             </v-col>
             <v-col cols="12" md="3" class="p-1 mb-2">
-              <b-form-checkbox v-model="checked" name="check-button" class="font-weight-500" switch>
+              <b-form-checkbox name="check-button" class="font-weight-500" switch>
                 CPRS
               </b-form-checkbox>
             </v-col>
             <v-col cols="12" md="3" class="p-1 mb-2">
-              <b-form-checkbox v-model="checked" name="check-button" class="font-weight-500" switch>
+              <b-form-checkbox name="check-button" class="font-weight-500" switch>
                 Reporting Status
               </b-form-checkbox>
             </v-col>
@@ -152,7 +152,7 @@ export default {
   },
   
   data: () => ({
-    checked:'',
+
   }),
 }
 </script>

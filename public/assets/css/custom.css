@@ -18,10 +18,6 @@ h3 {
     border-radius: 2.5px;
 }
 
-::-webkit-scrollbar-thumb:hover {
-    background: #9ea5ab;
-}
-
 .w-max-content {
     width: max-content !important;
 }
@@ -48,7 +44,6 @@ h3 {
 }
 
 .font-red {
-
     color: #D34657 !important;
 }
 
@@ -192,11 +187,6 @@ h3 {
     padding: 0 5px !important;
 }
 
-.v-data-table>.v-data-table__wrapper>table>tbody>tr {
-    padding-right: 16px !important;
-}
-
-
 .v-data-table>.v-data-table__wrapper>table>tbody>tr>td {
     font-family: 'SF Mono', sans-serif !important;
 }
@@ -245,7 +235,6 @@ h3 {
     font-size: 13px !important;
     margin-left: 5px !important;
     margin-right: 0 !important;
-    /* transform: rotate(360deg) !important; */
 }
 
 .modal-header {
@@ -254,9 +243,6 @@ h3 {
     border: 0 !important;
 }
 
-/* .modal-body {
-    padding-top: 0;
-} */
 .v-text-field--outlined .v-label.v-label--active {
     left: -11px !important;
     color: #FF7E1D;
@@ -385,6 +371,7 @@ button:focus {
     line-height: 17px;
     color: #444444 !important;
     margin-bottom: 0 !important;
+    border-radius: 4px !important
 }
 
 .multiselect__tag-icon {
@@ -412,39 +399,46 @@ button:focus {
     margin-bottom: 0 !important;
     padding-left: 9px;
 }
-.multiselect__content-wrapper {
-    z-index: 2 !important;
-    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15);
-}
 
 .multiselect--active {
     z-index: 2 !important;
 }
+
 .tab-pane .v-icon.v-icon {
     color: #FF7E1D !important;
 }
+
 table>tbody>tr>th,
 tr:nth-child(even) {
-  background: #F6F6F6 !important
+    background: #F6F6F6 !important
 }
 
 table>tbody>tr>td {
     font-family: 'SF Mono', sans-serif !important;
 }
+
 table>tbody>tr>td,
 table>thead>tr>th {
     height: 48px !important;
     font-size: 14px !important;
     border-top: none !important;
 }
+
 table>thead>tr>th {
     padding-bottom: 0 !important;
     padding: 12px 12px 0 12px !important;
-
 }
+
 .table thead th {
     border-bottom: none !important;
 }
-.lastcol{
-    margin-right: 20px !important;
-  }
+
+.tab-content {
+    width: 96% !important;
+}
+.custom-select{
+    height: 40px !important;
+}
+.form-control{
+    height: 40px !important;
+}

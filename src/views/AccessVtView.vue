@@ -69,6 +69,7 @@
               <b-dropdown id="dropdown-1" text="Access Level" block variant="outline"
                 class="text-left custom-dropdown border py-5 border-light-gray rounded">
                 <b-dropdown-item>All Sales</b-dropdown-item>
+                
                 <b-dropdown id="dropdown-2" text="Territory" variant="outline" dropright class="">
                   <b-dropdown-item>
                     <b-form-checkbox value="me">Barcelona</b-form-checkbox>
