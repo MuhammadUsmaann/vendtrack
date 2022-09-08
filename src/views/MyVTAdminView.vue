@@ -4,13 +4,13 @@
       <div class="col-md col-12 px-0">
         <CHeading content="">
           MyVT <sup class="font-14 font-orange font-weight-400 certical-align-revert">TM</sup> Admin
-        </CHeading> 
+        </CHeading>
       </div>
       <div class="col-sm col-auto px-0 text-center">
-        <router-link to="/my-VT-admin" >
-          <button class=" btn-light-orange btn font-weight-700">Access</button>
+        <router-link to="/my-VT-admin">
+          <button class="font-18 btn-light-orange btn font-weight-700">Access</button>
         </router-link>
-        <router-link to="/client-VT" >
+        <router-link to="/client-VT">
           <button class="btn text-black font-18 font-weight-500 ml-2">Client VT</button>
         </router-link>
       </div>
@@ -24,13 +24,26 @@
         </button>
       </div>
     </div>
-    <v-data-table :headers="headers" :items="reports" sort-by="calories" class="elevation-1">
-      <template v-slot:[`item.action`]="{ item }">
-        <div small class="mr-2 text-center" @click="editItem(item)">
-          <img src="../assets/UserInterface.png" alt="">
-        </div>
-      </template>
-    </v-data-table>
+    <div class="overflow-auto">
+
+      <b-table id="my-table" hover :fields="fields" :items="items" :per-page="perPage" :current-page="currentPage">
+        <template #cell(action)>
+          <div small class="mr-2 text-center" @click="row.editItem(item)">
+            <img src="../assets/UserInterface.png" alt="">
+          </div>
+        </template>
+      </b-table>
+
+    </div>
+    <div class=" paginationclass pt-5">
+      <div class="font-mono font-14 mb-3">
+        {{ rows }} Total Listings
+      </div>
+      <div>
+        <b-pagination v-model="currentPage" :total-rows="rows" :per-page="perPage" aria-controls="my-table">
+        </b-pagination>
+      </div>
+    </div>
 
     <b-modal id="addUser" hide-footer>
       <template #modal-title>
@@ -56,9 +69,17 @@
               <b-dropdown id="dropdown-1" text="Access Level" block variant="outline"
                 class="text-left custom-dropdown border py-5 border-light-gray rounded">
                 <b-dropdown-item>All Sales</b-dropdown-item>
-                <b-dropdown id="dropdown-3" text="Region" variant="outline" dropright class="">
-                  <b-dropdown-item>First Action 2</b-dropdown-item>
-                  <b-dropdown-item>Second Action 2</b-dropdown-item>
+                
+                <b-dropdown id="dropdown-2" text="Territory" variant="outline" dropright class="">
+                  <b-dropdown-item>
+                    <b-form-checkbox value="me">Barcelona</b-form-checkbox>
+                  </b-dropdown-item>
+                  <b-dropdown-item>
+                    <b-form-checkbox value="me">Madrid</b-form-checkbox>
+                  </b-dropdown-item>
+                  <b-dropdown-item>
+                    <b-form-checkbox value="me">Alicante</b-form-checkbox>
+                  </b-dropdown-item>
                 </b-dropdown>
                 <b-dropdown id="dropdown-2" text="Territory" variant="outline" dropright class="">
                   <b-dropdown-item>
@@ -82,6 +103,7 @@
         </b-form>
       </div>
     </b-modal>
+
   </div>
 </template>
 
@@ -93,18 +115,23 @@ export default {
   components: {
     CHeading
   },
+  computed: {
+    rows() {
+      return this.items.length
+    }
+  },
   data: () => ({
-    headers: [
-      { text: 'Username', value: 'username' },
-      { text: 'Email Address', value: 'emailAddress' },
-      { text: 'User Type', value: 'userType' },
-      { text: 'Access Level', value: 'accessLevel' },
-      { text: 'Status', value: 'status' },
-      { text: 'CYTD Login Count', value: 'CYTDLoginCount', align: 'right' },
-      { text: 'Current Month Login Count', value: 'currentMonthLoginCount', align: 'right' },
-      { text: 'Action', value: 'action', width: '10%', align: 'center' },
+    fields: [
+      { label: 'Username', key: 'username' },
+      { label: 'Email Address', key: 'emailAddress' },
+      { label: 'User Type', key: 'userType' },
+      { label: 'Access Level', key: 'accessLevel' },
+      { label: 'Status', key: 'status' },
+      { label: 'CYTD Login Count', key: 'CYTDLoginCount', class: 'rightAligned' },
+      { label: 'Current Month Login Count', key: 'currentMonthLoginCount', class: 'rightAligned' },
+      { label: 'Action', key: 'action', width: '10%', align: 'center' },
     ],
-    reports: [
+    items: [
       {
         username: 'Devon Lane',
         emailAddress: 'dolores.chambers@example.com',
@@ -204,12 +231,33 @@ export default {
         CYTDLoginCount: '5,138',
         currentMonthLoginCount: '8,116',
       }
+      ,
+      {
+        username: 'Devon Lane',
+        emailAddress: 'dolores.chambers@example.com',
+        userType: 'Admin',
+        accessLevel: 'Admin',
+        status: 'Active',
+        CYTDLoginCount: '5,138',
+        currentMonthLoginCount: '8,116',
+      },
+      {
+        username: 'Devon Lane',
+        emailAddress: 'dolores.chambers@example.com',
+        userType: 'Admin',
+        accessLevel: 'Admin',
+        status: 'Active',
+        CYTDLoginCount: '5,138',
+        currentMonthLoginCount: '8,116',
+      }
     ],
+    currentPage: 1,
+    perPage: 10,
     active: ['Active', 'Bar', 'Fizz', 'Buzz'],
     userType: ['Admin', 'Broker/Sales Ref', 'MFG',],
     show: true,
     isDropdown2Visible: false
-  }),
+  }), 
   mounted: function () {
     this.$root.$on('bv::dropdown::show', bvEvent => {
       if (bvEvent.componentId === 'dropdown-2') {
@@ -227,3 +275,8 @@ export default {
   }
 }
 </script>
+<style scoped>
+.dropdown button[aria-expanded="true"] {
+  background-color: #FF7E1D !important;
+}
+</style>

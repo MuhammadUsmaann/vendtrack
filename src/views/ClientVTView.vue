@@ -8,7 +8,7 @@
           </CHeading>
         </div>
         <div class="col-sm col-12 px-0 text-center">
-          <router-link to="/access-VT-View" >
+          <router-link to="/my-VT-admin" >
             <button class="btn text-black font-18 font-weight-500">Access</button>
           </router-link>
           <router-link to="/client-VT" >
