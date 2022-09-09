@@ -27,11 +27,33 @@
     <div class="overflow-auto">
 
       <b-table id="my-table" hover :fields="fields" :items="items" :per-page="perPage" :current-page="currentPage">
-        <template #cell(action)>
+        <template v-for="field in editableField" v-slot:[`cell(${field.key})`]="{ item ,value}">
+          <span :key="field.key" v-if="!item.editing">
+            {{ value }}
+          </span>
+          <b-input :key="field.index" v-else v-model="item.temp[field.key]" @keydown.enter.exact="doSave(item)" />
+        </template>
+
+
+        <template #cell(action)={item}>
+
+          <div class="d-flex justify-content-center align-items-center">
+            <div small class="mr-2 text-center cursor-pointer" v-if="!item.editing" @click="doEdit(item)">
+              <i class="fas fa-edit"></i>
+            </div>
+            <span class="p-1 cursor-pointer" v-if="item.editing" @click="doSave(item)" variant="success">
+              <i class="fas fa-save"></i>
+            </span>
+            <span class="p-1 cursor-pointer" v-if="item.editing" @click="doCancel(item)" variant="danger">
+              <i class="fa fa-times " aria-hidden="true"></i>
+            </span>
+          </div>
+        </template>
+        <!-- <template #cell(action)>
           <div small class="mr-2 text-center" @click="row.editItem(item)">
             <img src="../assets/UserInterface.png" alt="">
           </div>
-        </template>
+        </template> -->
       </b-table>
 
     </div>
@@ -69,9 +91,15 @@
               <b-dropdown id="dropdown-1" text="Access Level" block variant="outline"
                 class="text-left custom-dropdown border py-5 border-light-gray rounded">
                 <b-dropdown-item>All Sales</b-dropdown-item>
-                
-                <b-dropdown id="dropdown-2" text="Territory" variant="outline" dropright class="">
-                  <b-dropdown-item>
+
+                <b-dropdown id="dropdown-2" text="Region " variant="outline" dropright class="">
+                  <div class="px-2">
+                    <b-form-checkbox value="me">Barcelona</b-form-checkbox>
+                    <b-form-checkbox value="me">Madrid</b-form-checkbox>
+                    <b-form-checkbox value="me">Alicante</b-form-checkbox>
+                  </div>
+
+                  <!-- <b-dropdown-item>
                     <b-form-checkbox value="me">Barcelona</b-form-checkbox>
                   </b-dropdown-item>
                   <b-dropdown-item>
@@ -79,10 +107,15 @@
                   </b-dropdown-item>
                   <b-dropdown-item>
                     <b-form-checkbox value="me">Alicante</b-form-checkbox>
-                  </b-dropdown-item>
+                  </b-dropdown-item> -->
                 </b-dropdown>
                 <b-dropdown id="dropdown-2" text="Territory" variant="outline" dropright class="">
-                  <b-dropdown-item>
+                  <div class="px-2">
+                    <b-form-checkbox value="me">Barcelona</b-form-checkbox>
+                    <b-form-checkbox value="me">Madrid</b-form-checkbox>
+                    <b-form-checkbox value="me">Alicante</b-form-checkbox>
+                  </div>
+                  <!-- <b-dropdown-item>
                     <b-form-checkbox value="me">Barcelona</b-form-checkbox>
                   </b-dropdown-item>
                   <b-dropdown-item>
@@ -90,7 +123,7 @@
                   </b-dropdown-item>
                   <b-dropdown-item>
                     <b-form-checkbox value="me">Alicante</b-form-checkbox>
-                  </b-dropdown-item>
+                  </b-dropdown-item> -->
                 </b-dropdown>
               </b-dropdown>
             </v-col>
@@ -118,18 +151,21 @@ export default {
   computed: {
     rows() {
       return this.items.length
+    },
+    editableField() {
+      return this.fields.filter(field => field.editable)
     }
   },
   data: () => ({
     fields: [
-      { label: 'Username', key: 'username' },
-      { label: 'Email Address', key: 'emailAddress' },
-      { label: 'User Type', key: 'userType' },
-      { label: 'Access Level', key: 'accessLevel' },
-      { label: 'Status', key: 'status' },
-      { label: 'CYTD Login Count', key: 'CYTDLoginCount', class: 'rightAligned' },
-      { label: 'Current Month Login Count', key: 'currentMonthLoginCount', class: 'rightAligned' },
-      { label: 'Action', key: 'action', width: '10%', align: 'center' },
+      { label: 'Username', key: 'username', editable: true },
+      { label: 'Email Address', key: 'emailAddress', editable: true },
+      { label: 'User Type', key: 'userType', editable: true },
+      { label: 'Access Level', key: 'accessLevel', editable: true },
+      { label: 'Status', key: 'status', editable: true },
+      { label: 'CYTD Login Count', key: 'CYTDLoginCount', class: 'rightAligned', editable: true },
+      { label: 'Current Month Login Count', key: 'currentMonthLoginCount', class: 'rightAligned', editable: true },
+      { label: 'Action', key: 'action', align: 'center', width: '20%' },
     ],
     items: [
       {
@@ -257,7 +293,25 @@ export default {
     userType: ['Admin', 'Broker/Sales Ref', 'MFG',],
     show: true,
     isDropdown2Visible: false
-  }), 
+  }),
+  methods: {
+    doEdit(item) {
+      this.$set(item, 'temp', JSON.parse(JSON.stringify(item)))
+      this.$set(item, 'editing', true)
+    },
+    doSave(item) {
+      this.$set(item, 'editing', false)
+      for (let key in item.temp) {
+        if (item[key] != item.temp[key]) {
+          item[key] = item.temp[key]
+        }
+      }
+    },
+    doCancel(item) {
+      this.$set(item, 'editing', false)
+      this.$delete(item, 'temp')
+    }
+  },
   mounted: function () {
     this.$root.$on('bv::dropdown::show', bvEvent => {
       if (bvEvent.componentId === 'dropdown-2') {
@@ -278,5 +332,12 @@ export default {
 <style scoped>
 .dropdown button[aria-expanded="true"] {
   background-color: #FF7E1D !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+.cursor-pointer:hover{
+  color: #FF7E1D !important;  
 }
 </style>
