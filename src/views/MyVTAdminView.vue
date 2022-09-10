@@ -34,7 +34,6 @@
           <b-input :key="field.index" v-else v-model="item.temp[field.key]" @keydown.enter.exact="doSave(item)" />
         </template>
 
-
         <template #cell(action)={item}>
 
           <div class="d-flex justify-content-center align-items-center">
@@ -49,11 +48,7 @@
             </span>
           </div>
         </template>
-        <!-- <template #cell(action)>
-          <div small class="mr-2 text-center" @click="row.editItem(item)">
-            <img src="../assets/UserInterface.png" alt="">
-          </div>
-        </template> -->
+
       </b-table>
 
     </div>
