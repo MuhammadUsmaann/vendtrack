@@ -1,10 +1,11 @@
 <template>
   <div class="report-generator rounded bg-white px-3 py-4 ">
-    <div class="row mx-0 align-item-center">
-      <div class="col-md-auto col-12 px-0 w-max-content">
+    <div class="row mx-0 ">
+      <div class="col-md-auto col-6 px-0 w-max-content">
         <CHeading content="Dashboard" />
+        <p class="font-14 font-weight-500">All Values are "To-Date" mm/dd</p>
       </div>
-      <div class="col-md col-12 px-0 text-right">
+      <div class="col-md col-6 px-0 text-right">
         <span class="font-500 font-14 font-mono mr-1 w-md-100 d-inline-block mb-md-0 mb-2">Last Update:
           02/18/2022</span>
         <b-dropdown id="dropdown-1" text="All Sales" variant="outline"
@@ -25,7 +26,6 @@
         </button>
       </div>
     </div>
-    <p class="font-14 font-weight-500">All Values are "To-Date" mm/dd</p>
 
     <div class="mt-5">
       <div v-for="item in items" v-bind:key="item.id">
