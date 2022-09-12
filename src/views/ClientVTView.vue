@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <div class="report-generator bg-white px-3 py-4">
+    <div class="report-generator rounded bg-white px-3 py-4">
       <div class="row mx-0 align-item-center mb-3">
         <div class="col-sm col-12 px-0">
           <CHeading content="">

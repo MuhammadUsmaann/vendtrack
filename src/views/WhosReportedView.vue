@@ -1,7 +1,7 @@
 <template>
 
 
-  <div class=" whos-Reported bg-white px-3 py-4">
+  <div class=" whos-Reported rounded bg-white px-3 py-4">
     <div class="row mx-0 align-item-center mb-3">
       <div class="col px-0">
         <CHeading content="Who’s Reported" />

@@ -1,5 +1,5 @@
 <template>
-    <div class="report-generator bg-white px-3 py-4">
+    <div class="report-generator rounded bg-white px-3 py-4">
         <div class="row mx-0 align-item-center">
             <div class="col-md col-sm-6 col-12 px-0">
                 <CHeading content="Report Generator" />
@@ -18,10 +18,10 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-10">
+            <div class="col-9">
                 <p class="appFilters">Applied Filters</p>
             </div>
-            <div class="col-2 ">
+            <div class="col-3">
                 <router-link to="/filter-comparison-generator" class="waves-effect">
                     <p class="mb-0 font-weight-600 font-orange font-13 text-right font-mono font-style-underline">Change
                         Filters

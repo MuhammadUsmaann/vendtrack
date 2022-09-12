@@ -1,5 +1,5 @@
 <template>
-    <div class="report-generator bg-white px-3 py-4">
+    <div class="report-generator rounded bg-white px-3 py-4">
         <div class="row mx-0 align-item-center">
             <div class="col-md col-sm-6 col-12 px-0">
                 <CHeading content="Report Generator" />

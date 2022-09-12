@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <div class="myvt bg-white px-3 py-4">
+    <div class="myvt bg-white rounded px-3 py-4">
       <div class="row mx-0 align-item-center">
         <div class="col px-0">
           <CHeading>
