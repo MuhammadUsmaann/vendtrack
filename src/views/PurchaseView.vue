@@ -444,7 +444,7 @@ export default {
 
 }
 </script>
-<style scoped>
+<style scoped >
 .arrowsRight {
   right: 15px;
 }
