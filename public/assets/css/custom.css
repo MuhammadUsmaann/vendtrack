@@ -45,7 +45,7 @@ h3 {
 }
 
 .font-red {
-    color: #D34657 !important;
+    color: #E95145 !important;
 }
 
 .font-14,
@@ -64,7 +64,9 @@ h3 {
 .font-25 {
     font-size: 25px !important;
 }
-
+.font-28 {
+    font-size: 28px !important;
+}
 .font-30 {
     font-size: 30px !important;
 }
@@ -96,6 +98,7 @@ h3 {
 .rounded-md {
     border-radius: 10px !important;
 }
+
 
 .inner-mx-auto>* {
     margin-left: auto !important;
