@@ -39,6 +39,6 @@ export default {
 }
 </script>
 <style>
-  @import url('http://fonts.cdnfonts.com/css/sf-mono');
+  @import url('https://fonts.cdnfonts.com/css/sf-mono');
 
 </style>
