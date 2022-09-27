@@ -39,6 +39,8 @@ export default defineComponent({
       }
       ],
       linechartOptions: {
+        colors: ["#FF7E1D","#873BD3","#466ABB" ],
+
         chart: {
           height: 350,
           type: 'line',
@@ -101,6 +103,8 @@ export default defineComponent({
         }]
       }],
       chartOptions: {
+        colors: ["#FF7E1D","#873BD3" ],
+
         chart: {
           type: 'rangeBar',
           height: 350
