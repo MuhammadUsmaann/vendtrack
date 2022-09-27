@@ -12,7 +12,7 @@ import YtdPurchase from '../views/PurchaseView.vue'
 import YtdPurchaseList from '../views/YTDPurchaseList.vue'
 
 import MyVTAdmin from '../views/MyVTAdminView.vue'
-import ReviewList from '../views/ReviewView.vue'
+import ClientTrackSelect from '../views/ClientTrackSelect.vue'
 import ProfileView from '../views/ProfileView.vue'
 import ClientVT from '../views/ClientVTView.vue'
 import AthenaReview from '../views/AthenaReviewView.vue'
@@ -77,9 +77,9 @@ const routes = [
     component: MyVTAdmin
   },
   {
-    path: '/review-list',
-    name: 'reviewList',
-    component: ReviewList
+    path: '/select-client-track',
+    name: 'ClientTrackSelect',
+    component: ClientTrackSelect
   },
   {
     path: '/profile',

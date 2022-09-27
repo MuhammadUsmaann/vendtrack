@@ -14,7 +14,7 @@
         single-line
         hide-details
       ></v-text-field>
-        <button class="btn border border-light-gray p-10 ml-2"><img src="../assets/excel.png" alt=""> <div class="d-md-inline-block d-none"> Export in Excel</div></button>
+        <button class="btn border border-light-gray p-10 ml-2"><img src="../assets/excel.svg" alt=""> <div class="d-md-inline-block d-none"> Export in Excel</div></button>
       </div>
     </div>
     <div class="border rounded-sm bg-light-gray justify-content-between row mx-0 mt-3 mb-3">
@@ -102,7 +102,7 @@
     <v-data-table :headers="headers" :items="desserts" class="elevation-1" :search="search">
       <template v-slot:[`item.actions`]="{ item }">
         <div small class="mr-2" @click="editItem(item)">
-          <img src="../assets/UserInterface.png" alt="">
+          <img src="../assets/UserInterface.svg" alt="">
         </div>
       </template>
 

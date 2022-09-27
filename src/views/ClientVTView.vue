@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <div class="report-generator rounded bg-white px-3 py-4">
+    <div class="clientvtview rounded bg-white px-3 py-4">
       <div class="row mx-0 align-item-center mb-3">
         <div class="col-sm col-12 px-0">
           <CHeading content="">
@@ -8,10 +8,10 @@
           </CHeading>
         </div>
         <div class="col-sm col-12 px-0 text-center">
-          <router-link to="/my-VT-admin" >
+          <router-link to="/my-VT-admin">
             <button class="btn text-black font-18 font-weight-500">Access</button>
           </router-link>
-          <router-link to="/client-VT" >
+          <router-link to="/client-VT">
             <button class="font-18 btn-light-orange btn font-weight-700 ml-2">Client VT</button>
           </router-link>
         </div>
@@ -26,16 +26,25 @@
           </div>
           <b-row class="mx-n1 mt-3 inner-font-black inner-font-14 pb-5">
             <v-col cols="12" md="3" class="p-1">
-              <v-text-field label="First Name" outlined></v-text-field>
+              <b-form-group label="First Name" label-for="FirstName" class="mb-0 font-black font-weight-700 font-14">
+                <b-form-input id="FirstName"></b-form-input>
+              </b-form-group>
             </v-col>
             <v-col cols="12" md="3" class="p-1">
-              <v-text-field label="Last Name" outlined></v-text-field>
+              <b-form-group label="Last Name" label-for="LastName" class="mb-0 font-black font-weight-700 font-14">
+                <b-form-input id="LastName"></b-form-input>
+              </b-form-group>
             </v-col>
             <v-col cols="12" md="3" class="p-1">
-              <v-text-field label="Email" outlined></v-text-field>
+              <b-form-group label="Email" label-for="Email" class="mb-0 font-black font-weight-700 font-14">
+                <b-form-input id="Email" type="email"></b-form-input>
+              </b-form-group>
             </v-col>
+
             <v-col cols="12" md="3" class="p-1">
-              <v-text-field label="Access Level" outlined></v-text-field>
+              <p class="mb-5px font-black font-weight-700 font-14">Access Level</p>
+              <multiselect :searchable="false" placeholder="" v-model="accesslevelselected" label="name" track-by="code"
+                :options="accesslevel"></multiselect>
             </v-col>
           </b-row>
           <div class="sub-heading-hhh font-weight-700 font-20 font-black">
@@ -145,14 +154,28 @@
 
 <script>
 import CHeading from '@/components/heading.vue';
+import Multiselect from 'vue-multiselect'
+
 export default {
   name: 'ClientVT',
   components: {
-    CHeading
+    CHeading, Multiselect
   },
-  
+
   data: () => ({
+    accesslevelselected: null,
+    accesslevel: [
+      { name: 'All Sales', code: 'cs' },
+      { name: 'All Sales', code: 'ds' },
+      { name: 'All Sales', code: 'os' }
+    ],
 
   }),
 }
 </script>
+<style scoped>
+.clientvtview {
+  height: 100vh !important;
+  overflow-y: auto;
+}
+</style>

@@ -20,7 +20,7 @@
           <b-dropdown-item>Third Action</b-dropdown-item>
         </b-dropdown>
         <button class="btn border border-light-gray ml-2 font-14 font-weight-500 font-black shadow-sm"><img
-            src="../assets/pdf.png" alt="" class="pr-1">
+            src="../assets/pdf.svg" alt="" class="pr-1">
           <div class="d-inline-block"> Export in PDF</div>
         </button>
       </div>
@@ -159,6 +159,84 @@ export default {
         CHG2022vs2020: '9,828',
         'CHG2022vs2020%': '5,948'
       },
+      {
+        productCategory: 'Devon Lane',
+        CHG2022vs2020: '9,828',
+        TD2020: 'Tio Félix',
+        TD2021: '2022',
+        TD2022: '9,359',
+        CHG2022vs2021: '4,152',
+        'CHG2022vs2021%': '5,948',
+        'CHG2022vs2020%': '5,948',
+
+      },
+      {
+        productCategory: 'Devon Lane',
+
+        TD2020: 'Tio Félix',
+        TD2021: '2022',
+        TD2022: '9,359',
+        CHG2022vs2021: '4,152',
+        'CHG2022vs2021%': '5,948',
+        CHG2022vs2020: '9,828',
+        'CHG2022vs2020%': '5,948'
+      },
+      {
+        productCategory: 'Devon Lane',
+
+        TD2020: 'Tio Félix',
+        TD2021: '2022',
+        TD2022: '9,359',
+        CHG2022vs2021: '4,152',
+        'CHG2022vs2021%': '5,948',
+        CHG2022vs2020: '9,828',
+        'CHG2022vs2020%': '5,948'
+      },
+      {
+        productCategory: 'Devon Lane',
+        CHG2022vs2020: '9,828',
+        TD2020: 'Tio Félix',
+        TD2021: '2022',
+        TD2022: '9,359',
+        CHG2022vs2021: '4,152',
+        'CHG2022vs2021%': '5,948',
+        'CHG2022vs2020%': '5,948',
+
+      },
+      {
+        productCategory: 'Devon Lane',
+
+        TD2020: 'Tio Félix',
+        TD2021: '2022',
+        TD2022: '9,359',
+        CHG2022vs2021: '4,152',
+        'CHG2022vs2021%': '5,948',
+        CHG2022vs2020: '9,828',
+        'CHG2022vs2020%': '5,948'
+      },
+      {
+        productCategory: 'Devon Lane',
+
+        TD2020: 'Tio Félix',
+        TD2021: '2022',
+        TD2022: '9,359',
+        CHG2022vs2021: '4,152',
+        'CHG2022vs2021%': '5,948',
+        CHG2022vs2020: '9,828',
+        'CHG2022vs2020%': '5,948'
+      },
+      {
+        productCategory: 'Devon Lane',
+
+        TD2020: 'Tio Félix',
+        TD2021: '2022',
+        TD2022: '9,359',
+        CHG2022vs2021: '4,152',
+        'CHG2022vs2021%': '5,948',
+        CHG2022vs2020: '9,828',
+        'CHG2022vs2020%': '5,948'
+      },
+
     ],
     GOPheaders: [
       { text: 'GOP', value: 'GOP', },
@@ -204,6 +282,83 @@ export default {
         CHG2022vs2020: '9,828',
         'CHG2022vs2020%': '5,948'
       },
+      {
+        GOP: 'Devon Lane',
+        CHG2022vs2020: '9,828',
+        TD2020: 'Tio Félix',
+        TD2021: '2022',
+        TD2022: '9,359',
+        CHG2022vs2021: '4,152',
+        'CHG2022vs2021%': '5,948',
+        'CHG2022vs2020%': '5,948',
+
+      },
+      {
+        GOP: 'Devon Lane',
+
+        TD2020: 'Tio Félix',
+        TD2021: '2022',
+        TD2022: '9,359',
+        CHG2022vs2021: '4,152',
+        'CHG2022vs2021%': '5,948',
+        CHG2022vs2020: '9,828',
+        'CHG2022vs2020%': '5,948'
+      },
+      {
+        GOP: 'Devon Lane',
+
+        TD2020: 'Tio Félix',
+        TD2021: '2022',
+        TD2022: '9,359',
+        CHG2022vs2021: '4,152',
+        'CHG2022vs2021%': '5,948',
+        CHG2022vs2020: '9,828',
+        'CHG2022vs2020%': '5,948'
+      },
+      {
+        GOP: 'Devon Lane',
+        CHG2022vs2020: '9,828',
+        TD2020: 'Tio Félix',
+        TD2021: '2022',
+        TD2022: '9,359',
+        CHG2022vs2021: '4,152',
+        'CHG2022vs2021%': '5,948',
+        'CHG2022vs2020%': '5,948',
+
+      },
+      {
+        GOP: 'Devon Lane',
+
+        TD2020: 'Tio Félix',
+        TD2021: '2022',
+        TD2022: '9,359',
+        CHG2022vs2021: '4,152',
+        'CHG2022vs2021%': '5,948',
+        CHG2022vs2020: '9,828',
+        'CHG2022vs2020%': '5,948'
+      },
+      {
+        GOP: 'Devon Lane',
+
+        TD2020: 'Tio Félix',
+        TD2021: '2022',
+        TD2022: '9,359',
+        CHG2022vs2021: '4,152',
+        'CHG2022vs2021%': '5,948',
+        CHG2022vs2020: '9,828',
+        'CHG2022vs2020%': '5,948'
+      },
+      {
+        GOP: 'Devon Lane',
+
+        TD2020: 'Tio Félix',
+        TD2021: '2022',
+        TD2022: '9,359',
+        CHG2022vs2021: '4,152',
+        'CHG2022vs2021%': '5,948',
+        CHG2022vs2020: '9,828',
+        'CHG2022vs2020%': '5,948'
+      },
     ],
     Territoryheaders: [
       { text: 'Territory', value: 'Territory', },
@@ -226,6 +381,83 @@ export default {
         'CHG2022vs2021%': '5,948',
         'CHG2022vs2020%': '5,948',
 
+      },
+      {
+        Territory: 'Devon Lane',
+
+        TD2020: 'Tio Félix',
+        TD2021: '2022',
+        TD2022: '9,359',
+        CHG2022vs2021: '4,152',
+        'CHG2022vs2021%': '5,948',
+        CHG2022vs2020: '9,828',
+        'CHG2022vs2020%': '5,948'
+      },
+      {
+        Territory: 'Devon Lane',
+
+        TD2020: 'Tio Félix',
+        TD2021: '2022',
+        TD2022: '9,359',
+        CHG2022vs2021: '4,152',
+        'CHG2022vs2021%': '5,948',
+        CHG2022vs2020: '9,828',
+        'CHG2022vs2020%': '5,948'
+      },
+      {
+        Territory: 'Devon Lane',
+        CHG2022vs2020: '9,828',
+        TD2020: 'Tio Félix',
+        TD2021: '2022',
+        TD2022: '9,359',
+        CHG2022vs2021: '4,152',
+        'CHG2022vs2021%': '5,948',
+        'CHG2022vs2020%': '5,948',
+
+      },
+      {
+        Territory: 'Devon Lane',
+
+        TD2020: 'Tio Félix',
+        TD2021: '2022',
+        TD2022: '9,359',
+        CHG2022vs2021: '4,152',
+        'CHG2022vs2021%': '5,948',
+        CHG2022vs2020: '9,828',
+        'CHG2022vs2020%': '5,948'
+      },
+      {
+        Territory: 'Devon Lane',
+
+        TD2020: 'Tio Félix',
+        TD2021: '2022',
+        TD2022: '9,359',
+        CHG2022vs2021: '4,152',
+        'CHG2022vs2021%': '5,948',
+        CHG2022vs2020: '9,828',
+        'CHG2022vs2020%': '5,948'
+      },
+      {
+        Territory: 'Devon Lane',
+        CHG2022vs2020: '9,828',
+        TD2020: 'Tio Félix',
+        TD2021: '2022',
+        TD2022: '9,359',
+        CHG2022vs2021: '4,152',
+        'CHG2022vs2021%': '5,948',
+        'CHG2022vs2020%': '5,948',
+
+      },
+      {
+        Territory: 'Devon Lane',
+
+        TD2020: 'Tio Félix',
+        TD2021: '2022',
+        TD2022: '9,359',
+        CHG2022vs2021: '4,152',
+        'CHG2022vs2021%': '5,948',
+        CHG2022vs2020: '9,828',
+        'CHG2022vs2020%': '5,948'
       },
       {
         Territory: 'Devon Lane',
@@ -296,6 +528,85 @@ export default {
         CHG2022vs2020: '9,828',
         'CHG2022vs2020%': '5,948'
       },
+      {
+        CustomerChainName: 'Devon Lane',
+        CHG2022vs2020: '9,828',
+        ID: '12121',
+        TD2020: 'Tio Félix',
+        TD2021: '2022',
+        TD2022: '9,359',
+        CHG2022vs2021: '4,152',
+        'CHG2022vs2021%': '5,948',
+        'CHG2022vs2020%': '5,948',
+
+      },
+      {
+        CustomerChainName: 'Devon Lane',
+        ID: '12121',
+        TD2020: 'Tio Félix',
+        TD2021: '2022',
+        TD2022: '9,359',
+        CHG2022vs2021: '4,152',
+        'CHG2022vs2021%': '5,948',
+        CHG2022vs2020: '9,828',
+        'CHG2022vs2020%': '5,948'
+      },
+      {
+        CustomerChainName: 'Devon Lane',
+        ID: '12121',
+        TD2020: 'Tio Félix',
+        TD2021: '2022',
+        TD2022: '9,359',
+        CHG2022vs2021: '4,152',
+        'CHG2022vs2021%': '5,948',
+        CHG2022vs2020: '9,828',
+        'CHG2022vs2020%': '5,948'
+      },
+      {
+        CustomerChainName: 'Devon Lane',
+        CHG2022vs2020: '9,828',
+        ID: '12121',
+        TD2020: 'Tio Félix',
+        TD2021: '2022',
+        TD2022: '9,359',
+        CHG2022vs2021: '4,152',
+        'CHG2022vs2021%': '5,948',
+        'CHG2022vs2020%': '5,948',
+
+      },
+      {
+        CustomerChainName: 'Devon Lane',
+        ID: '12121',
+        TD2020: 'Tio Félix',
+        TD2021: '2022',
+        TD2022: '9,359',
+        CHG2022vs2021: '4,152',
+        'CHG2022vs2021%': '5,948',
+        CHG2022vs2020: '9,828',
+        'CHG2022vs2020%': '5,948'
+      },
+      {
+        CustomerChainName: 'Devon Lane',
+        ID: '12121',
+        TD2020: 'Tio Félix',
+        TD2021: '2022',
+        TD2022: '9,359',
+        CHG2022vs2021: '4,152',
+        'CHG2022vs2021%': '5,948',
+        CHG2022vs2020: '9,828',
+        'CHG2022vs2020%': '5,948'
+      },
+      {
+        CustomerChainName: 'Devon Lane',
+        ID: '12121',
+        TD2020: 'Tio Félix',
+        TD2021: '2022',
+        TD2022: '9,359',
+        CHG2022vs2021: '4,152',
+        'CHG2022vs2021%': '5,948',
+        CHG2022vs2020: '9,828',
+        'CHG2022vs2020%': '5,948'
+      },
     ],
     bottomCustomersheaders: [
       { text: 'Customer / Chain Name', value: 'CustomerChainName' },
@@ -343,9 +654,89 @@ export default {
         CHG2022vs2020: '9,828',
         'CHG2022vs2020%': '5,948'
       },
+      {
+        CustomerChainName: 'Devon Lane',
+        CHG2022vs2020: '9,828',
+        ID: '12121',
+        TD2020: 'Tio Félix',
+        TD2021: '2022',
+        TD2022: '9,359',
+        CHG2022vs2021: '4,152',
+        'CHG2022vs2021%': '5,948',
+        'CHG2022vs2020%': '5,948',
+
+      },
+      {
+        CustomerChainName: 'Devon Lane',
+        ID: '12121',
+        TD2020: 'Tio Félix',
+        TD2021: '2022',
+        TD2022: '9,359',
+        CHG2022vs2021: '4,152',
+        'CHG2022vs2021%': '5,948',
+        CHG2022vs2020: '9,828',
+        'CHG2022vs2020%': '5,948'
+      },
+      {
+        CustomerChainName: 'Devon Lane',
+        ID: '12121',
+        TD2020: 'Tio Félix',
+        TD2021: '2022',
+        TD2022: '9,359',
+        CHG2022vs2021: '4,152',
+        'CHG2022vs2021%': '5,948',
+        CHG2022vs2020: '9,828',
+        'CHG2022vs2020%': '5,948'
+      },
+      {
+        CustomerChainName: 'Devon Lane',
+        CHG2022vs2020: '9,828',
+        ID: '12121',
+        TD2020: 'Tio Félix',
+        TD2021: '2022',
+        TD2022: '9,359',
+        CHG2022vs2021: '4,152',
+        'CHG2022vs2021%': '5,948',
+        'CHG2022vs2020%': '5,948',
+
+      },
+      {
+        CustomerChainName: 'Devon Lane',
+        ID: '12121',
+        TD2020: 'Tio Félix',
+        TD2021: '2022',
+        TD2022: '9,359',
+        CHG2022vs2021: '4,152',
+        'CHG2022vs2021%': '5,948',
+        CHG2022vs2020: '9,828',
+        'CHG2022vs2020%': '5,948'
+      },
+      {
+        CustomerChainName: 'Devon Lane',
+        ID: '12121',
+        TD2020: 'Tio Félix',
+        TD2021: '2022',
+        TD2022: '9,359',
+        CHG2022vs2021: '4,152',
+        'CHG2022vs2021%': '5,948',
+        CHG2022vs2020: '9,828',
+        'CHG2022vs2020%': '5,948'
+      },
+      {
+        CustomerChainName: 'Devon Lane',
+        ID: '12121',
+        TD2020: 'Tio Félix',
+        TD2021: '2022',
+        TD2022: '9,359',
+        CHG2022vs2021: '4,152',
+        'CHG2022vs2021%': '5,948',
+        CHG2022vs2020: '9,828',
+        'CHG2022vs2020%': '5,948'
+      },
     ],
     CYTDseries: [44, 55, 13, 43, 22],
     CYTDchartOptions: {
+      colors: ["#FF7E1D","#466ABB","#873BD3","#5BB878","#fbe5d4" ],
       chart: {
         width: 380,
         type: 'pie',
@@ -365,6 +756,8 @@ export default {
     },
     PYTDseries: [44, 55, 13, 43, 22],
     PYTDchartOptions: {
+      colors: ["#FF7E1D","#466ABB","#873BD3","#5BB878","#fbe5d4" ],
+
       chart: {
         width: 380,
         type: 'pie',
@@ -408,6 +801,8 @@ export default {
       data: [350000, 210000, 190000]
     }],
     barlinechartOptions: {
+      colors: ["#FF7E1D","#466ABB","#873BD3","#5BB878" ],
+
       chart: {
         height: 350,
         type: 'line',

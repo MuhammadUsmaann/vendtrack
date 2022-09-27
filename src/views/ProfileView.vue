@@ -15,35 +15,35 @@
               <ImgPreviewerPicker />
               <div class="heading-title pl-3">
                 <CHeading content="Vani Hedge" />
-                <div class="font-14 font-weight-500 font-black">vani_hedges@gmail.com</div>
+                <div class="font-14 font-weight-700 font-black">vani_hedges@gmail.com</div>
               </div>
             </div>
             <div class="row mx-n2 mt-2 mb-3">
               <div class="col-md-6 px-2 py-1">
-                <b-form-group label="First Name" label-for="FirstName" class="mb-0 font-black font-weight-500 font-14">
+                <b-form-group label="First Name" label-for="FirstName" class="mb-0 font-black font-weight-700 font-14">
                   <b-form-input id="FirstName"></b-form-input>
                 </b-form-group>
               </div>
               <div class="col-md-6 px-2 py-1">
-                <b-form-group label="Last Name" label-for="LastName" class="mb-0 font-black font-weight-500 font-14">
+                <b-form-group label="Last Name" label-for="LastName" class="mb-0 font-black font-weight-700 font-14">
                   <b-form-input id="LastName"></b-form-input>
                 </b-form-group>
               </div>
               <div class="col-md-6 px-2 py-1">
-                <b-form-group label="Email" label-for="Email" class="mb-0 font-black font-weight-500 font-14">
+                <b-form-group label="Email" label-for="Email" class="mb-0 font-black font-weight-700 font-14">
                   <b-form-input id="Email" type="email"></b-form-input>
                 </b-form-group>
               </div>
               <div class="col-md-6 px-2 py-1">
-                <b-form-group label="User Type" label-for="UserType" class="mb-0 font-black font-weight-500 font-14">
-                  <b-form-input id="UserType"></b-form-input>
-                </b-form-group>
+                <p class="mb-5px font-black font-weight-700 font-14">User Type</p>
+                <multiselect :searchable="false" placeholder="" v-model="usertypeselected" label="name" track-by="code"
+                  :options="usertype"></multiselect>
+
               </div>
               <div class="col-md-6 px-2 py-1">
-                <b-form-group label="Access Level" label-for="AccessLevel"
-                  class="mb-0 font-black font-weight-500 font-14">
-                  <b-form-input id="AccessLevel"></b-form-input>
-                </b-form-group>
+                <p class="mb-5px font-black font-weight-700 font-14">Access Level</p>
+                <multiselect :searchable="false" placeholder="" v-model="accesslevelselected" label="name"
+                  track-by="code" :options="accesslevel"></multiselect>
               </div>
             </div>
           </div>
@@ -55,20 +55,20 @@
             <div class="row mx-n2 mt-2 mb-3">
               <div class="col-md-6 px-2 py-1">
                 <b-form-group label="Current Password" label-for="CurrentPassword"
-                  class="mb-0 font-black font-weight-500 font-14">
+                  class="mb-0 font-black font-weight-700 font-14">
                   <b-form-input id="CurrentPassword" type="password"></b-form-input>
                 </b-form-group>
               </div>
               <div class="col-md-6"></div>
               <div class="col-md-6 px-2 py-1">
                 <b-form-group label="New Password" label-for="NewPassword"
-                  class="mb-0 font-black font-weight-500 font-14">
+                  class="mb-0 font-black font-weight-700 font-14">
                   <b-form-input id="NewPassword" type="password"></b-form-input>
                 </b-form-group>
               </div>
               <div class="col-md-6 px-2 py-1">
                 <b-form-group label="Confirm New Password" label-for="ConfirmNewPassword"
-                  class="mb-0 font-black font-weight-500 font-14">
+                  class="mb-0 font-black font-weight-700 font-14">
                   <b-form-input id="ConfirmNewPassword" type="password"></b-form-input>
                 </b-form-group>
               </div>
@@ -105,7 +105,7 @@
               class="elevation-1">
               <template v-slot:[`item.action`]="{ item }">
                 <div small class="mr-3 text-right" @click="editItem(item)">
-                  <img src="../assets/download.png" alt="">
+                  <img src="../assets/download.svg" alt="">
                 </div>
               </template>
             </v-data-table>
@@ -129,8 +129,8 @@
                 <p class="font-14 font-weight-700">My Customer Group</p>
                 <p class="font-14 font-weight-700 pr-3">Action</p>
               </div>
-              <b-table :fields="CustomerGroupheaders" :items="CustomerGroup" class="elevation-1" 
-                dense thead-class="hidden_header">
+              <b-table :fields="CustomerGroupheaders" :items="CustomerGroup" class="elevation-1" dense
+                thead-class="hidden_header">
                 <template v-for="field in editableField" v-slot:[`cell(${field.key})`]="{ item ,value}">
                   <span :key="field.key" v-if="!item.editing">
                     {{ value }}
@@ -141,15 +141,15 @@
 
                 <template #cell(action)={item}>
 
-                  <div class="">
+                  <div class=" d-flex align-items-center justify-content-end">
                     <div small class="mr-3 cursor-pointer" v-if="!item.editing" @click="doEdit(item)">
-                      <i class="fas fa-edit"></i>
+                      <img src="../assets/UserInterface.svg" alt="">
                     </div>
                     <span class="p-1 cursor-pointer" v-if="item.editing" @click="doSave(item)" variant="success">
-                      <i class="fas fa-save"></i>
+                      <span class = "p-1 font-10 btn-light rounded-xl">save</span>
                     </span>
                     <span class="p-1 cursor-pointer" v-if="item.editing" @click="doCancel(item)" variant="danger">
-                      <i class="fa fa-times " aria-hidden="true"></i>
+                      <span class = "p-1 font-10 btn-light rounded-xl">cancel</span>
                     </span>
                   </div>
                 </template>
@@ -161,8 +161,8 @@
                 <p class="font-14 font-weight-700">My Product Group</p>
                 <p class="font-14 font-weight-700 pr-3">Action</p>
               </div>
-              <b-table :fields="MyProductGroupheaders" :items="MyProductGroup" class="elevation-1 mt-2" thead-class="hidden_header"
-                 dense>
+              <b-table :fields="MyProductGroupheaders" :items="MyProductGroup" class="elevation-1 mt-2"
+                thead-class="hidden_header" dense>
                 <template v-for="field in editableFields" v-slot:[`cell(${field.key})`]="{ item ,value}">
                   <span :key="field.key" v-if="!item.editing">
                     {{ value }}
@@ -173,15 +173,15 @@
 
                 <template #cell(action)={item}>
 
-                  <div class="d-flex justify-content-end align-items-center">
-                    <div small class="mr-3  cursor-pointer" v-if="!item.editing" @click="doEdit(item)">
-                      <i class="fas fa-edit"></i>
+                  <div class=" d-flex align-items-center justify-content-end">
+                    <div small class="mr-3 cursor-pointer" v-if="!item.editing" @click="doEdit(item)">
+                      <img src="../assets/UserInterface.svg" alt="">
                     </div>
                     <span class="p-1 cursor-pointer" v-if="item.editing" @click="doSave(item)" variant="success">
-                      <i class="fas fa-save"></i>
+                      <span class = "p-1 font-10 btn-light rounded-xl">save</span>
                     </span>
                     <span class="p-1 cursor-pointer" v-if="item.editing" @click="doCancel(item)" variant="danger">
-                      <i class="fa fa-times " aria-hidden="true"></i>
+                      <span class = "p-1 font-10 btn-light rounded-xl">cancel</span>
                     </span>
                   </div>
                 </template>
@@ -252,11 +252,14 @@
 // @ is an alias to /src
 import CHeading from '@/components/heading.vue';
 import ImgPreviewerPicker from '@/components/ImgPreviewerPicker.vue';
+import Multiselect from 'vue-multiselect'
+
 export default {
   name: 'ProfileView',
   components: {
     CHeading,
-    ImgPreviewerPicker
+    ImgPreviewerPicker,
+    Multiselect
   },
   computed: {
     editableFields() {
@@ -285,6 +288,19 @@ export default {
     }
   },
   data: () => ({
+    usertypeselected: null,
+    accesslevelselected: null,
+
+    usertype: [
+      { name: 'MFG', code: 'cs' },
+      { name: 'MFG', code: 'ds' },
+      { name: 'MFG', code: 'os' }
+    ],
+    accesslevel: [
+      { name: 'All Sales', code: 'cs' },
+      { name: 'All Sales', code: 'ds' },
+      { name: 'All Sales', code: 'os' }
+    ],
     MyVTFeaturesheaders: [
       { text: 'Name', value: 'name' },
       { text: 'Action', value: 'action', align: 'right', sortable: false },
@@ -358,7 +374,7 @@ export default {
   }),
 }
 </script>
-<style scoped>
+<style >
 .cursor-pointer {
   cursor: pointer;
 }
@@ -366,4 +382,19 @@ export default {
 .cursor-pointer:hover {
   color: #FF7E1D !important;
 }
+
+.multiselect__input,
+.multiselect__single {
+  position: relative;
+  display: inline-block;
+  min-height: 20px;
+  line-height: 30px !important;
+  font-size: 14px !important;
+  margin-bottom: 0 !important;
+}
+
+.mb-5px {
+  margin-bottom: 5px !important;
+}
+
 </style>

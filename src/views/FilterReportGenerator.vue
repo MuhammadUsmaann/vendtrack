@@ -19,22 +19,30 @@
         </div>
 
         <div class="row ">
-            <div class="col-3 m-0">
-                <b-form-group label="Start Date " label-for="FirstName" class="font-14 font-weight-700 font-black">
+            <div class="col-6 col-md-3 margin-1">
+                <p class="font-14 font-weight-700 m-0 font-black mb-1">Start Date <img src="../assets/info.svg"
+                        alt="" /></p>
+                <DatePicker v-model="startdate" format="YYYY-MM-DD" type="date"></DatePicker>
+                <!-- <b-form-group label="Start Date " label-for="FirstName" class="font-14 font-weight-700 m-0 font-black">
                     <b-form-input id="StartDate"></b-form-input>
-                </b-form-group>
+                </b-form-group> -->
             </div>
-            <div class="col-3 m-0">
-                <b-form-group label="End Date" label-for="FirstName" class="font-14 font-weight-700 font-black">
-                    <b-form-input id="EndDate"></b-form-input>
-                </b-form-group>
+            <div class="col-6 col-md-3 margin-1">
+                <p class="font-14 font-weight-700 m-0 font-black mb-1">End Date <img src="../assets/info.svg"
+                        alt="" /></p>
+                <DatePicker v-model="enddate" format="YYYY-MM-DD" type="date"></DatePicker>
+                <!-- <b-form-group label="Start Date " label-for="FirstName" class="font-14 font-weight-700 m-0 font-black">
+                    <b-form-input id="StartDate"></b-form-input>
+                </b-form-group> -->
             </div>
-            <div class="col-3 m-0">
-                <p class="font-14 font-weight-700 font-black pb-1">Sales To</p>
+            <div class="col-6 col-md-3 m-0">
+                <p class="font-14 font-weight-700 m-0 font-black pb-1">Sales To <img src="../assets/info.svg" alt="">
+                </p>
                 <b-form-select :options="dropselect"></b-form-select>
             </div>
-            <div class="col-3 m-0">
-                <p class="font-14 font-weight-700 font-black pb-1">Display Reports By</p>
+            <div class="col-6 col-md-3 m-0">
+                <p class="font-14 font-weight-700 m-0 font-black pb-1">Display Reports By <img
+                        src="../assets/info.svg" alt=""></p>
                 <b-form-select :options="dropselect"></b-form-select>
             </div>
         </div>
@@ -42,7 +50,7 @@
 
         <div class="row mt-0">
             <div class="col-6">
-                <div class="font-14 font-weight-700 font-black pb-1">Unit of Measures <img src="../assets/Stroke.png"
+                <div class="font-14 font-weight-700 font-black pb-1">Unit of Measures <img src="../assets/info.svg"
                         alt="">
                 </div>
                 <div class="font-13 font-weight-600 font-black ">
@@ -53,7 +61,7 @@
                 </div>
             </div>
             <div class="col-6">
-                <div class="font-14 font-weight-700 font-black pb-1">Table Headers <img src="../assets/Stroke.png"
+                <div class="font-14 font-weight-700 font-black pb-1">Table Headers <img src="../assets/info.svg"
                         alt="">
                 </div>
                 <div class="font-13 font-weight-600 font-black ">
@@ -66,105 +74,194 @@
             </div>
         </div>
 
-        <div class="font-14 font-weight-700 font-black pt-4">Select Filters <img src="../assets/Stroke.png" alt="">
+        <div class="font-14 font-weight-700 font-black pt-4">Select Filters <img src="../assets/info.svg" alt="">
         </div>
 
         <div class="row pt-2">
             <div class="col-sm-6 col-12 ">
-                <div class="row">
-                    <div class="col-6 pr-0 position-relative">
-                        <div class="nav  flex-column nav-pills" id="v-pills-tab" role="tablist"
-                            aria-orientation="vertical">
-                            <a class="nav-link pl-2 font-black active position-relative" id="v-pills-home-tab"
-                                data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home"
-                                aria-selected="true">
-                                Customers
-                                <div class="whitediv"></div>
+                <div class="d-flex  w-100">
+                    <nav class="position-relative">
+                        <div class="nav nav-tabs d-flex flex-column border-bottom-0 h-100" id="nav-tab" role="tablist">
+
+                            <a class="nav-item nav-link active font-black font-14" id="nav-customers-tab"
+                                data-toggle="tab" href="#nav-customers" role="tab" aria-controls="nav-customers"
+                                aria-selected="true">Customers
                             </a>
-                            <a class="nav-link pl-2 font-black" id="v-pills-profile-tab" data-toggle="pill"
-                                href="#v-pills-profile" role="tab" aria-controls="v-pills-profile"
-                                aria-selected="false">Distributors</a>
-                            <a class="nav-link pl-2 font-black" id="v-pills-messages-tab" data-toggle="pill"
-                                href="#v-pills-messages" role="tab" aria-controls="v-pills-messages"
-                                aria-selected="false">Districts</a>
-                            <a class="nav-link pl-2 font-black" id="v-pills-settings-tab" data-toggle="pill"
-                                href="#v-pills-settings" role="tab" aria-controls="v-pills-settings"
-                                aria-selected="false">Territories</a>
+
+                            <a class="nav-item nav-link font-black font-14" id="nav-distributors-tab" data-toggle="tab"
+                                href="#nav-distributors" role="tab" aria-controls="nav-distributors"
+                                aria-selected="false">Distributors
+                            </a>
+
+                            <a class="nav-item nav-link font-black font-14" id="nav-districts-tab" data-toggle="tab"
+                                href="#nav-districts" role="tab" aria-controls="nav-districts"
+                                aria-selected="false">Districts
+                            </a>
+
+                            <a class="nav-item nav-link font-black font-14" id="nav-distributer-tab" data-toggle="tab"
+                                href="#nav-distributer" role="tab" aria-controls="nav-distributer"
+                                aria-selected="false">Territories
+                            </a>
 
                         </div>
-                    </div>
-                    <div class="col-6 p-0">
-                        <div class="tab-content py-3 pl-3 pr-1 border rounded" id="v-pills-tabContent">
-                            <div class="tab-pane  fade show active " id="v-pills-home" role="tabpanel"
-                                aria-labelledby="v-pills-home-tab">
-                                <v-checkbox class="checkbox" v-model="selectedcutomer" label="Facebook"
-                                    value="Facebook">
-                                </v-checkbox>
-                                <v-checkbox class="checkbox" v-model="selectedcutomer" label="Bank of America"
-                                    value="Bank of America"></v-checkbox>
-                                <v-checkbox class="checkbox" v-model="selectedcutomer" label="Johnson & Johnson"
-                                    value="Johnson & Johnson"></v-checkbox>
-                                <v-checkbox class="checkbox" v-model="selectedcutomer" label="Starbucks"
-                                    value="Starbucks">
-                                </v-checkbox>
-                                <v-checkbox class="checkbox" v-model="selectedcutomer" label="MasterCard"
-                                    value="MasterCard">
-                                </v-checkbox>
-                                <v-checkbox class="checkbox" v-model="selectedcutomer" label="Ferrari" value="Ferrari">
-                                </v-checkbox>
-                                <v-checkbox class="checkbox" v-model="selectedcutomer" label="DebitCard"
-                                    value="DebitCard">
-                                </v-checkbox>
-                                <v-checkbox class="checkbox" v-model="selectedcutomer" label="Fortuner"
-                                    value="Fortuner">
-                                </v-checkbox>
-                                <v-checkbox class="checkbox" v-model="selectedcutomer" label="Linkedin"
-                                    value="Linkedin">
-                                </v-checkbox>
-                                <v-checkbox class="checkbox" v-model="selectedcutomer" label="McDonald's"
-                                    value="McDonald's">
-                                </v-checkbox>
 
-                            </div>
-                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
-                                aria-labelledby="v-pills-profile-tab">
-
-                                <v-checkbox v-model="selecteddistributers" label="Facebook" value="Facebook">
-                                </v-checkbox>
-                                <v-checkbox v-model="selecteddistributers" label="Bank of America"
-                                    value="Bank of America"></v-checkbox>
-                                <v-checkbox v-model="selecteddistributers" label="Johnson & Johnson"
-                                    value="Johnson & Johnson"></v-checkbox>
-                                <v-checkbox v-model="selecteddistributers" label="Starbucks" value="Starbucks">
-                                </v-checkbox>
-                                <v-checkbox v-model="selecteddistributers" label="MasterCard" value="MasterCard">
-                                </v-checkbox>
-                                <v-checkbox v-model="selecteddistributers" label="Ferrari" value="Ferrari">
-                                </v-checkbox>
-                                <v-checkbox v-model="selecteddistributers" label="DebitCard" value="DebitCard">
-                                </v-checkbox>
-                                <v-checkbox v-model="selecteddistributers" label="Fortuner" value="Fortuner">
-                                </v-checkbox>
-                                <v-checkbox v-model="selecteddistributers" label="Linkedin" value="Linkedin">
-                                </v-checkbox>
-                                <v-checkbox v-model="selecteddistributers" label="McDonald's" value="McDonald's">
-                                </v-checkbox>
-                            </div>
-                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
-                                aria-labelledby="v-pills-messages-tab">...</div>
-                            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
-                                aria-labelledby="v-pills-settings-tab">...</div>
+                    </nav>
+                    <div class="tab-content p-3" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-customers" role="tabpanel"
+                            aria-labelledby="nav-customers-tab">
+                            <v-checkbox class="checkbox" v-model="selectedcutomer" label="Facebook" value="Facebook">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedcutomer" label="Bank of America"
+                                value="Bank of America"></v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedcutomer" label="Johnson & Johnson"
+                                value="Johnson & Johnson"></v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedcutomer" label="Starbucks" value="Starbucks">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedcutomer" label="MasterCard"
+                                value="MasterCard">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedcutomer" label="Ferrari" value="Ferrari">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedcutomer" label="DebitCard" value="DebitCard">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedcutomer" label="Fortuner" value="Fortuner">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedcutomer" label="Linkedin" value="Linkedin">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedcutomer" label="McDonald's"
+                                value="McDonald's">
+                            </v-checkbox>
                         </div>
+
+                        <div class="tab-pane fade" id="nav-distributors" role="tabpanel"
+                            aria-labelledby="nav-distributors-tab">
+                            <v-checkbox v-model="selecteddistributers" label="Facebook" value="Facebook">
+                            </v-checkbox>
+                            <v-checkbox v-model="selecteddistributers" label="Bank of America" value="Bank of America">
+                            </v-checkbox>
+                            <v-checkbox v-model="selecteddistributers" label="Johnson & Johnson"
+                                value="Johnson & Johnson"></v-checkbox>
+                            <v-checkbox v-model="selecteddistributers" label="Starbucks" value="Starbucks">
+                            </v-checkbox>
+                            <v-checkbox v-model="selecteddistributers" label="MasterCard" value="MasterCard">
+                            </v-checkbox>
+                            <v-checkbox v-model="selecteddistributers" label="Ferrari" value="Ferrari">
+                            </v-checkbox>
+                            <v-checkbox v-model="selecteddistributers" label="DebitCard" value="DebitCard">
+                            </v-checkbox>
+                            <v-checkbox v-model="selecteddistributers" label="Fortuner" value="Fortuner">
+                            </v-checkbox>
+                            <v-checkbox v-model="selecteddistributers" label="Linkedin" value="Linkedin">
+                            </v-checkbox>
+                            <v-checkbox v-model="selecteddistributers" label="McDonald's" value="McDonald's">
+                            </v-checkbox>
+                        </div>
+                        <div class="tab-pane fade" id="nav-districts" role="tabpanel"
+                            aria-labelledby="nav-districts-tab">
+                            <v-checkbox class="checkbox" v-model="selecteddistrict" label="Facebook" value="Facebook">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selecteddistrict" label="Bank of America"
+                                value="Bank of America"></v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selecteddistrict" label="Johnson & Johnson"
+                                value="Johnson & Johnson"></v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selecteddistrict" label="Starbucks" value="Starbucks">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selecteddistrict" label="MasterCard"
+                                value="MasterCard">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selecteddistrict" label="Ferrari" value="Ferrari">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selecteddistrict" label="DebitCard" value="DebitCard">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selecteddistrict" label="Fortuner" value="Fortuner">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selecteddistrict" label="Linkedin" value="Linkedin">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selecteddistrict" label="McDonald's"
+                                value="McDonald's">
+                            </v-checkbox>
+                        </div>
+                        <div class="tab-pane fade" id="nav-distributer" role="tabpanel"
+                            aria-labelledby="nav-distributer-tab">
+                            <v-checkbox class="checkbox" v-model="selectedterritory" label="Facebook" value="Facebook">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedterritory" label="Bank of America"
+                                value="Bank of America"></v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedterritory" label="Johnson & Johnson"
+                                value="Johnson & Johnson"></v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedterritory" label="Starbucks"
+                                value="Starbucks">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedterritory" label="MasterCard"
+                                value="MasterCard">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedterritory" label="Ferrari" value="Ferrari">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedterritory" label="DebitCard"
+                                value="DebitCard">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedterritory" label="Fortuner" value="Fortuner">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedterritory" label="Linkedin" value="Linkedin">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedterritory" label="McDonald's"
+                                value="McDonald's">
+                            </v-checkbox>
+                        </div>
+
                     </div>
                 </div>
+
             </div>
             <div class="col-sm-6 col-12 ">
-                <p class="font-14 font-weight-700 font-black pb-1">Customers</p>
-                <span class="multiselect__tag"><span>{{ selectedcutomer }}</span> <i aria-hidden="true" tabindex="1"
-                        class="multiselect__tag-icon"></i></span>
-                <p class="font-14 font-weight-700 font-black pt-3 pb-1">Distributors</p>
-                <span class="multiselect__tag"><span>{{ selecteddistributers }}</span> <i aria-hidden="true"
-                        tabindex="1" class="multiselect__tag-icon"></i></span>
+                <div>
+                    <p class="font-14 font-weight-700 font-black pb-1">Customers</p>
+                    <div>
+                        <span v-for="(list, index) in selectedcutomer" :key="index">
+                            <span class="multiselect__tag"><span>{{ list }}</span> <i aria-hidden="true" tabindex="1"
+                                    class="multiselect__tag-icon"></i></span><span
+                                v-if="index+1 < selectedcutomer.length">
+                            </span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="pt-4">
+                    <p class="font-14 font-weight-700 font-black pb-1">Distributors</p>
+                    <div>
+                        <span v-for="(list, index) in selecteddistributers" :key="index">
+                            <span class="multiselect__tag"><span>{{ list }}</span> <i aria-hidden="true" tabindex="1"
+                                    class="multiselect__tag-icon"></i></span><span
+                                v-if="index+1 < selecteddistributers.length">
+                            </span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class = "pt-4">
+                    <p class="font-14 font-weight-700 font-black pb-1">Districts</p>
+                <div>
+                    <span v-for="(list, index) in selecteddistrict" :key="index">
+                        <span class="multiselect__tag"><span>{{ list }}</span> <i aria-hidden="true" tabindex="1"
+                                class="multiselect__tag-icon"></i></span><span v-if="index+1 < selecteddistrict.length">
+                        </span>
+                    </span>
+                </div>
+                </div>
+
+                <div class = "pt-4">
+                    <p class="font-14 font-weight-700 font-black pb-1">Territories</p>
+                <div>
+                    <span v-for="(list, index) in selectedterritory" :key="index">
+                        <span class="multiselect__tag"><span>{{ list }}</span> <i aria-hidden="true" tabindex="1"
+                                class="multiselect__tag-icon"></i></span><span
+                            v-if="index+1 < selectedterritory.length">
+                        </span>
+                    </span>
+                </div>
+                </div>
+
+
             </div>
         </div>
         <div class="text-center pt-5 pb-5">
@@ -184,21 +281,26 @@
 import Multiselect from 'vue-multiselect'
 import CHeading from '@/components/heading.vue';
 import Vuetify from 'vuetify/lib/framework';
+import DatePicker from "vue2-datepicker";
+import 'vue2-datepicker/index.css';
 
 export default {
 
-    name: 'FilterComparisonGenerator',
+    name: 'FilterReportGenerator',
     components: {
-        CHeading, Multiselect
+        CHeading, Multiselect, DatePicker
     },
-    el: '#app',
     vuetify: new Vuetify(),
 
     data() {
         return {
+            startdate: null,
+            enddate: null,
             ex4: ['orange darken-3'],
-            selectedcutomer: "Starbucks",
-            selecteddistributers: "Starbucks",
+            selectedcutomer: ["Starbucks","Facebook","Bank of America","MasterCard"],
+            selecteddistributers: ["Facebook","Bank of America","MasterCard"],
+            selecteddistrict: ["Starbucks"],
+            selectedterritory: ["Fortuner"],
 
             value1: {
                 name: 'Cases',
@@ -295,12 +397,6 @@ export default {
     border-radius: 0 !important;
 }
 
-.tab-pane {
-    height: 508px !important;
-    overflow-y: auto;
-    margin: 0 !important;
-}
-
 
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
@@ -321,10 +417,49 @@ export default {
     margin-top: 0 !important;
 }
 
-.nav {
+nav {
+    width: 313px;
+    border-right: 1px solid #CECECE;
+    border-radius: 0px 0px 0px 0px !important;
+}
+
+.nav-tabs .nav-link.active {
+    position: relative;
+    right: -2px;
+    color: #495057;
+    background-color: #fff;
+    border-color: #CECECE transparent #CECECE #CECECE !important;
+    font-weight: 700;
+    border-radius: 5px 0px 0px 5px !important;
+}
+
+.nav-tabs .nav-link.active::after {
+    content: url(../assets/lessthan.svg);
     position: absolute;
-    width: 100%;
-    width: calc(97% - 2px);
-    z-index: 1;
+    right: 6px;
+}
+
+.nav-tabs .nav-link:hover {
+    background-color: #f4f2f2;
+    border-radius: 5px 0 0 5px !important;
+}
+
+.nav-tabs .ad {
+    border-right: 1px solid #CECECE;
+}
+
+.nav-link {
+    border-radius: 0 !important;
+}
+
+.tab-content {
+    border: 1px solid #CECECE;
+    border-left: 0 !important;
+    width: 269px;
+    border-radius: 0px 5px 5px 0px !important;
+}
+
+.margin-1 {
+    margin-top: 1px
 }
 </style>

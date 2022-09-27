@@ -21,9 +21,10 @@
           <b-dropdown-item>Third Action</b-dropdown-item>
         </b-dropdown>
         <button class="btn border border-light-gray ml-2 font-14 font-weight-500 font-black shadow-sm"><img
-            src="../assets/pdf.png" alt="" class="pr-1"> <div class="d-md-inline-block d-none"> Export in PDF</div></button>
-        <button class="btn border border-light-gray ml-2 font-14 font-weight-500 font-black shadow-sm"><img
             src="../assets/print.svg" alt="" class="pr-1"><div class="d-md-inline-block d-none">  Print </div></button>
+        <button class="btn border border-light-gray ml-2 font-14 font-weight-500 font-black shadow-sm"><img
+            src="../assets/pdf.svg" alt="" class="pr-1"> <div class="d-md-inline-block d-none"> Export in PDF</div></button>
+        
       </div>
     </div>
     <div class="font-20 font-weight-700 font-black mb-3">Distributor Market Segment Analysis</div>

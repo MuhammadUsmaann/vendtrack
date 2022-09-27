@@ -10,7 +10,7 @@
         <v-text-field class="reverse-row text-black font-weight-500 pt-0 mt-0 w-max-content d-inline-block ml-md-2 ml-0"
           v-model="search" append-icon="mdi-magnify" label="Product or customer search..." single-line hide-details>
         </v-text-field>
-        <button class="btn border border-light-gray p-10 ml-2"><img src="../assets/excel.png" alt="">
+        <button class="btn border border-light-gray p-10 ml-2"><img src="../assets/excel.svg" alt="">
           <div class="d-md-inline-block d-none"> Export in Excel</div>
         </button>
       </div>
@@ -104,7 +104,7 @@
       <b-table id="my-table" hover :fields="fields" :items="items" :per-page="perPage" :current-page="currentPage">
         <template #cell(action)>
           <div small class="mr-2 text-center" @click="row.editItem(item)">
-            <img src="../assets/UserInterface.png" alt="">
+            <img src="../assets/UserInterface.svg" alt="">
           </div>
         </template>
       </b-table>

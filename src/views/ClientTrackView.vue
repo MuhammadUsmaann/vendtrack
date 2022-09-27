@@ -22,13 +22,14 @@
           <b-dropdown-item>Third Action</b-dropdown-item>
         </b-dropdown>
         <button class="btn border border-light-gray ml-2 font-14 font-weight-500 font-black shadow-sm"><img
-            src="../assets/pdf.png" alt="" class="pr-1">
-          <div class="d-md-inline-block d-none"> Export in PDF</div>
-        </button>
-        <button class="btn border border-light-gray ml-2 font-14 font-weight-500 font-black shadow-sm"><img
             src="../assets/print.svg" alt="" class="pr-1">
           <div class="d-md-inline-block d-none"> Print </div>
         </button>
+        <button class="btn border border-light-gray ml-2 font-14 font-weight-500 font-black shadow-sm"><img
+            src="../assets/pdf.svg" alt="" class="pr-1">
+          <div class="d-md-inline-block d-none"> Export in PDF</div>
+        </button>
+        
       </div>
     </div>
     <b-row class="mb-3 mx-0">
@@ -73,68 +74,33 @@
     </div>
 
 
-
-
-
-
-    <!-- <div class="row mx-0 align-item-center mb-1">
-      <div class="col-md-auto px-0">
-        <CHeading>
-          Client Track<sup class="font-14 font-black font-weight-400">TM</sup>
-        </CHeading>
-      </div>
-      <div class="col px-0 text-right">
-        <span class="font-500 font-14 font-mono mr-1 w-md-100 d-inline-block mb-md-0 mb-2">Sales Data Available Up To:
-          02/18/2022</span>
-        <b-dropdown id="dropdown-1" text="Quarters" variant="outline"
-          class="d-inline-block inner-border-light-gray ml-2 inner-font-14 font-weight-500 font-black shadow-sm bg-transparent">
-          <b-dropdown-item>First Action</b-dropdown-item>
-          <b-dropdown-item>Second Action</b-dropdown-item>
-          <b-dropdown-item>Third Action</b-dropdown-item>
-        </b-dropdown>
-        <b-dropdown id="dropdown-1" text="Cases" variant="outline"
-          class="d-inline-block inner-border-light-gray ml-2 inner-font-14 font-weight-500 font-black shadow-sm bg-transparent">
-          <b-dropdown-item>First Action</b-dropdown-item>
-          <b-dropdown-item>Second Action</b-dropdown-item>
-          <b-dropdown-item>Third Action</b-dropdown-item>
-        </b-dropdown>
-        <button class="btn border border-light-gray ml-2 font-14 font-weight-500 font-black shadow-sm"><img
-            src="../assets/pdf.png" alt="" class="pr-1">
-          <div class="d-md-inline-block d-none"> Export in PDF</div>
-        </button>
-        <button class="btn border border-light-gray ml-2 font-14 font-weight-500 font-black shadow-sm"><img
-            src="../assets/print.svg" alt="" class="pr-1">
-          <div class="d-md-inline-block d-none"> Print </div>
-        </button>
-      </div>
-    </div> -->
     <b-row class="mb-4 mx-0">
       <v-col class="p-1" cols="12" md="">
-        <div class="bg-white shadow rounded-lg px-2 py-3 text-center h-100">
+        <div class="bg-white shadow rounded-md px-2 py-3 text-center h-100">
           <div class="font-30 font-weight-700 font-green">150,393 CS</div>
           <div class="font-14 font-weight-700 font-black">YTD Distributor Purchases</div>
         </div>
       </v-col>
       <v-col class="p-1" cols="12" md="">
-        <div class="bg-white shadow rounded-lg px-2 py-3 text-center h-100">
+        <div class="bg-white shadow rounded-md px-2 py-3 text-center h-100">
           <div class="font-30 font-weight-700 font-green">150,393 CS</div>
           <div class="font-14 font-weight-700 font-black">YTD Distributor Sales</div>
         </div>
       </v-col>
       <v-col class="p-1" cols="12" md="">
-        <div class="bg-white shadow rounded-lg px-2 py-3 text-center h-100">
+        <div class="bg-white shadow rounded-md px-2 py-3 text-center h-100">
           <div class="font-30 font-weight-700 font-green">150,393 CS</div>
           <div class="font-14 font-weight-700 font-black">Top 10 Customer CYTD Total Sales</div>
         </div>
       </v-col>
       <v-col class="p-1" cols="12" md="">
-        <div class="bg-white shadow rounded-lg px-2 py-3 text-center h-100">
+        <div class="bg-white shadow rounded-md px-2 py-3 text-center h-100">
           <div class="font-30 font-weight-700 font-green">150,393 CS</div>
           <div class="font-14 font-weight-700 font-black">Total Distributor Sales CYTD</div>
         </div>
       </v-col>
       <v-col class="p-1" cols="12" md="">
-        <div class="bg-white shadow rounded-lg px-2 py-3 text-center h-100">
+        <div class="bg-white shadow rounded-md px-2 py-3 text-center h-100">
           <div class="font-30 font-weight-700 font-green">43,20%</div>
           <div class="font-14 font-weight-700 font-black">Top 10 Customer Sales % of Total Sales</div>
         </div>
@@ -151,37 +117,7 @@
 
 
 
-    <!-- <div class="row mx-0 align-item-center mb-1">
-      <div class="col-md-auto px-0">
-        <CHeading>
-          Client Track<sup class="font-14 font-black font-weight-400">TM</sup>
-        </CHeading>
-      </div>
-      <div class="col px-0 text-right">
-        <span class="font-500 font-14 font-mono mr-1 w-md-100 d-inline-block mb-md-0 mb-2">Last Update:
-          02/18/2022</span>
-        <b-dropdown id="dropdown-1" text="Timeframe" variant="outline"
-          class="d-inline-block inner-border-light-gray ml-2 inner-font-14 font-weight-500 font-black shadow-sm bg-transparent">
-          <b-dropdown-item>First Action</b-dropdown-item>
-          <b-dropdown-item>Second Action</b-dropdown-item>
-          <b-dropdown-item>Third Action</b-dropdown-item>
-        </b-dropdown>
-        <b-dropdown id="dropdown-1" text="Cases" variant="outline"
-          class="d-inline-block inner-border-light-gray ml-2 inner-font-14 font-weight-500 font-black shadow-sm bg-transparent">
-          <b-dropdown-item>First Action</b-dropdown-item>
-          <b-dropdown-item>Second Action</b-dropdown-item>
-          <b-dropdown-item>Third Action</b-dropdown-item>
-        </b-dropdown>
-        <button class="btn border border-light-gray ml-2 font-14 font-weight-500 font-black shadow-sm"><img
-            src="../assets/pdf.png" alt="" class="pr-1">
-          <div class="d-md-inline-block d-none"> Export in PDF</div>
-        </button>
-        <button class="btn border border-light-gray ml-2 font-14 font-weight-500 font-black shadow-sm"><img
-            src="../assets/print.svg" alt="" class="pr-1">
-          <div class="d-md-inline-block d-none"> Print </div>
-        </button>
-      </div>
-    </div> -->
+    
     <div class="font-20 font-weight-700 font-black mt-4 mb-3">Distributor Market Segment Analysis</div>
     <v-data-table :headers="distributorMarketSegmentHeader" :items="distributorMarketSegment" class="elevation-1 mb-3"
       hide-default-footer>
@@ -256,6 +192,14 @@ export default {
         CHGCS: '6025',
         CHG: '6025'
       },
+      {
+        productCategory: 'Some Placeholder Text',
+        YTDCS: '6025',
+        PYTDCS: '6025',
+        CHGCS: '6025',
+        CHG: '6025'
+      },
+      
     ],
 
     distributorTopCutomerheaders: [
@@ -267,6 +211,38 @@ export default {
       { text: '% CHG', value: 'CHG', align:'right',width:'15%'},
     ],
     distributorTopCutomer: [
+      {
+        CustomerName: 'Vidal Plantas',
+        OperatorID: '4,600',
+        YTDCS: '6025',
+        PYTDCS: '6025',
+        CHGCS: '6025',
+        CHG: '6025'
+      },
+      {
+        CustomerName: 'Vidal Plantas',
+        OperatorID: '4,600',
+        YTDCS: '6025',
+        PYTDCS: '6025',
+        CHGCS: '6025',
+        CHG: '6025'
+      },
+      {
+        CustomerName: 'Vidal Plantas',
+        OperatorID: '4,600',
+        YTDCS: '6025',
+        PYTDCS: '6025',
+        CHGCS: '6025',
+        CHG: '6025'
+      },
+      {
+        CustomerName: 'Vidal Plantas',
+        OperatorID: '4,600',
+        YTDCS: '6025',
+        PYTDCS: '6025',
+        CHGCS: '6025',
+        CHG: '6025'
+      },
       {
         CustomerName: 'Vidal Plantas',
         OperatorID: '4,600',
@@ -367,9 +343,39 @@ export default {
         CHGCS: '6025',
         CHG: '6025'
       },
+      {
+        MarketSegment: 'Some Placeholder Text',
+        YTDCS: '6025',
+        PYTDCS: '6025',
+        CHGCS: '6025',
+        CHG: '6025'
+      },
+      {
+        MarketSegment: 'Some Placeholder Text',
+        YTDCS: '6025',
+        PYTDCS: '6025',
+        CHGCS: '6025',
+        CHG: '6025'
+      },
+      {
+        MarketSegment: 'Some Placeholder Text',
+        YTDCS: '6025',
+        PYTDCS: '6025',
+        CHGCS: '6025',
+        CHG: '6025'
+      },
+      {
+        MarketSegment: 'Some Placeholder Text',
+        YTDCS: '6025',
+        PYTDCS: '6025',
+        CHGCS: '6025',
+        CHG: '6025'
+      },
     ],
     CYTDseries: [44, 55, 13, 43, 22],
     CYTDchartOptions: {
+      colors: ["#FF7E1D","#466ABB","#873BD3","#5BB878","#fbe5d4" ],
+
       chart: {
         width: 380,
         type: 'pie',
@@ -389,6 +395,7 @@ export default {
     },
     PYTDseries: [44, 55, 13, 43, 22],
     PYTDchartOptions: {
+      colors: ["#FF7E1D","#466ABB","#873BD3","#5BB878","#fbe5d4" ],
       chart: {
         width: 380,
         type: 'pie',
@@ -471,11 +478,13 @@ export default {
       colors: ["#FF7E1D", ],
       chart: {
         type: 'rangeBar',
-        height: 350
+        height: 350,
       },
       plotOptions: {
         bar: {
-          horizontal: false
+          horizontal: false,
+          columnWidth: '40%',
+
         }
       },
     },

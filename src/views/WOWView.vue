@@ -22,11 +22,11 @@
           <b-dropdown-item>Third Action</b-dropdown-item>
         </b-dropdown>
         <button class=" btn border border-light-gray ml-2 font-14 font-weight-500 font-black shadow-sm"><img
-            src="../assets/excel.png" alt="" class="pr-1">
+            src="../assets/excel.svg" alt="" class="pr-1">
           <div class="d-md-inline-block d-none"> Export in Excel</div>
         </button>
         <button class=" btn border border-light-gray ml-2 font-14 font-weight-500 font-black shadow-sm"><img
-            src="../assets/pdf.png" alt="" class="pr-1">
+            src="../assets/pdf.svg" alt="" class="pr-1">
           <div class="d-md-inline-block d-none"> Export in PDF</div>
         </button>
       </div>
@@ -103,6 +103,7 @@ export default {
     }
     ],
     wowchartOptions: {
+      colors: ["#FF7E1D","#873BD3","#466ABB" ],
       chart: {
         height: 350,
         type: 'line',
@@ -134,6 +135,7 @@ export default {
     }
     ],
     popchartOptions: {
+      colors: ["#FF7E1D","#873BD3","#466ABB" ],
       chart: {
         height: 350,
         type: 'line',

@@ -20,7 +20,7 @@
           <b-dropdown-item>Third Action</b-dropdown-item>
         </b-dropdown>
         <button class="btn border border-light-gray ml-2 font-14 font-weight-500 font-black shadow-sm"><img
-            src="../assets/pdf.png" alt="" class="pr-1">
+            src="../assets/pdf.svg" alt="" class="pr-1">
           <div class="d-inline-block"> Export in PDF</div>
         </button>
       </div>
@@ -101,6 +101,8 @@ export default {
     ],
     CYTDseries: [44, 55, 13, 43, 22],
     CYTDchartOptions: {
+      colors: ["#FF7E1D","#466ABB","#873BD3","#5BB878","#fbe5d4" ],
+
       chart: {
         width: 380,
         type: 'pie',
@@ -120,6 +122,8 @@ export default {
     },
     PYTDseries: [44, 55, 13, 43, 22],
     PYTDchartOptions: {
+      colors: ["#FF7E1D","#466ABB","#873BD3","#5BB878","#fbe5d4" ],
+
       chart: {
         width: 380,
         type: 'pie',

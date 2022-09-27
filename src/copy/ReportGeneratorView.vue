@@ -99,7 +99,7 @@
     <v-data-table :headers="headers" :items="reports" sort-by="calories" class="elevation-1">
       <template v-slot:[`item.actions`]="{ item }">
         <div small class="mr-2" @click="editItem(item)">
-          <img src="../assets/UserInterface.png" alt="">
+          <img src="../assets/UserInterface.svg" alt="">
         </div>
       </template>
 

@@ -16,7 +16,7 @@
       </div>
       <div class="col-sm col-auto px-0 text-right">
         <button class="btn border border-light-gray ml-2 font-14 py-2 font-weight-500 font-black shadow-sm"><img
-            src="../assets/excel.png" alt="">
+            src="../assets/excel.svg" alt="">
           <div class="d-md-inline-block d-none"> Export in Excel</div>
         </button>
         <button class="btn btn-orange ml-2" @click="$bvModal.show('addUser')"><i class="fa-solid fa-plus"></i> Add

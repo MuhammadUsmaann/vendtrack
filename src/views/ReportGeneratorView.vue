@@ -122,7 +122,7 @@
     <!-- <v-data-table :headers="headers" :items="reports" sort-by="calories" class="elevation-1 " hide-default-footer>
       <template v-slot:[`item.actions`]="{ item }">
         <div small class="mr-2" @click="editItem(item)">
-          <img src="../assets/UserInterface.png" alt="">
+          <img src="../assets/UserInterface.svg" alt="">
         </div>
       </template>
     </v-data-table>
@@ -143,7 +143,7 @@
       </b-table>
 
     </div>
-    <div class=" paginationclass pt-5">
+    <div class=" paginationclass pt-4">
       <div class="font-mono font-14 mb-3">
         {{ rows }} Total Listings
       </div>
