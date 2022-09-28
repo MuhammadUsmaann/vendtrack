@@ -33,25 +33,25 @@
     </div>
     <b-row class="mb-4 mx-0">
       <v-col class="p-1" cols="12" md="">
-        <div class="bg-white shadow rounded-lg px-2 py-3 text-center h-100">
+        <div class="bg-white shadow-0720 rounded-lg px-2 py-3 text-center h-100">
           <div class="font-30 font-weight-700 font-black">39.20%</div>
           <div class="font-14 font-weight-700 font-black">% CHG CS WK # VS WK #</div>
         </div>
       </v-col>
       <v-col class="p-1" cols="12" md="">
-        <div class="bg-white shadow rounded-lg px-2 py-3 text-center h-100">
+        <div class="bg-white shadow-0720 rounded-lg px-2 py-3 text-center h-100">
           <div class="font-30 font-weight-700 font-black">39.20%</div>
           <div class="font-14 font-weight-700 font-black">% CHG CS CYTD VS PYTD</div>
         </div>
       </v-col>
       <v-col class="p-1" cols="12" md="">
-        <div class="bg-white shadow rounded-lg px-2 py-3 text-center h-100">
+        <div class="bg-white shadow-0720 rounded-lg px-2 py-3 text-center h-100">
           <div class="font-30 font-weight-700 font-black">39.20%</div>
           <div class="font-14 font-weight-700 font-black">% CHG CUST CYTD VS PYTD</div>
         </div>
       </v-col>
       <v-col class="p-1" cols="12" md="">
-        <div class="bg-white shadow rounded-lg px-2 py-3 text-center h-100">
+        <div class="bg-white shadow-0720 rounded-lg px-2 py-3 text-center h-100">
           <div class="font-30 font-weight-700 font-black">39.20%</div>
           <div class="font-14 font-weight-700 font-black">To be decided</div>
         </div>

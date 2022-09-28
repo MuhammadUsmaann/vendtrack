@@ -52,7 +52,7 @@ export default {
         { label: 'Last Reported Date', key: 'lastReportedDate', class: 'lastReportedDateClass', },
       ],
 
-      perPage: 14,
+      perPage: 12,
       currentPage: 1,
       items: [
         {
@@ -113,27 +113,67 @@ export default {
           distributerName: 'Cameron Williamson',
           lastInvoiceDateReported: '15/08/2017',
           lastReportedDate: '16/08/2013'
+        },
+        {
+          distributerName: 'Cameron Williamson',
+          lastInvoiceDateReported: '15/08/2017',
+          lastReportedDate: '16/08/2013'
+        },
+        {
+          distributerName: 'Cameron Williamson',
+          lastInvoiceDateReported: '15/08/2017',
+          lastReportedDate: '16/08/2013'
+        },
+        {
+          distributerName: 'Cameron Williamson',
+          lastInvoiceDateReported: '15/08/2017',
+          lastReportedDate: '16/08/2013'
+        },
+        {
+          distributerName: 'Cameron Williamson',
+          lastInvoiceDateReported: '15/08/2017',
+          lastReportedDate: '16/08/2013'
+        },
+        {
+          distributerName: 'Cameron Williamson',
+          lastInvoiceDateReported: '15/08/2017',
+          lastReportedDate: '16/08/2013',
+        },
+        {
+          distributerName: 'Cameron Williamson',
+          lastInvoiceDateReported: '15/08/2017',
+          lastReportedDate: '16/08/2013'
+        },
+        {
+          distributerName: 'Cameron Williamson',
+          lastInvoiceDateReported: '15/08/2017',
+          lastReportedDate: '16/08/2013'
+        },
+        {
+          distributerName: 'Cameron Williamson',
+          lastInvoiceDateReported: '15/08/2017',
+          lastReportedDate: '16/08/2013'
+        },
+        {
+          distributerName: 'Cameron Williamson',
+          lastInvoiceDateReported: '15/08/2017',
+          lastReportedDate: '16/08/2013'
+        },
+        {
+          distributerName: 'Cameron Williamson',
+          lastInvoiceDateReported: '15/08/2017',
+          lastReportedDate: '16/08/2013'
+        },
+        {
+          distributerName: 'Cameron Williamson',
+          lastInvoiceDateReported: '15/08/2017',
+          lastReportedDate: '16/08/2013'
         }, 
         {
           distributerName: 'Cameron Williamson',
           lastInvoiceDateReported: '15/08/2017',
           lastReportedDate: '16/08/2013'
-        },
-        {
-          distributerName: 'Cameron Williamson',
-          lastInvoiceDateReported: '15/08/2017',
-          lastReportedDate: '16/08/2013'
-        },
-        {
-          distributerName: 'Cameron Williamson',
-          lastInvoiceDateReported: '15/08/2017',
-          lastReportedDate: '16/08/2013'
-        },
-        {
-          distributerName: 'Cameron Williamson',
-          lastInvoiceDateReported: '15/08/2017',
-          lastReportedDate: '16/08/2013'
-        },
+        }
 
       ],
     }
@@ -169,10 +209,12 @@ export default {
   padding: 0 0.75rem !important;
   vertical-align: inherit !important;
 }
-ul{
+
+ul {
   margin-bottom: 0 !important;
 }
+
 .table {
-    margin-bottom: 0 !important;
+  margin-bottom: 0 !important;
 }
 </style>

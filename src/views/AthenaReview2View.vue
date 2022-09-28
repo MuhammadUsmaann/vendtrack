@@ -775,33 +775,36 @@ export default {
         }
       }]
     },
+
+
     barlineseries: [{
       name: '',
       type: 'column',
       data: [0, 0, 0, 0]
-    }, {
+    },
+     {
       name: 'USG',
       type: 'column',
       data: [120000, 130000, 90000]
     }, {
       name: 'Canteen',
       type: 'column',
-      data: [120000, 130000, 90000]
+      data: [130000, 150000, 90000]
     }, {
       name: 'Aramark',
       type: 'column',
-      data: [120000, 130000, 90000]
+      data: [150000, 110000, 90000]
     }, {
       name: 'Sodexo',
       type: 'column',
-      data: [120000, 130000, 90000]
+      data: [110000, 130000, 90000]
     }, {
       name: 'Total Business',
       type: 'line',
-      data: [350000, 210000, 190000]
+      data: [370000, 210000, 200000]
     }],
     barlinechartOptions: {
-      colors: ["#FF7E1D","#466ABB","#873BD3","#5BB878" ],
+      colors: ["#444444","#FF7E1D","#466ABB","#873BD3","#5BB878"],
 
       chart: {
         height: 350,
@@ -812,7 +815,7 @@ export default {
         enabled: false
       },
       stroke: {
-        width: [0, 0, 0, 0, 0, 4]
+        width: [0, 0, 0, 0, 0, 4,]
       },
       xaxis: {
         categories: ["2022 TD", "2021 TD", "2022 TD"],

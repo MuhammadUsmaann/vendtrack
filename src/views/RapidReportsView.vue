@@ -26,7 +26,7 @@
         </button>
       </div>
     </div>
-    <b-row class="mb-4 mx-0 bg-white shadow-sm rounded-md">
+    <b-row class="mb-4 mx-0 bg-white shadow-0720 rounded-md">
       <v-col class="font-14 font-black" cols="12" md="4">
         <div class="font-weight-700">Operator Name / Operator ID</div>
         <div class="font-weight-500">Mark Jackson / 93022</div>

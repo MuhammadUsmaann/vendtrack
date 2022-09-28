@@ -119,23 +119,7 @@
       </div>
     </div>
     <div class="font-20 font-weight-700 font-black mt-4 mb-1">Results</div>
-    <!-- <v-data-table :headers="headers" :items="reports" sort-by="calories" class="elevation-1 " hide-default-footer>
-      <template v-slot:[`item.actions`]="{ item }">
-        <div small class="mr-2" @click="editItem(item)">
-          <img src="../assets/UserInterface.svg" alt="">
-        </div>
-      </template>
-    </v-data-table>
-    <div class=" paginationclass pt-5">
-      <div class="font-mono font-14 mb-3">
-        {{ rows }} Total Listings
-      </div>
-      <div>
-        <b-pagination v-model="currentPage" :total-rows="rows" :per-page="rows" aria-controls="my-table">
-        </b-pagination>
-      </div>
-
-    </div> -->
+    
 
     <div class="overflow-auto">
 

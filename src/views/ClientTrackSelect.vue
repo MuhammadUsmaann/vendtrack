@@ -14,8 +14,7 @@
     </div>
 
    
-
-    <div class="d-flex flex-lg-row flex-column justify-content-center align-items-center">
+    <div class="d-flex flex-lg-row flex-column justify-content-center align-items-center pt-5">
       <router-link to="/client-track">
         <div class="blocks ">
           <div class="pb-5 bg-image-orange">
@@ -104,6 +103,6 @@ export default {
   font-weight: 500;
 }
 .linkstyle{
-  text-decoration: none;
+  text-decoration: none !important;
 }
 </style>

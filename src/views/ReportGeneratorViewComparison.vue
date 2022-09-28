@@ -14,7 +14,6 @@
             </div>
             <div class="col-md col-12 px-0 text-right">
                 <span class="font-500 font-14 font-mono">Last Update: 02/18/2022</span>
-                <!-- <button class="btn btn-orange ml-2 font-14"><i class="fa-solid fa-check"></i> Generate</button> -->
             </div>
         </div>
         <div class="row">
@@ -53,91 +52,25 @@
             <div class="px-2 col-md-auto col-6 col-sm-4">
                 <div class="font-14 font-weight-700 font-black w-max-content">Regions</div>
                 <div class="font-13 font-weight-600 font-black mt-1 font-mono">A,D,G</div>
-                <!-- <div class="font-13 font-weight-600 font-black custom-input-hh">
-            <v-select v-model="regionsValue" :items="regions" label="" multiple class="d-inline-block p-0">
-              <template v-slot:selection="{ item, index }">
-                <v-chip v-if="index === 0" class="bg-extra-light-ornge rounded-0 px-2 py-2">
-                  <span class="">{{ item }}</span>
-                </v-chip>
-                <span v-if="index === 1" class="grey--text text-caption btn-orange px-2 py-2 rounded-sm">
-                  +{{ regionsValue.length - 1 }}
-                </span>
-              </template>
-            </v-select>
-          </div> -->
+
             </div>
             <div class="px-2 col-md-auto col-6 col-sm-4">
                 <div class="font-14 font-weight-700 font-black w-max-content">State</div>
                 <div class="font-13 font-weight-600 font-black mt-1 font-mono">NY,SF,NV</div>
 
-                <!-- <div class="font-13 font-weight-600 font-black custom-input-hh">
-            <v-select v-model="categoryValue" :items="Categories" label="" multiple class="d-inline-block p-0">
-              <template v-slot:selection="{ item, index }">
-                <v-chip v-if="index === 0" class="bg-extra-light-ornge rounded-0 px-2 py-2">
-                  <span class="">{{ item }}</span>
-                </v-chip>
-                <span v-if="index === 1" class="grey--text text-caption btn-orange px-2 py-2 rounded-sm">
-                  +{{ categoryValue.length - 1 }}
-                </span>
-              </template>
-            </v-select>
-          </div> -->
+
             </div>
             <div class="px-2 col-md-auto col-6 col-sm-4">
                 <div class="font-14 font-weight-700 font-black w-max-content">National Account</div>
                 <div class="font-13 font-weight-600 font-black mt-1 font-mono">Some Info 1, Info,2</div>
-
-                <!-- <div class="font-13 font-weight-600 font-black custom-input-hh">
-            <v-select v-model="headersValue" :items="Headers" label="" multiple class="d-inline-block p-0">
-              <template v-slot:selection="{ item, index }">
-                <v-chip v-if="index === 0" class="bg-extra-light-ornge rounded-0 px-2 py-2">
-                  <span class="">{{ item }}</span>
-                </v-chip>
-                <span v-if="index === 1" class="grey--text text-caption btn-orange px-2 py-2 rounded-sm">
-                  +{{ headersValue.length - 1 }}
-                </span>
-              </template>
-            </v-select>
-          </div> -->
             </div>
             <div class="px-2 col-md-auto col-12 col-sm-4">
                 <div class="font-14 font-weight-700 font-black w-max-content">Distributors</div>
                 <div class="font-13 font-weight-600 font-black mt-1 font-mono">Alex Hales, Jackson Morrison</div>
-
-                <!-- <div class="font-13 font-weight-600 font-black custom-input-hh">
-            <v-select v-model="SelectFiltersValue" :items="SelectFilters" label="" multiple
-              class="d-inline-block p-0 p-0">
-              <template v-slot:selection="{ item, index }">
-                <v-chip v-if="index === 0" class="bg-extra-light-ornge rounded-0 px-2 py-2">
-                  <span class="">{{ item }}</span>
-                </v-chip>
-                <span v-if="index === 1" class="grey--text text-caption btn-orange px-2 py-2 rounded-sm">
-                  +{{ SelectFiltersValue.length - 1 }}
-                </span>
-              </template>
-            </v-select>
-          </div> -->
             </div>
         </div>
         <div class="font-20 font-weight-700 font-black mt-4 mb-1">Results</div>
-        <!-- <v-data-table :headers="headers" :items="reports" sort-by="calories" class="elevation-1 " hide-default-footer>
-        <template v-slot:[`item.actions`]="{ item }">
-          <div small class="mr-2" @click="editItem(item)">
-            <img src="../assets/UserInterface.svg" alt="">
-          </div>
-        </template>
-      </v-data-table>
-      <div class=" paginationclass pt-5">
-        <div class="font-mono font-14 mb-3">
-          {{ rows }} Total Listings
-        </div>
-        <div>
-          <b-pagination v-model="currentPage" :total-rows="rows" :per-page="rows" aria-controls="my-table">
-          </b-pagination>
-        </div>
-  
-      </div> -->
-
+       
         <div class="overflow-auto">
 
             <b-table id="my-table" hover :fields="fields" :items="items" :per-page="perPage"
@@ -159,7 +92,7 @@
     </div>
 </template>
   
-  <script>
+<script>
 // @ is an alias to /src
 import CHeading from '@/components/heading.vue';
 export default {
@@ -407,29 +340,29 @@ export default {
     }),
 }
 </script>
-  <style >
-  .v-data-footer {
-      display: none !important;
-  }
-  
-  .v-data-table tbody tr:nth-of-type(even),
-  .v-data-table thead tr:nth-of-type(even) {
-      background-color: #F6F6F6;
-  }
-  
-  .theme--light.v-data-table>.v-data-table__wrapper>table>thead>tr:last-child>th {
-      background-color: white;
-  }
-  
-  .paginationclass {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-  }
-  
-  
-  .rightAligned {
-      text-align: end;
-  }
-  </style>
+<style >
+.v-data-footer {
+    display: none !important;
+}
+
+.v-data-table tbody tr:nth-of-type(even),
+.v-data-table thead tr:nth-of-type(even) {
+    background-color: #F6F6F6;
+}
+
+.theme--light.v-data-table>.v-data-table__wrapper>table>thead>tr:last-child>th {
+    background-color: white;
+}
+
+.paginationclass {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.rightAligned {
+    text-align: end;
+}
+</style>
   

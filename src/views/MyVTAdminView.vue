@@ -1,5 +1,5 @@
 <template>
-  <div class="report-generator rounded bg-white px-3 py-4">
+  <div class="myvtadmin-access rounded bg-white px-3 py-4">
     <div class="row mx-0 align-item-center mb-3">
       <div class="col-md col-12 px-0">
         <CHeading content="">
@@ -52,7 +52,7 @@
       </b-table>
 
     </div>
-    <div class=" paginationclass pt-5">
+    <div class=" paginationclass pt-4">
       <div class="font-mono font-14 mb-3">
         {{ rows }} Total Listings
       </div>
@@ -94,15 +94,6 @@
                     <b-form-checkbox value="me">Alicante</b-form-checkbox>
                   </div>
 
-                  <!-- <b-dropdown-item>
-                    <b-form-checkbox value="me">Barcelona</b-form-checkbox>
-                  </b-dropdown-item>
-                  <b-dropdown-item>
-                    <b-form-checkbox value="me">Madrid</b-form-checkbox>
-                  </b-dropdown-item>
-                  <b-dropdown-item>
-                    <b-form-checkbox value="me">Alicante</b-form-checkbox>
-                  </b-dropdown-item> -->
                 </b-dropdown>
                 <b-dropdown id="dropdown-2" text="Territory" variant="outline" dropright class="">
                   <div class="px-2">
@@ -110,15 +101,7 @@
                     <b-form-checkbox value="me">Madrid</b-form-checkbox>
                     <b-form-checkbox value="me">Alicante</b-form-checkbox>
                   </div>
-                  <!-- <b-dropdown-item>
-                    <b-form-checkbox value="me">Barcelona</b-form-checkbox>
-                  </b-dropdown-item>
-                  <b-dropdown-item>
-                    <b-form-checkbox value="me">Madrid</b-form-checkbox>
-                  </b-dropdown-item>
-                  <b-dropdown-item>
-                    <b-form-checkbox value="me">Alicante</b-form-checkbox>
-                  </b-dropdown-item> -->
+                 
                 </b-dropdown>
               </b-dropdown>
             </v-col>
@@ -261,8 +244,107 @@ export default {
         status: 'Active',
         CYTDLoginCount: '5,138',
         currentMonthLoginCount: '8,116',
-      }
-      ,
+      },
+      {
+        username: 'Devon Lane',
+        emailAddress: 'dolores.chambers@example.com',
+        userType: 'Admin',
+        accessLevel: 'Admin',
+        status: 'Active',
+        CYTDLoginCount: '5,138',
+        currentMonthLoginCount: '8,116',
+      },
+      
+      {
+        username: 'Devon Lane',
+        emailAddress: 'dolores.chambers@example.com',
+        userType: 'Admin',
+        accessLevel: 'Admin',
+        status: 'Active',
+        CYTDLoginCount: '5,138',
+        currentMonthLoginCount: '8,116',
+      },
+      {
+        username: 'Devon Lane',
+        emailAddress: 'dolores.chambers@example.com',
+        userType: 'Admin',
+        accessLevel: 'Admin',
+        status: 'Active',
+        CYTDLoginCount: '5,138',
+        currentMonthLoginCount: '8,116',
+      },
+      {
+        username: 'Devon Lane',
+        emailAddress: 'dolores.chambers@example.com',
+        userType: 'Admin',
+        accessLevel: 'Admin',
+        status: 'Active',
+        CYTDLoginCount: '5,138',
+        currentMonthLoginCount: '8,116',
+      },
+      {
+        username: 'Devon Lane',
+        emailAddress: 'dolores.chambers@example.com',
+        userType: 'Admin',
+        accessLevel: 'Admin',
+        status: 'Active',
+        CYTDLoginCount: '5,138',
+        currentMonthLoginCount: '8,116',
+      },
+      {
+        username: 'Devon Lane',
+        emailAddress: 'dolores.chambers@example.com',
+        userType: 'Admin',
+        accessLevel: 'Admin',
+        status: 'Active',
+        CYTDLoginCount: '5,138',
+        currentMonthLoginCount: '8,116',
+      },
+      {
+        username: 'Devon Lane',
+        emailAddress: 'dolores.chambers@example.com',
+        userType: 'Admin',
+        accessLevel: 'Admin',
+        status: 'Active',
+        CYTDLoginCount: '5,138',
+        currentMonthLoginCount: '8,116',
+      },
+      {
+        username: 'Devon Lane',
+        emailAddress: 'dolores.chambers@example.com',
+        userType: 'Admin',
+        accessLevel: 'Admin',
+        status: 'Active',
+        CYTDLoginCount: '5,138',
+        currentMonthLoginCount: '8,116',
+      },
+      {
+        username: 'Devon Lane',
+        emailAddress: 'dolores.chambers@example.com',
+        userType: 'Admin',
+        accessLevel: 'Admin',
+        status: 'Active',
+        CYTDLoginCount: '5,138',
+        currentMonthLoginCount: '8,116',
+      },
+      {
+        username: 'Devon Lane',
+        emailAddress: 'dolores.chambers@example.com',
+        userType: 'Admin',
+        accessLevel: 'Admin',
+        status: 'Active',
+        CYTDLoginCount: '5,138',
+        currentMonthLoginCount: '8,116',
+      },
+      {
+        username: 'Devon Lane',
+        emailAddress: 'dolores.chambers@example.com',
+        userType: 'Admin',
+        accessLevel: 'Admin',
+        status: 'Active',
+        CYTDLoginCount: '5,138',
+        currentMonthLoginCount: '8,116',
+      },
       {
         username: 'Devon Lane',
         emailAddress: 'dolores.chambers@example.com',
@@ -283,7 +365,7 @@ export default {
       }
     ],
     currentPage: 1,
-    perPage: 10,
+    perPage: 12,
     active: ['Active', 'Bar', 'Fizz', 'Buzz'],
     userType: ['Admin', 'Broker/Sales Ref', 'MFG',],
     show: true,
@@ -334,5 +416,9 @@ export default {
 }
 .cursor-pointer:hover{
   color: #FF7E1D !important;  
+}
+.myvtadmin-access{
+  height: 88vh !important;
+  overflow-y: auto;
 }
 </style>

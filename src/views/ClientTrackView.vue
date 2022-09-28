@@ -46,14 +46,14 @@
     </b-row>
     <b-row class="mt-2 mb-4">
       <v-col cols="12" md="6">
-        <div class="bg-white shadow p-4 rounded-xl text-center">
+        <div class="bg-white shadow-0318 p-4 rounded-xl text-center">
           <apexchart type="pie" width="380" class="inner-mx-auto" :options="CYTDchartOptions" :series="CYTDseries">
           </apexchart>
           <div class="font-20 font-weight-700 font-black mt-3">Distributor Product Mix</div>
         </div>
       </v-col>
       <v-col cols="12" md="6">
-        <div class="bg-white shadow p-4 rounded-xl text-center">
+        <div class="bg-white shadow-0318 p-4 rounded-xl text-center">
           <apexchart type="pie" width="380" class="inner-mx-auto" :options="PYTDchartOptions" :series="PYTDseries">
           </apexchart>
           <div class="font-20 font-weight-700 font-black mt-3">Regional Product Mix</div>
@@ -76,31 +76,31 @@
 
     <b-row class="mb-4 mx-0">
       <v-col class="p-1" cols="12" md="">
-        <div class="bg-white shadow rounded-md px-2 py-3 text-center h-100">
+        <div class="bg-white shadow-0318 rounded-md px-2 py-3 text-center h-100">
           <div class="font-30 font-weight-700 font-green">150,393 CS</div>
           <div class="font-14 font-weight-700 font-black">YTD Distributor Purchases</div>
         </div>
       </v-col>
       <v-col class="p-1" cols="12" md="">
-        <div class="bg-white shadow rounded-md px-2 py-3 text-center h-100">
+        <div class="bg-white shadow-0318 rounded-md px-2 py-3 text-center h-100">
           <div class="font-30 font-weight-700 font-green">150,393 CS</div>
           <div class="font-14 font-weight-700 font-black">YTD Distributor Sales</div>
         </div>
       </v-col>
       <v-col class="p-1" cols="12" md="">
-        <div class="bg-white shadow rounded-md px-2 py-3 text-center h-100">
+        <div class="bg-white shadow-0318 rounded-md px-2 py-3 text-center h-100">
           <div class="font-30 font-weight-700 font-green">150,393 CS</div>
           <div class="font-14 font-weight-700 font-black">Top 10 Customer CYTD Total Sales</div>
         </div>
       </v-col>
       <v-col class="p-1" cols="12" md="">
-        <div class="bg-white shadow rounded-md px-2 py-3 text-center h-100">
+        <div class="bg-white shadow-0318 rounded-md px-2 py-3 text-center h-100">
           <div class="font-30 font-weight-700 font-green">150,393 CS</div>
           <div class="font-14 font-weight-700 font-black">Total Distributor Sales CYTD</div>
         </div>
       </v-col>
       <v-col class="p-1" cols="12" md="">
-        <div class="bg-white shadow rounded-md px-2 py-3 text-center h-100">
+        <div class="bg-white shadow-0318 rounded-md px-2 py-3 text-center h-100">
           <div class="font-30 font-weight-700 font-green">43,20%</div>
           <div class="font-14 font-weight-700 font-black">Top 10 Customer Sales % of Total Sales</div>
         </div>
