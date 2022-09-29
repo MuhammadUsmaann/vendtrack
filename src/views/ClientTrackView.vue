@@ -25,11 +25,11 @@
             src="../assets/print.svg" alt="" class="pr-1">
           <div class="d-md-inline-block d-none"> Print </div>
         </button>
-        <button class="btn border border-light-gray ml-2 font-14 font-weight-500 font-black shadow-sm"><img
+        <button class="btn border border-light-gray ml-2 bg-white font-14 font-weight-500 font-black shadow-sm"><img
             src="../assets/pdf.svg" alt="" class="pr-1">
           <div class="d-md-inline-block d-none"> Export in PDF</div>
         </button>
-        
+
       </div>
     </div>
     <b-row class="mb-3 mx-0">
@@ -117,7 +117,7 @@
 
 
 
-    
+
     <div class="font-20 font-weight-700 font-black mt-4 mb-3">Distributor Market Segment Analysis</div>
     <v-data-table :headers="distributorMarketSegmentHeader" :items="distributorMarketSegment" class="elevation-1 mb-3"
       hide-default-footer>
@@ -199,16 +199,16 @@ export default {
         CHGCS: '6025',
         CHG: '6025'
       },
-      
+
     ],
 
     distributorTopCutomerheaders: [
-      { text: 'Customer Name', value: 'CustomerName',width:'10%' },
-      { text: 'Operator ID', value: 'OperatorID',align:'right',width:'12%' },
-      { text: 'YTD CS', value: 'YTDCS', align:'right',width:'15%'},
-      { text: 'PYTD CS', value: 'PYTDCS', align:'right',width:'12%'},
-      { text: 'CHG CS', value: 'CHGCS', align:'right',width:'15%'},
-      { text: '% CHG', value: 'CHG', align:'right',width:'15%'},
+      { text: 'Customer Name', value: 'CustomerName', width: '10%' },
+      { text: 'Operator ID', value: 'OperatorID', align: 'right', width: '12%' },
+      { text: 'YTD CS', value: 'YTDCS', align: 'right', width: '15%' },
+      { text: 'PYTD CS', value: 'PYTDCS', align: 'right', width: '12%' },
+      { text: 'CHG CS', value: 'CHGCS', align: 'right', width: '15%' },
+      { text: '% CHG', value: 'CHG', align: 'right', width: '15%' },
     ],
     distributorTopCutomer: [
       {
@@ -294,11 +294,11 @@ export default {
     ],
 
     distributorMarketSegmentHeader: [
-      { text: 'Market Segment', value: 'MarketSegment',width:'30%' },
-      { text: 'YTD CS', value: 'YTDCS', align:'center',width:'20%'},
-      { text: 'PYTD CS', value: 'PYTDCS',align:'center',width:'15%' },
-      { text: 'CHG CS', value: 'CHGCS', align:'center',width:'28%'},
-      { text: '% CHG', value: 'CHG', align:'center',width:'7%'},
+      { text: 'Market Segment', value: 'MarketSegment', width: '30%' },
+      { text: 'YTD CS', value: 'YTDCS', align: 'center', width: '20%' },
+      { text: 'PYTD CS', value: 'PYTDCS', align: 'center', width: '15%' },
+      { text: 'CHG CS', value: 'CHGCS', align: 'center', width: '28%' },
+      { text: '% CHG', value: 'CHG', align: 'center', width: '7%' },
     ],
     distributorMarketSegment: [
       {
@@ -374,9 +374,12 @@ export default {
     ],
     CYTDseries: [44, 55, 13, 43, 22],
     CYTDchartOptions: {
-      colors: ["#FF7E1D","#466ABB","#873BD3","#5BB878","#fbe5d4" ],
+      colors: ["#FF7E1D", "#466ABB", "#873BD3", "#5BB878", "#fbe5d4"],
 
       chart: {
+        animations: {
+          enabled: false
+        },
         width: 380,
         type: 'pie',
       },
@@ -395,8 +398,11 @@ export default {
     },
     PYTDseries: [44, 55, 13, 43, 22],
     PYTDchartOptions: {
-      colors: ["#FF7E1D","#466ABB","#873BD3","#5BB878","#fbe5d4" ],
+      colors: ["#FF7E1D", "#466ABB", "#873BD3", "#5BB878", "#fbe5d4"],
       chart: {
+        animations: {
+          enabled: false
+        },
         width: 380,
         type: 'pie',
       },
@@ -405,6 +411,9 @@ export default {
         breakpoint: 480,
         options: {
           chart: {
+            animations: {
+              enabled: false
+            },
             width: 200
           },
           legend: {
@@ -451,8 +460,11 @@ export default {
       }]
     }],
     barchartOptions: {
-      colors: ["#FF7E1D","#873BD3" ],
+      colors: ["#FF7E1D", "#873BD3"],
       chart: {
+        animations: {
+          enabled: false
+        },
         type: 'rangeBar',
         height: 350
       },
@@ -475,8 +487,11 @@ export default {
 
     }],
     WarehouseOptions: {
-      colors: ["#FF7E1D", ],
+      colors: ["#FF7E1D",],
       chart: {
+        animations: {
+          enabled: false
+        },
         type: 'rangeBar',
         height: 350,
       },

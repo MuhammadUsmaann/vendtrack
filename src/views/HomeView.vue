@@ -39,9 +39,12 @@ export default defineComponent({
       }
       ],
       linechartOptions: {
-        colors: ["#FF7E1D","#873BD3","#466ABB" ],
+        colors: ["#FF7E1D", "#873BD3", "#466ABB"],
 
         chart: {
+          animations: {
+            enabled: false
+          },
           height: 350,
           type: 'line',
           // zoom: {
@@ -103,9 +106,12 @@ export default defineComponent({
         }]
       }],
       chartOptions: {
-        colors: ["#FF7E1D","#873BD3" ],
+        colors: ["#FF7E1D", "#873BD3"],
 
         chart: {
+          animations: {
+            enabled: false
+          },
           type: 'rangeBar',
           height: 350
         },

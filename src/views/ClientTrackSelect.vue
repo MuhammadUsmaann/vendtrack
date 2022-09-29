@@ -13,7 +13,7 @@
       </div>
     </div>
 
-   
+
     <div class="d-flex flex-lg-row flex-column justify-content-center align-items-center pt-5">
       <router-link to="/client-track">
         <div class="blocks ">
@@ -25,7 +25,7 @@
           <p class="font-30 font-weight-700 pt-4 font-black linkstyle">Customer</p>
         </div>
       </router-link>
-     
+
       <router-link to="/client-track">
         <div class="blocks ">
           <div class="pb-5 bg-image-orange">
@@ -102,7 +102,8 @@ export default {
 .font-weight-500 {
   font-weight: 500;
 }
-.linkstyle{
+
+a:hover{
   text-decoration: none !important;
 }
 </style>

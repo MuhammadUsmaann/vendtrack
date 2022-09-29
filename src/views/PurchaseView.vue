@@ -20,7 +20,7 @@
           <b-dropdown-item>Second Action</b-dropdown-item>
           <b-dropdown-item>Third Action</b-dropdown-item>
         </b-dropdown>
-        <button class=" btn border border-light-gray ml-2 font-14 font-weight-500 font-black shadow-sm"><img
+        <button class="btn border border-light-gray ml-2 bg-white font-14 font-weight-500 font-black shadow-sm"><img
             src="../assets/pdf.svg" alt="" class="pr-1">
           <div class="d-md-inline-block d-none"> Export in PDF</div>
         </button>

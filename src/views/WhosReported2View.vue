@@ -22,9 +22,9 @@
             src="../assets/UserInterface.svg" alt="">
           <div class="d-md-inline-block d-none"> Edit Query</div>
         </button>
-        <button class="btn border border-light-gray ml-md-2 ml-1 px-2 font-14 font-weight-500 font-black shadow-sm"><img
-            src="../assets/excel.svg" alt="">
-          <div class="d-md-inline-block d-none pl-2"> Export in Excel</div>
+        <button class=" btn border border-light-gray ml-2 font-14 font-weight-500 font-black shadow-sm"><img
+            src="../assets/excel.svg" alt="" class="pr-1">
+          <div class="d-md-inline-block d-none"> Export in Excel</div>
         </button>
       </div>
     </div>

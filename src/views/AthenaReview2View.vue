@@ -19,9 +19,9 @@
           <b-dropdown-item>Second Action</b-dropdown-item>
           <b-dropdown-item>Third Action</b-dropdown-item>
         </b-dropdown>
-        <button class="btn border border-light-gray ml-2 font-14 font-weight-500 font-black shadow-sm"><img
+        <button class="btn border border-light-gray ml-2 bg-white font-14 font-weight-500 font-black shadow-sm"><img
             src="../assets/pdf.svg" alt="" class="pr-1">
-          <div class="d-inline-block"> Export in PDF</div>
+          <div class="d-md-inline-block d-none"> Export in PDF</div>
         </button>
       </div>
     </div>
@@ -43,8 +43,8 @@
       </v-col>
     </b-row>
     <div class="font-20 font-weight-700 font-black mt-3 mb-3">Market Segment Sales Performance</div>
-    <v-data-table hide-default-footer :headers="marketSegmentSalesPerformanceHeader" :items="marketSegmentSalesPerformance"
-      class="elevation-1">
+    <v-data-table hide-default-footer :headers="marketSegmentSalesPerformanceHeader"
+      :items="marketSegmentSalesPerformance" class="elevation-1">
     </v-data-table>
     <div class="font-20 font-weight-700 font-black mt-3 mb-3">GPO Sales Perforance</div>
     <apexchart type="line" height="350" :options="barlinechartOptions" :series="barlineseries"></apexchart>
@@ -98,7 +98,8 @@
     </v-data-table>
 
     <div class="font-20 font-weight-700 font-black mt-4 mb-3">Bottom 10 Customers / Chains Performance</div>
-    <v-data-table hide-default-footer :headers="bottomCustomersheaders" :items="bottomCustomersreports" class="elevation-1">
+    <v-data-table hide-default-footer :headers="bottomCustomersheaders" :items="bottomCustomersreports"
+      class="elevation-1">
     </v-data-table>
   </div>
 </template>
@@ -736,8 +737,11 @@ export default {
     ],
     CYTDseries: [44, 55, 13, 43, 22],
     CYTDchartOptions: {
-      colors: ["#FF7E1D","#466ABB","#873BD3","#5BB878","#fbe5d4" ],
+      colors: ["#FF7E1D", "#466ABB", "#873BD3", "#5BB878", "#fbe5d4"],
       chart: {
+        animations: {
+          enabled: false
+        },
         width: 380,
         type: 'pie',
       },
@@ -746,6 +750,9 @@ export default {
         breakpoint: 480,
         options: {
           chart: {
+            animations: {
+              enabled: false
+            },
             width: 200
           },
           legend: {
@@ -756,9 +763,12 @@ export default {
     },
     PYTDseries: [44, 55, 13, 43, 22],
     PYTDchartOptions: {
-      colors: ["#FF7E1D","#466ABB","#873BD3","#5BB878","#fbe5d4" ],
+      colors: ["#FF7E1D", "#466ABB", "#873BD3", "#5BB878", "#fbe5d4"],
 
       chart: {
+        animations: {
+          enabled: false
+        },
         width: 380,
         type: 'pie',
       },
@@ -767,6 +777,9 @@ export default {
         breakpoint: 480,
         options: {
           chart: {
+            animations: {
+              enabled: false
+            },
             width: 200
           },
           legend: {
@@ -782,7 +795,7 @@ export default {
       type: 'column',
       data: [0, 0, 0, 0]
     },
-     {
+    {
       name: 'USG',
       type: 'column',
       data: [120000, 130000, 90000]
@@ -804,9 +817,12 @@ export default {
       data: [370000, 210000, 200000]
     }],
     barlinechartOptions: {
-      colors: ["#444444","#FF7E1D","#466ABB","#873BD3","#5BB878"],
+      colors: ["#444444", "#FF7E1D", "#466ABB", "#873BD3", "#5BB878"],
 
       chart: {
+        animations: {
+          enabled: false
+        },
         height: 350,
         type: 'line',
         stacked: false
