@@ -26,23 +26,23 @@
           </div>
           <b-row class="mx-n1 mt-3 inner-font-black inner-font-14 pb-5">
             <v-col cols="12" md="3" class="p-1">
-              <b-form-group label="First Name" label-for="FirstName" class="mb-0 font-black font-weight-700 font-14">
+              <b-form-group label="First Name" label-for="FirstName" class="mb-0 input-label">
                 <b-form-input id="FirstName"></b-form-input>
               </b-form-group>
             </v-col>
             <v-col cols="12" md="3" class="p-1">
-              <b-form-group label="Last Name" label-for="LastName" class="mb-0 font-black font-weight-700 font-14">
+              <b-form-group label="Last Name" label-for="LastName" class="mb-0 input-label">
                 <b-form-input id="LastName"></b-form-input>
               </b-form-group>
             </v-col>
             <v-col cols="12" md="3" class="p-1">
-              <b-form-group label="Email" label-for="Email" class="mb-0 font-black font-weight-700 font-14">
+              <b-form-group label="Email" label-for="Email" class="mb-0 input-label">
                 <b-form-input id="Email" type="email"></b-form-input>
               </b-form-group>
             </v-col>
 
             <v-col cols="12" md="3" class="p-1">
-              <p class="mb-5px font-black font-weight-700 font-14">Access Level</p>
+              <p class="mb-5px input-label">Access Level</p>
               <multiselect :searchable="false" placeholder="" v-model="accesslevelselected" label="name" track-by="code"
                 :options="accesslevel"></multiselect>
             </v-col>
@@ -141,7 +141,7 @@
         </b-form>
       </div>
       <div class="text-center pt-3 mt-2">
-        <button class="btn btn-outline-secondary mr-3">
+        <button class="btn btn-light mr-3">
           <i class="fa-solid fa-times"></i> Cancel
         </button>
         <button class="btn btn-orange">

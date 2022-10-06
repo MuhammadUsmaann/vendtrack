@@ -30,42 +30,42 @@
         </div>
         <div class="border rounded-sm bg-light-gray p-2 mx-0 mt-3 justify-content-between row ">
             <div class="px-2 col-md-auto col-6 col-sm-4">
-                <div class="font-14 font-weight-700 font-black w-max-content">Start Date</div>
+                <div class="input-label">Start Date</div>
                 <div class="font-13 font-weight-600 font-black mt-1 font-mono">03/08/2022</div>
             </div>
             <div class="px-2 col-md-auto col-6 col-sm-4">
-                <div class="font-14 font-weight-700 font-black w-max-content">End Date</div>
+                <div class="input-label">End Date</div>
                 <div class="font-13 font-weight-600 font-black mt-1 font-mono">03/08/2022</div>
             </div>
             <div class="px-2 col-md-auto col-6 col-sm-4">
-                <div class="font-14 font-weight-700 font-black w-max-content">Unit of Measure</div>
+                <div class="input-label">Unit of Measure</div>
                 <div class="font-13 font-weight-600 font-black mt-1 font-mono">Dollars</div>
             </div>
             <div class="px-2 col-md-auto col-6 col-sm-4">
-                <div class="font-14 font-weight-700 font-black w-max-content">Sales to</div>
+                <div class="input-label">Sales to</div>
                 <div class="font-13 font-weight-600 font-black mt-1 font-mono">Distributors</div>
             </div>
             <div class="px-2 col-md-auto col-6 col-sm-4">
-                <div class="font-14 font-weight-700 font-black w-max-content">Reports By</div>
+                <div class="input-label">Reports By</div>
                 <div class="font-13 font-weight-600 font-black mt-1 font-mono">Customers</div>
             </div>
             <div class="px-2 col-md-auto col-6 col-sm-4">
-                <div class="font-14 font-weight-700 font-black w-max-content">Regions</div>
+                <div class="input-label">Regions</div>
                 <div class="font-13 font-weight-600 font-black mt-1 font-mono">A,D,G</div>
 
             </div>
             <div class="px-2 col-md-auto col-6 col-sm-4">
-                <div class="font-14 font-weight-700 font-black w-max-content">State</div>
+                <div class="input-label">State</div>
                 <div class="font-13 font-weight-600 font-black mt-1 font-mono">NY,SF,NV</div>
 
 
             </div>
             <div class="px-2 col-md-auto col-6 col-sm-4">
-                <div class="font-14 font-weight-700 font-black w-max-content">National Account</div>
+                <div class="input-label">National Account</div>
                 <div class="font-13 font-weight-600 font-black mt-1 font-mono">Some Info 1, Info,2</div>
             </div>
             <div class="px-2 col-md-auto col-12 col-sm-4">
-                <div class="font-14 font-weight-700 font-black w-max-content">Distributors</div>
+                <div class="input-label">Distributors</div>
                 <div class="font-13 font-weight-600 font-black mt-1 font-mono">Alex Hales, Jackson Morrison</div>
             </div>
         </div>
@@ -106,7 +106,7 @@ export default {
         }
     },
     data: () => ({
-        perPage: 10,
+        perPage: 20,
         currentPage: 1,
 
         fields: [
@@ -120,199 +120,408 @@ export default {
             { label: 'Total', key: 'total', align: 'right', class: 'rightAligned' },
 
         ],
-
         items: [
-            {
-                chain: 'Louis Vuitton',
-                customer: 'Valerie Ahorro',
-                year: 2022,
-                q1: '7,791',
-                q2: '5,545',
-                q3: '4,544',
-                ytdTotal: '10,121',
-                total: '10,121'
-            },
-            {
-                chain: 'Louis Vuitton',
-                customer: 'Valerie Ahorro',
-                year: 2022,
-                q1: '7,791',
-                q2: '5,545',
-                q3: '4,544',
-                ytdTotal: '10,121',
-                total: '10,121'
-            },
-            {
-                chain: 'Louis Vuitton',
-                customer: 'Valerie Ahorro',
-                year: 2022,
-                q1: '7,791',
-                q2: '5,545',
-                q3: '4,544',
-                ytdTotal: '10,121',
-                total: '10,121'
-            },
-            {
-                chain: 'Louis Vuitton',
-                customer: 'Valerie Ahorro',
-                year: 2022,
-                q1: '7,791',
-                q2: '5,545',
-                q3: '4,544',
-                ytdTotal: '10,121',
-                total: '10,121'
-            },
-            {
-                chain: 'Louis Vuitton',
-                customer: 'Valerie Ahorro',
-                year: 2022,
-                q1: '7,791',
-                q2: '5,545',
-                q3: '4,544',
-                ytdTotal: '10,121',
-                total: '10,121'
-            },
-            {
-                chain: 'Louis Vuitton',
-                customer: 'Valerie Ahorro',
-                year: 2022,
-                q1: '7,791',
-                q2: '5,545',
-                q3: '4,544',
-                ytdTotal: '10,121',
-                total: '10,121'
-            },
-            {
-                chain: 'Louis Vuitton',
-                customer: 'Valerie Ahorro',
-                year: 2022,
-                q1: '7,791',
-                q2: '5,545',
-                q3: '4,544',
-                ytdTotal: '10,121',
-                total: '10,121'
-            },
-            {
-                chain: 'Louis Vuitton',
-                customer: 'Valerie Ahorro',
-                year: 2022,
-                q1: '7,791',
-                q2: '5,545',
-                q3: '4,544',
-                ytdTotal: '10,121',
-                total: '10,121'
-            },
-            {
-                chain: 'Louis Vuitton',
-                customer: 'Valerie Ahorro',
-                year: 2022,
-                q1: '7,791',
-                q2: '5,545',
-                q3: '4,544',
-                ytdTotal: '10,121',
-                total: '10,121'
-            },
-            {
-                chain: 'Louis Vuitton',
-                customer: 'Valerie Ahorro',
-                year: 2022,
-                q1: '7,791',
-                q2: '5,545',
-                q3: '4,544',
-                ytdTotal: '10,121',
-                total: '10,121'
-            },
-            {
-                chain: 'Louis Vuitton',
-                customer: 'Valerie Ahorro',
-                year: 2022,
-                q1: '7,791',
-                q2: '5,545',
-                q3: '4,544',
-                ytdTotal: '10,121',
-                total: '10,121'
-            },
-            {
-                chain: 'Louis Vuitton',
-                customer: 'Valerie Ahorro',
-                year: 2022,
-                q1: '7,791',
-                q2: '5,545',
-                q3: '4,544',
-                ytdTotal: '10,121',
-                total: '10,121'
-            },
-            {
-                chain: 'Louis Vuitton',
-                customer: 'Valerie Ahorro',
-                year: 2022,
-                q1: '7,791',
-                q2: '5,545',
-                q3: '4,544',
-                ytdTotal: '10,121',
-                total: '10,121'
-            },
-            {
-                chain: 'Louis Vuitton',
-                customer: 'Valerie Ahorro',
-                year: 2022,
-                q1: '7,791',
-                q2: '5,545',
-                q3: '4,544',
-                ytdTotal: '10,121',
-                total: '10,121'
-            },
-            {
-                chain: 'Louis Vuitton',
-                customer: 'Valerie Ahorro',
-                year: 2022,
-                q1: '7,791',
-                q2: '5,545',
-                q3: '4,544',
-                ytdTotal: '10,121',
-                total: '10,121'
-            },
-            {
-                chain: 'Louis Vuitton',
-                customer: 'Valerie Ahorro',
-                year: 2022,
-                q1: '7,791',
-                q2: '5,545',
-                q3: '4,544',
-                ytdTotal: '10,121',
-                total: '10,121'
-            },
-            {
-                chain: 'Louis Vuitton',
-                customer: 'Valerie Ahorro',
-                year: 2022,
-                q1: '7,791',
-                q2: '5,545',
-                q3: '4,544',
-                ytdTotal: '10,121',
-                total: '10,121'
-            },
-            {
-                chain: 'Louis Vuitton',
-                customer: 'Valerie Ahorro',
-                year: 2022,
-                q1: '7,791',
-                q2: '5,545',
-                q3: '4,544',
-                ytdTotal: '10,121',
-                total: '10,121'
-            },
-            {
-                chain: 'Louis Vuitton',
-                customer: 'Valerie Ahorro',
-                year: 2022,
-                q1: '7,791',
-                q2: '5,545',
-                q3: '4,544',
-                ytdTotal: '10,121',
-                total: '10,000'
-            },
-        ],
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,000'
+      },
+    ],
         regions: ['A', 'B', 'C', 'D'],
         regionsValue: ['A', 'C'],
         Categories: ['Candy', 'B', 'C', 'D'],

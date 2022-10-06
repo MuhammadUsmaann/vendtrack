@@ -7,19 +7,14 @@ import FilterComparisonGenerator from '../views/FilterComparisonGenerator'
 import ReportGeneratorComparisonView from '../views/ReportGeneratorViewComparison'
 
 import WhosReported from '../views/WhosReportedView.vue'
-import WhosReported2 from '../views/WhosReported2View.vue'
 import YtdPurchase from '../views/PurchaseView.vue'
-import YtdPurchaseList from '../views/YTDPurchaseList.vue'
 
 import MyVTAdmin from '../views/MyVTAdminView.vue'
 import ClientTrackSelect from '../views/ClientTrackSelect.vue'
 import ProfileView from '../views/ProfileView.vue'
 import ClientVT from '../views/ClientVTView.vue'
-import AthenaReview from '../views/AthenaReviewView.vue'
 import AthenaReview2 from '../views/AthenaReview2View.vue'
 import ClientTrack from '../views/ClientTrackView.vue'
-import ClientTrack2 from '../views/ClientTrack2View.vue'
-import ClientTrack3 from '../views/ClientTrack3View.vue'
 import WOW from '../views/WOWView.vue'
 import RapidReports from '../views/RapidReportsView.vue'
 
@@ -35,11 +30,6 @@ const routes = [
     path: '/report-generator',
     name: 'reportGenerator',
     component: ReportGenerator
-  },
-  {
-    path: '/ytd-purchaselist',
-    name: 'YtdPurchaseList',
-    component: YtdPurchaseList
   },
   {
     path: '/filter-report-generator',
@@ -60,11 +50,6 @@ const routes = [
     path: '/whos-reported',
     name: 'whosReported',
     component: WhosReported
-  },
-  {
-    path: '/whos-reported-2',
-    name: 'whosReported2',
-    component: WhosReported2
   },
   {
     path: '/purchase',
@@ -94,7 +79,7 @@ const routes = [
   {
     path: '/athena-review',
     name: 'athena-review',
-    component: AthenaReview
+    component: AthenaReview2
   },
   {
     path: '/athena-review-2',
@@ -109,12 +94,12 @@ const routes = [
   {
     path: '/client-track2',
     name: 'client-track2',
-    component: ClientTrack2
+    component: ClientTrack
   },
   {
     path: '/client-track3',
     name: 'client-track3',
-    component: ClientTrack3
+    component: ClientTrack
   },
   {
     path: '/WOW',

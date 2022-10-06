@@ -14,9 +14,9 @@
     </div>
 
 
-    <div class="d-flex flex-lg-row flex-column justify-content-center align-items-center pt-5">
+    <div class="d-flex flex-lg-row flex-column justify-content-center align-items-center pt-5 ">
       <router-link to="/client-track">
-        <div class="blocks ">
+        <div class="blocks mx-lg-5 my-lg-0 my-5">
           <div class="pb-5 bg-image-orange">
             <div class="bg-div pt-5">
               <img src="../assets/clienttrackcustomer.svg" alt="" />
@@ -64,7 +64,6 @@ export default {
   border-radius: 20px;
   width: 350px;
   height: 343px;
-  margin: 35px;
   padding: 30px;
   display: flex;
   flex-direction: column;

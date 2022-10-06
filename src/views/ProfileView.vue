@@ -15,33 +15,33 @@
               <ImgPreviewerPicker />
               <div class="heading-title pl-3">
                 <CHeading content="Vani Hedge" />
-                <div class="font-14 font-weight-700 font-black">vani_hedges@gmail.com</div>
+                <div class="input-label">vani_hedges@gmail.com</div>
               </div>
             </div>
             <div class="row mx-n2 mt-2 mb-3">
               <div class="col-md-6 px-2 py-1">
-                <b-form-group label="First Name" label-for="FirstName" class="mb-0 font-black font-weight-700 font-14">
+                <b-form-group label="First Name" label-for="FirstName" class="mb-0 input-label">
                   <b-form-input id="FirstName"></b-form-input>
                 </b-form-group>
               </div>
               <div class="col-md-6 px-2 py-1">
-                <b-form-group label="Last Name" label-for="LastName" class="mb-0 font-black font-weight-700 font-14">
+                <b-form-group label="Last Name" label-for="LastName" class="mb-0 input-label">
                   <b-form-input id="LastName"></b-form-input>
                 </b-form-group>
               </div>
               <div class="col-md-6 px-2 py-1">
-                <b-form-group label="Email" label-for="Email" class="mb-0 font-black font-weight-700 font-14">
+                <b-form-group label="Email" label-for="Email" class="mb-0 input-label">
                   <b-form-input id="Email" type="email"></b-form-input>
                 </b-form-group>
               </div>
               <div class="col-md-6 px-2 py-1">
-                <p class="mb-5px font-black font-weight-700 font-14">User Type</p>
+                <p class="mb-5px input-label">User Type</p>
                 <multiselect :searchable="false" placeholder="" v-model="usertypeselected" label="name" track-by="code"
                   :options="usertype"></multiselect>
 
               </div>
               <div class="col-md-6 px-2 py-1">
-                <p class="mb-5px font-black font-weight-700 font-14">Access Level</p>
+                <p class="mb-5px input-label">Access Level</p>
                 <multiselect :searchable="false" placeholder="" v-model="accesslevelselected" label="name"
                   track-by="code" :options="accesslevel"></multiselect>
               </div>
@@ -54,21 +54,18 @@
                 class="mt-n1 mr-1">Password</div>
             <div class="row mx-n2 mt-2 mb-3">
               <div class="col-md-6 px-2 py-1">
-                <b-form-group label="Current Password" label-for="CurrentPassword"
-                  class="mb-0 font-black font-weight-700 font-14">
+                <b-form-group label="Current Password" label-for="CurrentPassword" class="mb-0 input-label">
                   <b-form-input id="CurrentPassword" type="password"></b-form-input>
                 </b-form-group>
               </div>
               <div class="col-md-6"></div>
               <div class="col-md-6 px-2 py-1">
-                <b-form-group label="New Password" label-for="NewPassword"
-                  class="mb-0 font-black font-weight-700 font-14">
+                <b-form-group label="New Password" label-for="NewPassword" class="mb-0 input-label">
                   <b-form-input id="NewPassword" type="password"></b-form-input>
                 </b-form-group>
               </div>
               <div class="col-md-6 px-2 py-1">
-                <b-form-group label="Confirm New Password" label-for="ConfirmNewPassword"
-                  class="mb-0 font-black font-weight-700 font-14">
+                <b-form-group label="Confirm New Password" label-for="ConfirmNewPassword" class="mb-0 input-label">
                   <b-form-input id="ConfirmNewPassword" type="password"></b-form-input>
                 </b-form-group>
               </div>
@@ -120,7 +117,8 @@
                       class="mt-n1 mr-1" alt="">Customer Group</div>
                 </div>
                 <div class="col px-0 text-right">
-                  <button class="font-16 btn btn-orange ml-2 mb-2" @click="$bvModal.show('addNewGroup')"><i
+
+                  <button class="font-16 btn text-white btn-orange ml-2 mb-2" @click="$bvModal.show('addNewGroup')"><i
                       class="fa-solid fa-plus"></i> Add </button>
                 </div>
               </div>
@@ -146,10 +144,10 @@
                       <img src="../assets/UserInterface.svg" alt="">
                     </div>
                     <span class="p-1 cursor-pointer" v-if="item.editing" @click="doSave(item)" variant="success">
-                      <span class = "p-1 font-10 btn-light rounded-xl">save</span>
+                      <span class="p-1 font-10 btn-light rounded-xl">save</span>
                     </span>
                     <span class="p-1 cursor-pointer" v-if="item.editing" @click="doCancel(item)" variant="danger">
-                      <span class = "p-1 font-10 btn-light rounded-xl">cancel</span>
+                      <span class="p-1 font-10 btn-light rounded-xl">cancel</span>
                     </span>
                   </div>
                 </template>
@@ -178,10 +176,10 @@
                       <img src="../assets/UserInterface.svg" alt="">
                     </div>
                     <span class="p-1 cursor-pointer" v-if="item.editing" @click="doSave(item)" variant="success">
-                      <span class = "p-1 font-10 btn-light rounded-xl">save</span>
+                      <span class="p-1 font-10 btn-light rounded-xl">save</span>
                     </span>
                     <span class="p-1 cursor-pointer" v-if="item.editing" @click="doCancel(item)" variant="danger">
-                      <span class = "p-1 font-10 btn-light rounded-xl">cancel</span>
+                      <span class="p-1 font-10 btn-light rounded-xl">cancel</span>
                     </span>
                   </div>
                 </template>
@@ -217,7 +215,7 @@
         </div>
       </div>
       <div class="text-center pt-3 mt-2">
-        <button class="btn btn-outline-secondary mr-3">
+        <button class="btn btn-light mr-3">
           <i class="fa-solid fa-times"></i> Cancel
         </button>
         <button class="btn btn-orange">
@@ -233,13 +231,14 @@
         <b-form>
           <b-row class="mx-0  inner-font-black inner-font-14">
             <v-col cols="12" md="12" class="p-1">
-              <v-text-field label="Enter group name" outlined></v-text-field>
+              <b-form-group label="Enter group name" label-for="FirstName" class="mb-0 input-label">
+                <b-form-input id="FirstName"></b-form-input>
+              </b-form-group>
             </v-col>
           </b-row>
           <div class="text-center pt-2">
-
             <button type="submit" @click="$bvModal.hide('addNewGroup')"
-              class="text-white px-3 mt-3 btn btn-orange">Save</button>
+              class="px-3 mt-3 btn btn-orange">Save</button>
 
           </div>
         </b-form>
@@ -396,5 +395,4 @@ export default {
 .mb-5px {
   margin-bottom: 5px !important;
 }
-
 </style>

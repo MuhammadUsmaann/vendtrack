@@ -20,8 +20,9 @@
 
         <div class="row ">
             <div class="col-12 col-lg-6 m-0">
-                <p class="pb-1  font-14 font-weight-700 font-black m-0 "> Time and Frequency <img
-                        src="../assets/info.svg" alt=""/><span class="font-10 font-mono pl-3 ">All Comparison reports
+                <b-tooltip target="multi-btns" placement="top">Tooltip Title</b-tooltip>
+                <p class="pb-1  input-label m-0 "> Time and Frequency <img
+                        src="../assets/info.svg" id = "multi-btns" alt=""/><span class="font-10 font-mono pl-3 ">All Comparison reports
                         will be run
                         period to date</span></p>
 
@@ -47,12 +48,14 @@
                 </div>
             </div>
             <div class="col-6 col-lg-3 m-0">
-                <p class="font-14 font-weight-700 font-black m-0 pb-1">Sales To <img src="../assets/info.svg" alt="" />
+                <b-tooltip target="sales-btn" placement="right">Tooltip Title</b-tooltip>
+                <p class="input-label m-0 pb-1">Sales To <img src="../assets/info.svg" id = "sales-btn" alt="" />
                 </p>
                 <b-form-select :options="dropselect"></b-form-select>
             </div>
             <div class="col-6 col-lg-3 m-0">
-                <p class="font-14 font-weight-700 font-black m-0 pb-1">Display Reports By <img src="../assets/info.svg" alt="" />
+                <b-tooltip target="display-btn" placement="right">Tooltip Title</b-tooltip>
+                <p class="input-label m-0 pb-1">Display Reports By <img id = "display-btn" src="../assets/info.svg" alt="" />
                 </p>
                 <b-form-select :options="dropselect"></b-form-select>
             </div>
@@ -61,7 +64,8 @@
 
         <div class="row">
             <div class="col-6 pt-0">
-                <div class="font-14 font-weight-700 font-black pb-1">Unit of Measures <img src="../assets/info.svg"
+                <b-tooltip target="unit-btn" placement="right">Tooltip Title</b-tooltip>
+                <div class="input-label pb-1">Unit of Measures <img id = "unit-btn" src="../assets/info.svg"
                         alt="">
                 </div>
                 <div class="font-13 font-weight-600 font-black ">
@@ -73,7 +77,8 @@
                 </div>
             </div>
             <div class="col-6 pt-0">
-                <div class="font-14 font-weight-700 font-black pb-1">Table Headers <img src="../assets/info.svg" alt="">
+                <b-tooltip target="table-btn" placement="right">Tooltip Title</b-tooltip>
+                <div class="input-label pb-1">Table Headers <img id = "table-btn" src="../assets/info.svg" alt="">
                 </div>
                 <div class="font-13 font-weight-600 font-black ">
                     <div>
@@ -85,7 +90,8 @@
             </div>
         </div>
 
-        <div class="font-14 font-weight-700 font-black pt-4">Select Filters <img src="../assets/info.svg" alt="">
+        <b-tooltip target="filter-btn" placement="right">Tooltip Title</b-tooltip>
+        <div class="input-label pt-4">Select Filters <img id = "filter-btn" src="../assets/info.svg" alt="">
         </div>
         <div class="row pt-2">
             <div class="col-sm-6 col-12 ">
@@ -225,7 +231,7 @@
             </div>
             <div class="col-sm-6 col-12 ">
                 <div>
-                    <p class="font-14 font-weight-700 font-black pb-1">Customers</p>
+                    <p class="input-label pb-1">Customers</p>
                     <div>
                         <span v-for="(list, index) in selectedcutomer" :key="index">
                             <span class="multiselect__tag"><span>{{ list }}</span> <i aria-hidden="true" tabindex="1"
@@ -237,7 +243,7 @@
                 </div>
 
                 <div class="pt-4">
-                    <p class="font-14 font-weight-700 font-black pb-1">Distributors</p>
+                    <p class="input-label pb-1">Distributors</p>
                     <div>
                         <span v-for="(list, index) in selecteddistributers" :key="index">
                             <span class="multiselect__tag"><span>{{ list }}</span> <i aria-hidden="true" tabindex="1"
@@ -249,7 +255,7 @@
                 </div>
 
                 <div class="pt-4">
-                    <p class="font-14 font-weight-700 font-black pb-1">Districts</p>
+                    <p class="input-label pb-1">Districts</p>
                     <div>
                         <span v-for="(list, index) in selecteddistrict" :key="index">
                             <span class="multiselect__tag"><span>{{ list }}</span> <i aria-hidden="true" tabindex="1"
@@ -261,7 +267,7 @@
                 </div>
 
                 <div class="pt-4">
-                    <p class="font-14 font-weight-700 font-black pb-1">Territories</p>
+                    <p class="input-label pb-1">Territories</p>
                     <div>
                         <span v-for="(list, index) in selectedterritory" :key="index">
                             <span class="multiselect__tag"><span>{{ list }}</span> <i aria-hidden="true" tabindex="1"
@@ -276,7 +282,7 @@
             </div>
         </div>
         <div class="text-center pt-5 pb-5">
-            <button class="btn btn-outline-secondary mr-3"><i class="fa-solid fa-times"></i> Reset </button>
+            <button class="btn btn-light mr-3"><i class="fa-solid fa-times"></i> Reset </button>
             <router-link to="/report-generator-comparison-view" class="waves-effect">
                 <button class="btn btn-orange"><i class="fa-solid fa-check"></i> Generate </button>
             </router-link>
@@ -378,11 +384,7 @@ export default {
 
 </script>
 <style scoped>
-.btn-orange {
-    background: #FF7E1D;
-    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15);
-    color: #ffffff;
-}
+
 
 .v-select.v-select--chips:not(.v-text-field--single-line).v-text-field--enclosed .v-select__selections {
     min-height: 56px;

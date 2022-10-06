@@ -6,7 +6,7 @@
                 <!-- Left Menu Start -->
                 <ul class="metismenu" id="side-menu">
                     <li>
-                        <router-link to="/WOW" class="waves-effect">
+                        <router-link to="/purchase" class="waves-effect">
                             <div class="active-li"></div>
                             <img src="../../assets/home.svg" alt="">
                             <span> Home </span>
@@ -25,7 +25,7 @@
                         </router-link>
                     </li>
                     <li>
-                        <router-link to="/purchase" class="waves-effect">
+                        <router-link to="/''" class="waves-effect">
                             <img src="../../assets/Dashboard.svg" alt="">
                             <span> Dashboard </span>
                         </router-link>
@@ -43,7 +43,7 @@
                         </router-link>
                     </li>
                     <li>
-                        <router-link to="/select-client-track" class="waves-effect">
+                        <router-link to="/''" class="waves-effect">
                             <img src="../../assets/GapAnalysis.svg" alt="">
                             <span> Gap Analysis </span>
                         </router-link>
@@ -62,33 +62,39 @@
                     </li>
                     
                     <li>
-                        <router-link to="/client-track3" class="waves-effect">
+                        <router-link to="/''" class="waves-effect">
                             <img src="../../assets/OperatorTargets.svg" alt="">
                             <span> Operator Targets </span>
                         </router-link>
                     </li>
                     <li>
-                        <router-link to="/client-track2" class="waves-effect">
+                        <router-link to="/''" class="waves-effect">
                             <img src="../../assets/CPRs.svg" alt="">
                             <span> CPRs </span>
                         </router-link>
                     </li>
                     <li>
-                        <router-link to="/client-track" class="waves-effect">
+                        <router-link to="/''" class="waves-effect">
                             <img src="../../assets/RebateCalculator.svg" alt="">
                             <span> Rebate Calculator </span>
                         </router-link>
                     </li>
                     <li>
-                        <router-link to="/athena-review" class="waves-effect">
+                        <router-link to="/''" class="waves-effect">
                             <img src="../../assets/TradeSpend.svg" alt="">
                             <span> Trade Spend </span>
                         </router-link>
                     </li>
                     <li>
-                        <router-link to="/athena-review-2" class="waves-effect">
+                        <router-link to="/athena-review" class="waves-effect">
                             <img src="../../assets/AthenaReview.svg" alt="">
                             <span> Athena Review </span>
+                        </router-link>
+                    </li>
+                    <li>
+                        <router-link to="/WOW" class="waves-effect">
+                            <img src="../../assets/wow.svg" alt="">
+                            <span> WOW </span>
                         </router-link>
                     </li>
                     

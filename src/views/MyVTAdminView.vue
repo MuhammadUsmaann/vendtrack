@@ -35,22 +35,19 @@
         </template>
 
         <template #cell(action)={item}>
-
           <div class="d-flex justify-content-center align-items-center">
             <div small class="mr-2 text-center cursor-pointer" v-if="!item.editing" @click="doEdit(item)">
-              <i class="fas fa-edit"></i>
+              <img src="../assets/UserInterface.svg" alt="">
             </div>
             <span class="p-1 cursor-pointer" v-if="item.editing" @click="doSave(item)" variant="success">
-              <i class="fas fa-save"></i>
+              <span class = "p-1 font-10 btn-light rounded-xl">save</span>
             </span>
             <span class="p-1 cursor-pointer" v-if="item.editing" @click="doCancel(item)" variant="danger">
-              <i class="fa fa-times " aria-hidden="true"></i>
+              <span class = "p-1 font-10 btn-light rounded-xl">cancel</span>
             </span>
           </div>
         </template>
-
       </b-table>
-
     </div>
     <div class=" paginationclass pt-4">
       <div class="font-mono font-14 mb-3">
@@ -70,21 +67,32 @@
         <b-form v-if="show">
           <b-row class="mx-0  inner-font-black inner-font-14 pb-5">
             <v-col cols="12" md="6" class="p-1">
-              <v-text-field label="First Name" outlined></v-text-field>
+              <b-form-group label="First Name" label-for="FirstName" class="mb-0 input-label">
+                <b-form-input id="FirstName"></b-form-input>
+              </b-form-group>
+              <!-- <v-text-field label="First Name" outlined></v-text-field> -->
             </v-col>
             <v-col cols="12" md="6" class="p-1">
-              <v-text-field label="Last Name" outlined></v-text-field>
+              <b-form-group label="Last Name" label-for="FirstName" class="mb-0 input-label">
+                <b-form-input id="LastName"></b-form-input>
+              </b-form-group>
+              <!-- <v-text-field label="Last Name" outlined></v-text-field> -->
             </v-col>
             <v-col cols="12" md="6" class="p-1">
-              <v-select :items="active" label="Active" outlined></v-select>
+              <p class="input-label pb-1">Active</p>
+              <b-form-select :options="active"></b-form-select>
+              <!-- <v-select :items="active" label="Active" outlined></v-select> -->
             </v-col>
             <v-col cols="12" md="6" class="p-1">
-              <v-select :items="userType" label="User Type" outlined></v-select>
+              <p class="input-label pb-1">User Type</p>
+              <b-form-select :options="userType"></b-form-select>
+              <!-- <v-select :items="userType" label="User Type"  outlined></v-select> -->
             </v-col>
 
             <v-col cols="12" md="6" class="p-1">
+              <p class="input-label pb-1">User Type</p>
               <b-dropdown id="dropdown-1" text="Access Level" block variant="outline"
-                class="text-left custom-dropdown border py-5 border-light-gray rounded">
+                class="text-left custom-dropdown dropbtn rounded">
                 <b-dropdown-item>All Sales</b-dropdown-item>
 
                 <b-dropdown id="dropdown-2" text="Region " variant="outline" dropright class="">
@@ -101,7 +109,7 @@
                     <b-form-checkbox value="me">Madrid</b-form-checkbox>
                     <b-form-checkbox value="me">Alicante</b-form-checkbox>
                   </div>
-                 
+
                 </b-dropdown>
               </b-dropdown>
             </v-col>
@@ -254,7 +262,97 @@ export default {
         CYTDLoginCount: '5,138',
         currentMonthLoginCount: '8,116',
       },
-      
+
+      {
+        username: 'Devon Lane',
+        emailAddress: 'dolores.chambers@example.com',
+        userType: 'Admin',
+        accessLevel: 'Admin',
+        status: 'Active',
+        CYTDLoginCount: '5,138',
+        currentMonthLoginCount: '8,116',
+      },
+      {
+        username: 'Devon Lane',
+        emailAddress: 'dolores.chambers@example.com',
+        userType: 'Admin',
+        accessLevel: 'Admin',
+        status: 'Active',
+        CYTDLoginCount: '5,138',
+        currentMonthLoginCount: '8,116',
+      },
+      {
+        username: 'Devon Lane',
+        emailAddress: 'dolores.chambers@example.com',
+        userType: 'Admin',
+        accessLevel: 'Admin',
+        status: 'Active',
+        CYTDLoginCount: '5,138',
+        currentMonthLoginCount: '8,116',
+      },
+      {
+        username: 'Devon Lane',
+        emailAddress: 'dolores.chambers@example.com',
+        userType: 'Admin',
+        accessLevel: 'Admin',
+        status: 'Active',
+        CYTDLoginCount: '5,138',
+        currentMonthLoginCount: '8,116',
+      },
+      {
+        username: 'Devon Lane',
+        emailAddress: 'dolores.chambers@example.com',
+        userType: 'Admin',
+        accessLevel: 'Admin',
+        status: 'Active',
+        CYTDLoginCount: '5,138',
+        currentMonthLoginCount: '8,116',
+      },
+      {
+        username: 'Devon Lane',
+        emailAddress: 'dolores.chambers@example.com',
+        userType: 'Admin',
+        accessLevel: 'Admin',
+        status: 'Active',
+        CYTDLoginCount: '5,138',
+        currentMonthLoginCount: '8,116',
+      },
+      {
+        username: 'Devon Lane',
+        emailAddress: 'dolores.chambers@example.com',
+        userType: 'Admin',
+        accessLevel: 'Admin',
+        status: 'Active',
+        CYTDLoginCount: '5,138',
+        currentMonthLoginCount: '8,116',
+      },
+      {
+        username: 'Devon Lane',
+        emailAddress: 'dolores.chambers@example.com',
+        userType: 'Admin',
+        accessLevel: 'Admin',
+        status: 'Active',
+        CYTDLoginCount: '5,138',
+        currentMonthLoginCount: '8,116',
+      },
+      {
+        username: 'Devon Lane',
+        emailAddress: 'dolores.chambers@example.com',
+        userType: 'Admin',
+        accessLevel: 'Admin',
+        status: 'Active',
+        CYTDLoginCount: '5,138',
+        currentMonthLoginCount: '8,116',
+      },
+      {
+        username: 'Devon Lane',
+        emailAddress: 'dolores.chambers@example.com',
+        userType: 'Admin',
+        accessLevel: 'Admin',
+        status: 'Active',
+        CYTDLoginCount: '5,138',
+        currentMonthLoginCount: '8,116',
+      },
       {
         username: 'Devon Lane',
         emailAddress: 'dolores.chambers@example.com',
@@ -363,9 +461,10 @@ export default {
         CYTDLoginCount: '5,138',
         currentMonthLoginCount: '8,116',
       }
+
     ],
     currentPage: 1,
-    perPage: 12,
+    perPage: 17,
     active: ['Active', 'Bar', 'Fizz', 'Buzz'],
     userType: ['Admin', 'Broker/Sales Ref', 'MFG',],
     show: true,
@@ -414,11 +513,17 @@ export default {
 .cursor-pointer {
   cursor: pointer;
 }
-.cursor-pointer:hover{
-  color: #FF7E1D !important;  
+
+.cursor-pointer:hover {
+  color: #FF7E1D !important;
 }
-.myvtadmin-access{
-  height: 88vh !important;
-  overflow-y: auto;
+
+.myvtadmin-access {
+  /* height: 88vh !important;
+  overflow-y: auto; */
+}
+.dropbtn{
+  height: 40px !important;
+  border: 1px solid #ced4da;
 }
 </style>

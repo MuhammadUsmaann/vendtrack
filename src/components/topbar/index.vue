@@ -12,16 +12,21 @@
                     <div class="dropdown notification-list nav-pro-img">
                         <a class="dropdown-toggle nav-link arrow-none nav-user" data-toggle="dropdown" href="#"
                             role="button" aria-haspopup="false" aria-expanded="false">
-                            <img src="assets/images/user-4.jpg" alt="user" class="rounded-circle">
+                            <img src="assets/images/user-4.jpg" alt="user" class="contact-img rounded-circle">
                             <span class="font-14 font-black ml-2">Vani Hedge</span>
-                            <i class="fa-solid fa-angle-down ml-2 mt-1"></i>
+                            <img class = "font-14 font-black ml-2" src="../../assets/headerdropdownicon.svg"/>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
                             <!-- item-->
-                            <a class="dropdown-item" href="#"><i class="mdi mdi-account-circle"></i> Profile</a>
-                            <a class="dropdown-item d-block" href="#"><span
-                                    class="badge btn-orange float-right">11</span><i class="mdi mdi-settings"></i>
-                                Settings</a>
+                            <router-link to="/profile" class="waves-effect dropdown-item">
+                                <i class="mdi mdi-account-circle"></i> Profile
+                            </router-link>
+
+                            <router-link to="/profile" class="waves-effect dropdown-item">
+                                <span class="badge btn-orange float-right">11</span><i class="mdi mdi-settings"></i>
+                                Settings
+                            </router-link>
+
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item text-danger" href="#"><i class="mdi mdi-power text-danger"></i>
                                 Logout</a>
@@ -51,4 +56,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
 </style>

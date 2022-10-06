@@ -35,7 +35,7 @@
             <div class="bg-white  px-3  text-center h-100">
               <div class="row  m-0">
                 <div class="col-8 py-0 pl-1 text-left">
-                  <h3 class="font-22 font-weight-700 font-black">{{ item.col1.name }}</h3>
+                  <h3 class="dashboard-subheading">{{ item.col1.name }}</h3>
                 </div> 
                 <div class="col-4 text-right px-0 py-0">
                   <p class="font-20 font-weight-700 font-black">{{ item.col1.rate }}</p>
@@ -73,7 +73,7 @@
             <div class="bg-white  px-3  text-center h-100">
               <div class="row  m-0">
                 <div class="col-8 py-0 pl-1 text-left">
-                  <h3 class="font-22 font-weight-700 font-black">{{ item.col2.name }}</h3>
+                  <h3 class="dashboard-subheading">{{ item.col2.name }}</h3>
                 </div>
                 <div class="col-4 text-right px-0 py-0">
                   <p class="font-20 font-weight-700 font-black">{{ item.col2.rate }}</p>
@@ -111,7 +111,7 @@
             <div class="bg-white  px-3  text-center h-100">
               <div class="row  m-0">
                 <div class="col-8 py-0 pl-1 text-left">
-                  <h3 class="font-22 font-weight-700 font-black">{{ item.col2.name }}</h3>
+                  <h3 class="dashboard-subheading">{{ item.col2.name }}</h3>
                 </div>
                 <div class="col-4 text-right px-0 py-0">
                   <p class="font-20 font-weight-700 font-black">{{ item.col2.rate }}</p>

@@ -1,5 +1,5 @@
 <template>
-    <div class="report-generator rounded bg-white px-3 py-4">
+    <div class="report-generator  rounded bg-white px-3 py-4">
         <div class="row mx-0 align-item-center">
             <div class="col-md col-sm-6 col-12 px-0">
                 <CHeading content="Report Generator" />
@@ -20,29 +20,27 @@
 
         <div class="row ">
             <div class="col-6 col-md-3 margin-1">
-                <p class="font-14 font-weight-700 m-0 font-black mb-1">Start Date <img src="../assets/info.svg"
-                        alt="" /></p>
+
+                <b-tooltip target="sdate-btn" placement="right">Tooltip Title</b-tooltip>
+                <p class="input-label mb-1">Start Date <img id = "sdate-btn" src="../assets/info.svg"  alt="" /></p>
                 <DatePicker v-model="startdate" format="YYYY-MM-DD" type="date"></DatePicker>
-                <!-- <b-form-group label="Start Date " label-for="FirstName" class="font-14 font-weight-700 m-0 font-black">
-                    <b-form-input id="StartDate"></b-form-input>
-                </b-form-group> -->
+
             </div>
             <div class="col-6 col-md-3 margin-1">
-                <p class="font-14 font-weight-700 m-0 font-black mb-1">End Date <img src="../assets/info.svg"
-                        alt="" /></p>
+                <b-tooltip target="edate-btn" placement="right">Tooltip Title</b-tooltip>
+                <p class="input-label mb-1">End Date <img id  = "edate-btn" src="../assets/info.svg" alt="" /></p>
                 <DatePicker v-model="enddate" format="YYYY-MM-DD" type="date"></DatePicker>
-                <!-- <b-form-group label="Start Date " label-for="FirstName" class="font-14 font-weight-700 m-0 font-black">
-                    <b-form-input id="StartDate"></b-form-input>
-                </b-form-group> -->
+
             </div>
-            <div class="col-6 col-md-3 m-0">
-                <p class="font-14 font-weight-700 m-0 font-black pb-1">Sales To <img src="../assets/info.svg" alt="">
+            <div class="col-6 col-md-3">
+                <b-tooltip target="sales-btn" placement="right">Tooltip Title</b-tooltip>
+                <p class="input-label pb-1">Sales To <img id = "sales-btn" src="../assets/info.svg" alt="">
                 </p>
                 <b-form-select :options="dropselect"></b-form-select>
             </div>
-            <div class="col-6 col-md-3 m-0">
-                <p class="font-14 font-weight-700 m-0 font-black pb-1">Display Reports By <img
-                        src="../assets/info.svg" alt=""></p>
+            <div class="col-6 col-md-3">
+                <b-tooltip target="display-btn" placement="right">Tooltip Title</b-tooltip>
+                <p class="input-label pb-1">Display Reports By <img id = "display-btn" src="../assets/info.svg" alt=""></p>
                 <b-form-select :options="dropselect"></b-form-select>
             </div>
         </div>
@@ -50,8 +48,8 @@
 
         <div class="row mt-0">
             <div class="col-6">
-                <div class="font-14 font-weight-700 font-black pb-1">Unit of Measures <img src="../assets/info.svg"
-                        alt="">
+                <b-tooltip target="unit-btn" placement="right">Tooltip Title</b-tooltip>
+                <div class="input-label pb-1">Unit of Measures <img id = "unit-btn" src="../assets/info.svg" alt="">
                 </div>
                 <div class="font-13 font-weight-600 font-black ">
                     <div>
@@ -61,8 +59,8 @@
                 </div>
             </div>
             <div class="col-6">
-                <div class="font-14 font-weight-700 font-black pb-1">Table Headers <img src="../assets/info.svg"
-                        alt="">
+                <b-tooltip target="table-btn" placement="right">Tooltip Title</b-tooltip>
+                <div class="input-label pb-1" >Table Headers <img id="table-btn" src="../assets/info.svg" alt="">
                 </div>
                 <div class="font-13 font-weight-600 font-black ">
                     <div>
@@ -74,14 +72,15 @@
             </div>
         </div>
 
-        <div class="font-14 font-weight-700 font-black pt-4">Select Filters <img src="../assets/info.svg" alt="">
+        <b-tooltip target="filter-btn" placement="right">Tooltip Title</b-tooltip>
+        <div class="input-label pt-4">Select Filters <img src="../assets/info.svg"  id="filter-btn" alt="">
         </div>
 
         <div class="row pt-2">
             <div class="col-sm-6 col-12 ">
                 <div class="d-flex  w-100">
                     <nav class="position-relative">
-                        <div class="nav nav-tabs d-flex flex-column border-bottom-0 h-100" id="nav-tab" role="tablist">
+                        <div class="nav nav-tabs d-flex flex-column border-bott h-100" id="nav-tab" role="tablist">
 
                             <a class="nav-item nav-link active font-black font-14" id="nav-customers-tab"
                                 data-toggle="tab" href="#nav-customers" role="tab" aria-controls="nav-customers"
@@ -215,7 +214,7 @@
             </div>
             <div class="col-sm-6 col-12 ">
                 <div>
-                    <p class="font-14 font-weight-700 font-black pb-1">Customers</p>
+                    <p class="input-label pb-1">Customers</p>
                     <div>
                         <span v-for="(list, index) in selectedcutomer" :key="index">
                             <span class="multiselect__tag"><span>{{ list }}</span> <i aria-hidden="true" tabindex="1"
@@ -227,7 +226,7 @@
                 </div>
 
                 <div class="pt-4">
-                    <p class="font-14 font-weight-700 font-black pb-1">Distributors</p>
+                    <p class="input-label pb-1">Distributors</p>
                     <div>
                         <span v-for="(list, index) in selecteddistributers" :key="index">
                             <span class="multiselect__tag"><span>{{ list }}</span> <i aria-hidden="true" tabindex="1"
@@ -238,34 +237,35 @@
                     </div>
                 </div>
 
-                <div class = "pt-4">
-                    <p class="font-14 font-weight-700 font-black pb-1">Districts</p>
-                <div>
-                    <span v-for="(list, index) in selecteddistrict" :key="index">
-                        <span class="multiselect__tag"><span>{{ list }}</span> <i aria-hidden="true" tabindex="1"
-                                class="multiselect__tag-icon"></i></span><span v-if="index+1 < selecteddistrict.length">
+                <div class="pt-4">
+                    <p class="input-label pb-1">Districts</p>
+                    <div>
+                        <span v-for="(list, index) in selecteddistrict" :key="index">
+                            <span class="multiselect__tag"><span>{{ list }}</span> <i aria-hidden="true" tabindex="1"
+                                    class="multiselect__tag-icon"></i></span><span
+                                v-if="index+1 < selecteddistrict.length">
+                            </span>
                         </span>
-                    </span>
-                </div>
+                    </div>
                 </div>
 
-                <div class = "pt-4">
-                    <p class="font-14 font-weight-700 font-black pb-1">Territories</p>
-                <div>
-                    <span v-for="(list, index) in selectedterritory" :key="index">
-                        <span class="multiselect__tag"><span>{{ list }}</span> <i aria-hidden="true" tabindex="1"
-                                class="multiselect__tag-icon"></i></span><span
-                            v-if="index+1 < selectedterritory.length">
+                <div class="pt-4">
+                    <p class="input-label pb-1">Territories</p>
+                    <div>
+                        <span v-for="(list, index) in selectedterritory" :key="index">
+                            <span class="multiselect__tag"><span>{{ list }}</span> <i aria-hidden="true" tabindex="1"
+                                    class="multiselect__tag-icon"></i></span><span
+                                v-if="index+1 < selectedterritory.length">
+                            </span>
                         </span>
-                    </span>
-                </div>
+                    </div>
                 </div>
 
 
             </div>
         </div>
         <div class="text-center pt-5 pb-5">
-            <button class="btn btn-outline-secondary mr-3"><i class="fa-solid fa-times"></i> Reset </button>
+            <button class="btn  btn-light mr-3"><i class="fa-solid fa-times"></i> Reset </button>
             <router-link to="/report-generator" class="waves-effect">
                 <button class="btn btn-orange"><i class="fa-solid fa-check"></i> Generate </button>
             </router-link>
@@ -297,8 +297,8 @@ export default {
             startdate: null,
             enddate: null,
             ex4: ['orange darken-3'],
-            selectedcutomer: ["Starbucks","Facebook","Bank of America","MasterCard"],
-            selecteddistributers: ["Facebook","Bank of America","MasterCard"],
+            selectedcutomer: ["Starbucks", "Facebook", "Bank of America", "MasterCard"],
+            selecteddistributers: ["Facebook", "Bank of America", "MasterCard"],
             selecteddistrict: ["Starbucks"],
             selectedterritory: ["Fortuner"],
 
@@ -370,11 +370,6 @@ export default {
 
 </script>
 <style scoped>
-.btn-orange {
-    background: #FF7E1D;
-    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15);
-    color: #ffffff;
-}
 
 .v-select.v-select--chips:not(.v-text-field--single-line).v-text-field--enclosed .v-select__selections {
     min-height: 56px;
@@ -446,6 +441,10 @@ nav {
 
 .nav-tabs .ad {
     border-right: 1px solid #CECECE;
+}
+
+.nav-tabs {
+    border-bottom: none !important;
 }
 
 .nav-link {

@@ -210,7 +210,7 @@ html {
   background-color: rgba(34, 36, 55, 0.05);
 }
 
-.notification-list .nav-user img {
+.notification-list .nav-user .contact-img {
   height: 36px;
   width: 36px;
 }
@@ -502,15 +502,15 @@ html {
 }
 
 .enlarged #wrapper .left.side-menu #sidebar-menu > ul > li > a {
-  padding: 15px 20px;
+  /* padding: 15px 20px; */
   -webkit-transition: none;
   transition: none;
 }
 
-.enlarged #wrapper .left.side-menu #sidebar-menu > ul > li > a:hover, .enlarged #wrapper .left.side-menu #sidebar-menu > ul > li > a:active, .enlarged #wrapper .left.side-menu #sidebar-menu > ul > li > a:focus {
+/* .enlarged #wrapper .left.side-menu #sidebar-menu > ul > li > a:hover, .enlarged #wrapper .left.side-menu #sidebar-menu > ul > li > a:active, .enlarged #wrapper .left.side-menu #sidebar-menu > ul > li > a:focus {
   color: #f6f6f6;
   background-color: #2e304a;
-}
+} */
 
 .enlarged #wrapper .left.side-menu #sidebar-menu > ul > li > a i {
   font-size: 18px;
@@ -553,9 +553,9 @@ html {
 
 /******* Responsive *******/
 @media (min-width: 769px) {
-  .enlarged {
+  /* .enlarged {
     min-height: 1200px;
-  }
+  } */
   .enlarged .slimscroll-menu {
     overflow: inherit !important;
   }
@@ -611,6 +611,9 @@ html {
   }
   .footer {
     left: 0 !important;
+  }
+  .side-menu{
+    /* width: 0px; */
   }
 }
 

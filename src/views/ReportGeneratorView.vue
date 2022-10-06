@@ -30,92 +30,44 @@
     </div>
     <div class="border rounded-sm bg-light-gray p-2 mx-0 mt-3 justify-content-between row ">
       <div class="px-2 col-md-auto col-6 col-sm-4">
-        <div class="font-14 font-weight-700 font-black w-max-content">Start Date</div>
+        <div class="input-label">Start Date</div>
         <div class="font-13 font-weight-600 font-black mt-1 font-mono">03/08/2022</div>
       </div>
       <div class="px-2 col-md-auto col-6 col-sm-4">
-        <div class="font-14 font-weight-700 font-black w-max-content">End Date</div>
+        <div class="input-label">End Date</div>
         <div class="font-13 font-weight-600 font-black mt-1 font-mono">03/08/2022</div>
       </div>
       <div class="px-2 col-md-auto col-6 col-sm-4">
-        <div class="font-14 font-weight-700 font-black w-max-content">Unit of Measure</div>
+        <div class="input-label">Unit of Measure</div>
         <div class="font-13 font-weight-600 font-black mt-1 font-mono">Dollars</div>
       </div>
       <div class="px-2 col-md-auto col-6 col-sm-4">
-        <div class="font-14 font-weight-700 font-black w-max-content">Sales to</div>
+        <div class="input-label">Sales to</div>
         <div class="font-13 font-weight-600 font-black mt-1 font-mono">Distributors</div>
       </div>
       <div class="px-2 col-md-auto col-6 col-sm-4">
-        <div class="font-14 font-weight-700 font-black w-max-content">Reports By</div>
+        <div class="input-label">Reports By</div>
         <div class="font-13 font-weight-600 font-black mt-1 font-mono">Customers</div>
       </div>
       <div class="px-2 col-md-auto col-6 col-sm-4">
-        <div class="font-14 font-weight-700 font-black w-max-content">Regions</div>
+        <div class="input-label">Regions</div>
         <div class="font-13 font-weight-600 font-black mt-1 font-mono">A,D,G</div>
-        <!-- <div class="font-13 font-weight-600 font-black custom-input-hh">
-          <v-select v-model="regionsValue" :items="regions" label="" multiple class="d-inline-block p-0">
-            <template v-slot:selection="{ item, index }">
-              <v-chip v-if="index === 0" class="bg-extra-light-ornge rounded-0 px-2 py-2">
-                <span class="">{{ item }}</span>
-              </v-chip>
-              <span v-if="index === 1" class="grey--text text-caption btn-orange px-2 py-2 rounded-sm">
-                +{{ regionsValue.length - 1 }}
-              </span>
-            </template>
-          </v-select>
-        </div> -->
+        
       </div>
       <div class="px-2 col-md-auto col-6 col-sm-4">
-        <div class="font-14 font-weight-700 font-black w-max-content">State</div>
+        <div class="input-label">State</div>
         <div class="font-13 font-weight-600 font-black mt-1 font-mono">NY,SF,NV</div>
 
-        <!-- <div class="font-13 font-weight-600 font-black custom-input-hh">
-          <v-select v-model="categoryValue" :items="Categories" label="" multiple class="d-inline-block p-0">
-            <template v-slot:selection="{ item, index }">
-              <v-chip v-if="index === 0" class="bg-extra-light-ornge rounded-0 px-2 py-2">
-                <span class="">{{ item }}</span>
-              </v-chip>
-              <span v-if="index === 1" class="grey--text text-caption btn-orange px-2 py-2 rounded-sm">
-                +{{ categoryValue.length - 1 }}
-              </span>
-            </template>
-          </v-select>
-        </div> -->
       </div>
       <div class="px-2 col-md-auto col-6 col-sm-4">
-        <div class="font-14 font-weight-700 font-black w-max-content">National Account</div>
+        <div class="input-label">National Account</div>
         <div class="font-13 font-weight-600 font-black mt-1 font-mono">Some Info 1, Info,2</div>
 
-        <!-- <div class="font-13 font-weight-600 font-black custom-input-hh">
-          <v-select v-model="headersValue" :items="Headers" label="" multiple class="d-inline-block p-0">
-            <template v-slot:selection="{ item, index }">
-              <v-chip v-if="index === 0" class="bg-extra-light-ornge rounded-0 px-2 py-2">
-                <span class="">{{ item }}</span>
-              </v-chip>
-              <span v-if="index === 1" class="grey--text text-caption btn-orange px-2 py-2 rounded-sm">
-                +{{ headersValue.length - 1 }}
-              </span>
-            </template>
-          </v-select>
-        </div> -->
       </div>
       <div class="px-2 col-md-auto col-12 col-sm-4">
-        <div class="font-14 font-weight-700 font-black w-max-content">Distributors</div>
+        <div class="input-label">Distributors</div>
         <div class="font-13 font-weight-600 font-black mt-1 font-mono">Alex Hales, Jackson Morrison</div>
 
-        <!-- <div class="font-13 font-weight-600 font-black custom-input-hh">
-          <v-select v-model="SelectFiltersValue" :items="SelectFilters" label="" multiple
-            class="d-inline-block p-0 p-0">
-            <template v-slot:selection="{ item, index }">
-              <v-chip v-if="index === 0" class="bg-extra-light-ornge rounded-0 px-2 py-2">
-                <span class="">{{ item }}</span>
-              </v-chip>
-              <span v-if="index === 1" class="grey--text text-caption btn-orange px-2 py-2 rounded-sm">
-                +{{ SelectFiltersValue.length - 1 }}
-              </span>
-            </template>
-          </v-select>
-        </div> -->
       </div>
     </div>
     <div class="font-20 font-weight-700 font-black mt-4 mb-1">Results</div>
@@ -155,11 +107,11 @@ export default {
     }
   },
   data: () => ({
-    perPage: 10,
+    perPage: 20,
     currentPage: 1,
 
     fields: [
-      { label: 'Chain', key: 'chain' },
+      { label: 'Chain', key: 'chain',sortable:true },
       { label: 'Customer', key: 'customer',  },
       { label: 'Year', key: 'year' },
       { label: 'Q1', key: 'q1',class:'rightAligned' },
@@ -171,6 +123,216 @@ export default {
     ],
     
     items: [
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
+      {
+        chain: 'Louis Vuitton',
+        customer: 'Valerie Ahorro',
+        year: 2022,
+        q1: '7,791',
+        q2: '5,545',
+        q3: '4,544',
+        ytdTotal: '10,121',
+        total: '10,121'
+      },
       {
         chain: 'Louis Vuitton',
         customer: 'Valerie Ahorro',
