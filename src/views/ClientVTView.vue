@@ -141,13 +141,14 @@
         </b-form>
       </div>
       <div class="text-center pt-3 mt-2">
-        <button class="btn btn-light mr-3">
-          <i class="fa-solid fa-times"></i> Cancel
+        <button class="btn btn-light mr-3 d-inline-flex justify-content-center align-items-center">
+          <img src="../assets/cancel.svg" alt="" class="mr-2" /> <span>Cancel</span>
         </button>
-        <button class="btn btn-orange">
-          <i class="fa-solid fa-check"></i> Save
+        <button class="btn btn-orange d-inline-flex justify-content-center align-items-center">
+          <img src="../assets/check.svg" alt="" class="mr-2" /> Save
         </button>
       </div>
+
     </div>
   </div>
 </template>

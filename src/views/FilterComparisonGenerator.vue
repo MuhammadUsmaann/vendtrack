@@ -21,8 +21,8 @@
         <div class="row ">
             <div class="col-12 col-lg-6 m-0">
                 <b-tooltip target="multi-btns" placement="top">Tooltip Title</b-tooltip>
-                <p class="pb-1  input-label m-0 "> Time and Frequency <img
-                        src="../assets/info.svg" id = "multi-btns" alt=""/><span class="font-10 font-mono pl-3 ">All Comparison reports
+                <p class="pb-1  input-label m-0 "> Time and Frequency <img src="../assets/info.svg" id="multi-btns"
+                        alt="" /><span class="font-10 font-mono pl-3 ">All Comparison reports
                         will be run
                         period to date</span></p>
 
@@ -49,13 +49,14 @@
             </div>
             <div class="col-6 col-lg-3 m-0">
                 <b-tooltip target="sales-btn" placement="right">Tooltip Title</b-tooltip>
-                <p class="input-label m-0 pb-1">Sales To <img src="../assets/info.svg" id = "sales-btn" alt="" />
+                <p class="input-label m-0 pb-1">Sales To <img src="../assets/info.svg" id="sales-btn" alt="" />
                 </p>
                 <b-form-select :options="dropselect"></b-form-select>
             </div>
             <div class="col-6 col-lg-3 m-0">
                 <b-tooltip target="display-btn" placement="right">Tooltip Title</b-tooltip>
-                <p class="input-label m-0 pb-1">Display Reports By <img id = "display-btn" src="../assets/info.svg" alt="" />
+                <p class="input-label m-0 pb-1">Display Reports By <img id="display-btn" src="../assets/info.svg"
+                        alt="" />
                 </p>
                 <b-form-select :options="dropselect"></b-form-select>
             </div>
@@ -65,8 +66,7 @@
         <div class="row">
             <div class="col-6 pt-0">
                 <b-tooltip target="unit-btn" placement="right">Tooltip Title</b-tooltip>
-                <div class="input-label pb-1">Unit of Measures <img id = "unit-btn" src="../assets/info.svg"
-                        alt="">
+                <div class="input-label pb-1">Unit of Measures <img id="unit-btn" src="../assets/info.svg" alt="">
                 </div>
                 <div class="font-13 font-weight-600 font-black ">
                     <div>
@@ -78,7 +78,7 @@
             </div>
             <div class="col-6 pt-0">
                 <b-tooltip target="table-btn" placement="right">Tooltip Title</b-tooltip>
-                <div class="input-label pb-1">Table Headers <img id = "table-btn" src="../assets/info.svg" alt="">
+                <div class="input-label pb-1">Table Headers <img id="table-btn" src="../assets/info.svg" alt="">
                 </div>
                 <div class="font-13 font-weight-600 font-black ">
                     <div>
@@ -91,7 +91,7 @@
         </div>
 
         <b-tooltip target="filter-btn" placement="right">Tooltip Title</b-tooltip>
-        <div class="input-label pt-4">Select Filters <img id = "filter-btn" src="../assets/info.svg" alt="">
+        <div class="input-label pt-4">Select Filters <img id="filter-btn" src="../assets/info.svg" alt="">
         </div>
         <div class="row pt-2">
             <div class="col-sm-6 col-12 ">
@@ -282,11 +282,17 @@
             </div>
         </div>
         <div class="text-center pt-5 pb-5">
-            <button class="btn btn-light mr-3"><i class="fa-solid fa-times"></i> Reset </button>
+            <button class="btn btn-light mr-3 d-inline-flex justify-content-center align-items-center">
+                <img src="../assets/cancel.svg" alt="" class="mr-2" /> <span>Reset</span>
+            </button>
             <router-link to="/report-generator-comparison-view" class="waves-effect">
-                <button class="btn btn-orange"><i class="fa-solid fa-check"></i> Generate </button>
+                <button class="btn btn-orange d-inline-flex justify-content-center align-items-center">
+                    <img src="../assets/check.svg" alt="" class="mr-2" /> Generate
+                </button>
             </router-link>
+
         </div>
+       
 
 
 
@@ -384,8 +390,6 @@ export default {
 
 </script>
 <style scoped>
-
-
 .v-select.v-select--chips:not(.v-text-field--single-line).v-text-field--enclosed .v-select__selections {
     min-height: 56px;
 }
@@ -463,5 +467,8 @@ nav {
 
 .minus-margin {
     margin-top: -11px
+}
+a:hover{
+  text-decoration: none !important;
 }
 </style>

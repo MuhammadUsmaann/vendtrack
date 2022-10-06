@@ -49,7 +49,7 @@
                         </router-link>
                     </li>
                     <li>
-                        <router-link to="/profile" class="waves-effect">
+                        <router-link to="/''" class="waves-effect">
                             <img src="../../assets/BrokerScorecard.svg" alt="">
                             <span> Broker Scorecard </span>
                         </router-link>

@@ -265,14 +265,16 @@
             </div>
         </div>
         <div class="text-center pt-5 pb-5">
-            <button class="btn  btn-light mr-3"><i class="fa-solid fa-times"></i> Reset </button>
+            <button class="btn btn-light mr-3 d-inline-flex justify-content-center align-items-center">
+                <img src="../assets/cancel.svg" alt="" class="mr-2" /> <span>Reset</span>
+            </button>
             <router-link to="/report-generator" class="waves-effect">
-                <button class="btn btn-orange"><i class="fa-solid fa-check"></i> Generate </button>
+                <button class="btn btn-orange d-inline-flex justify-content-center align-items-center">
+                    <img src="../assets/check.svg" alt="" class="mr-2" /> Generate
+                </button>
             </router-link>
+
         </div>
-
-
-
     </div>
 
 </template>
@@ -370,7 +372,9 @@ export default {
 
 </script>
 <style scoped>
-
+a:hover{
+  text-decoration: none !important;
+}
 .v-select.v-select--chips:not(.v-text-field--single-line).v-text-field--enclosed .v-select__selections {
     min-height: 56px;
 }

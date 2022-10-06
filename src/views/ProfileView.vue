@@ -118,8 +118,10 @@
                 </div>
                 <div class="col px-0 text-right">
 
-                  <button class="font-16 btn text-white btn-orange ml-2 mb-2" @click="$bvModal.show('addNewGroup')"><i
-                      class="fa-solid fa-plus"></i> Add </button>
+                  <button class="btn btn-orange ml-2 d-inline-flex justify-content-center align-items-center"
+                  @click="$bvModal.show('addNewGroup')"><img src="../assets/plus.svg" alt="" class="pr-1">
+                    Add
+                  </button>
                 </div>
               </div>
 
@@ -143,11 +145,11 @@
                     <div small class="mr-3 cursor-pointer" v-if="!item.editing" @click="doEdit(item)">
                       <img src="../assets/UserInterface.svg" alt="">
                     </div>
-                    <span class="p-1 cursor-pointer" v-if="item.editing" @click="doSave(item)" variant="success">
-                      <span class="p-1 font-10 btn-light rounded-xl">save</span>
-                    </span>
                     <span class="p-1 cursor-pointer" v-if="item.editing" @click="doCancel(item)" variant="danger">
-                      <span class="p-1 font-10 btn-light rounded-xl">cancel</span>
+                      <img src="../assets/x-circle.svg" alt="">
+                    </span>
+                    <span class="p-1 cursor-pointer" v-if="item.editing" @click="doSave(item)" variant="success">
+                      <img src="../assets/check-circle.svg" alt="">
                     </span>
                   </div>
                 </template>
@@ -175,11 +177,11 @@
                     <div small class="mr-3 cursor-pointer" v-if="!item.editing" @click="doEdit(item)">
                       <img src="../assets/UserInterface.svg" alt="">
                     </div>
-                    <span class="p-1 cursor-pointer" v-if="item.editing" @click="doSave(item)" variant="success">
-                      <span class="p-1 font-10 btn-light rounded-xl">save</span>
-                    </span>
                     <span class="p-1 cursor-pointer" v-if="item.editing" @click="doCancel(item)" variant="danger">
-                      <span class="p-1 font-10 btn-light rounded-xl">cancel</span>
+                      <img src="../assets/x-circle.svg" alt="">
+                    </span>
+                    <span class="p-1 cursor-pointer" v-if="item.editing" @click="doSave(item)" variant="success">
+                      <img src="../assets/check-circle.svg" alt="">
                     </span>
                   </div>
                 </template>
@@ -215,11 +217,11 @@
         </div>
       </div>
       <div class="text-center pt-3 mt-2">
-        <button class="btn btn-light mr-3">
-          <i class="fa-solid fa-times"></i> Cancel
+        <button class="btn btn-light mr-3 d-inline-flex justify-content-center align-items-center">
+          <img src="../assets/cancel.svg" alt="" class="mr-2" /> <span>Cancel</span>
         </button>
-        <button class="btn btn-orange">
-          <i class="fa-solid fa-check"></i> Save
+        <button class="btn btn-orange d-inline-flex justify-content-center align-items-center">
+          <img src="../assets/check.svg" alt="" class="mr-2" /> Save
         </button>
       </div>
     </div>
@@ -237,8 +239,7 @@
             </v-col>
           </b-row>
           <div class="text-center pt-2">
-            <button type="submit" @click="$bvModal.hide('addNewGroup')"
-              class="px-3 mt-3 btn btn-orange">Save</button>
+            <button type="submit" @click="$bvModal.hide('addNewGroup')" class="px-3 mt-3 btn btn-orange">Save</button>
 
           </div>
         </b-form>

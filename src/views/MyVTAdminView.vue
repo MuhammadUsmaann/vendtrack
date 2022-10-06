@@ -19,7 +19,8 @@
             src="../assets/excel.svg" alt="" class="pr-1">
           <div class="d-md-inline-block d-none"> Export in Excel</div>
         </button>
-        <button class="btn btn-orange ml-2" @click="$bvModal.show('addUser')"><i class="fa-solid fa-plus"></i> Add
+        <button class="btn btn-orange ml-2 d-inline-flex justify-content-center align-items-center" @click="$bvModal.show('addUser')"><img src="../assets/plus.svg" alt=""
+            class="pr-1"> <span>Add</span>
           <div class="d-md-inline-block d-none"> User</div>
         </button>
       </div>
@@ -39,11 +40,11 @@
             <div small class="mr-2 text-center cursor-pointer" v-if="!item.editing" @click="doEdit(item)">
               <img src="../assets/UserInterface.svg" alt="">
             </div>
-            <span class="p-1 cursor-pointer" v-if="item.editing" @click="doSave(item)" variant="success">
-              <span class = "p-1 font-10 btn-light rounded-xl">save</span>
-            </span>
             <span class="p-1 cursor-pointer" v-if="item.editing" @click="doCancel(item)" variant="danger">
-              <span class = "p-1 font-10 btn-light rounded-xl">cancel</span>
+              <img src="../assets/x-circle.svg" alt="">
+            </span>
+            <span class="p-1 cursor-pointer" v-if="item.editing" @click="doSave(item)" variant="success">
+              <img src="../assets/check-circle.svg" alt="">
             </span>
           </div>
         </template>
@@ -115,9 +116,10 @@
             </v-col>
           </b-row>
           <div class="text-center">
-            <b-button type="submit" @click="$bvModal.hide('addUser')" variant="orange" class="text-white px-3 mt-3"><i
-                class="fas pr-1 fa-check"></i> Save</b-button>
-
+            <b-button type="submit" @click="$bvModal.hide('addUser')" variant="orange"
+              class="  d-inline-flex justify-content-center align-items-center">
+              <img src="../assets/check.svg" alt="" class="mr-2" /> Save
+            </b-button>
           </div>
         </b-form>
       </div>
@@ -522,7 +524,8 @@ export default {
   /* height: 88vh !important;
   overflow-y: auto; */
 }
-.dropbtn{
+
+.dropbtn {
   height: 40px !important;
   border: 1px solid #ced4da;
 }
