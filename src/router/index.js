@@ -5,6 +5,7 @@ import ReportGenerator from '../views/ReportGeneratorView.vue'
 import FilterSalesGenerator from '../views/FilterReportGenerator'
 import FilterComparisonGenerator from '../views/FilterComparisonGenerator'
 import ReportGeneratorComparisonView from '../views/ReportGeneratorViewComparison'
+import PromotionView from '../views/PromotionView.vue'
 
 import WhosReported from '../views/WhosReportedView.vue'
 import YtdPurchase from '../views/PurchaseView.vue'
@@ -25,6 +26,11 @@ const routes = [
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/promotion',
+    name: 'Promotion',
+    component: PromotionView
   },
   {
     path: '/report-generator',

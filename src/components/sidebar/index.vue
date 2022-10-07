@@ -5,11 +5,17 @@
             <div id="sidebar-menu">
                 <!-- Left Menu Start -->
                 <ul class="metismenu" id="side-menu">
-                    <li>
+                    <!-- <li>
                         <router-link to="/purchase" class="waves-effect">
                             <div class="active-li"></div>
                             <img src="../../assets/home.svg" alt="">
                             <span> Home </span>
+                        </router-link>
+                    </li> -->
+                    <li>
+                        <router-link to="/purchase" class="waves-effect">
+                            <img src="../../assets/Dashboard.svg" alt="">
+                            <span> Dashboard </span>
                         </router-link>
                     </li>
                     <li>
@@ -24,12 +30,7 @@
                             <span> Report Generator </span>
                         </router-link>
                     </li>
-                    <li>
-                        <router-link to="/''" class="waves-effect">
-                            <img src="../../assets/Dashboard.svg" alt="">
-                            <span> Dashboard </span>
-                        </router-link>
-                    </li>
+                   
                     <li>
                         <router-link to="/rapid-reports" class="waves-effect">
                             <img src="../../assets/RapidReports.svg" alt="">

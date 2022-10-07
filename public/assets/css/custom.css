@@ -100,7 +100,9 @@ h3 {
 .align-item-center {
     align-items: center;
 }
-
+.rounded-lg{
+    border-radius: 10px !important;
+}
 .rounded-xl {
     border-radius: 20px !important;
 }
@@ -126,11 +128,13 @@ h3 {
 .btn-light-orange {
     background: #fff7f1;
     color: #FF7E1D;
+
 }
 
 .btn-orange {
     background: #FF7E1D;
     color: white !important;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .btn-orange:hover {
