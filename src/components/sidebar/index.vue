@@ -98,6 +98,12 @@
                             <span> WOW </span>
                         </router-link>
                     </li>
+                    <li>
+                        <router-link to="/promotion" class="waves-effect">
+                            <img src="../../assets/wow.svg" alt="">
+                            <span> Promotion </span>
+                        </router-link>
+                    </li>
                     
                 </ul>
             </div>
