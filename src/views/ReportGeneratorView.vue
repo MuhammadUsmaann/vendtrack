@@ -103,7 +103,7 @@ export default {
   },
   computed: {
     rows() {
-      return this.items.length
+      return this.items.length;
     }
   },
   data: () => ({
@@ -111,7 +111,7 @@ export default {
     currentPage: 1,
 
     fields: [
-      { label: 'Chain', key: 'chain',sortable:true },
+      { label: 'Chain', key: 'chain'},
       { label: 'Customer', key: 'customer',  },
       { label: 'Year', key: 'year' },
       { label: 'Q1', key: 'q1',class:'rightAligned' },
