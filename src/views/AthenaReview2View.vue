@@ -253,8 +253,8 @@ export default {
     ],
     GOPheaders: [
       { text: 'GOP', value: 'GOP', },
-      { text: '2022 TD', value: 'TD2020', align: 'right' },
-      { text: '2022 TD', value: 'TD2021', align: 'right' },
+      { text: '2020 TD', value: 'TD2020', align: 'right' },
+      { text: '2021 TD', value: 'TD2021', align: 'right' },
       { text: '2022 TD', value: 'TD2022', align: 'right' },
       { text: 'CHG 2022 vs 2021', value: 'CHG2022vs2021', align: 'right' },
       { text: 'CHG 2022 vs 2020', value: 'CHG2022vs2020', align: 'right' },

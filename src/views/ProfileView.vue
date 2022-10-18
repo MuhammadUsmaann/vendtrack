@@ -117,7 +117,7 @@
                 </div>
                 <div class="col px-0 text-right">
 
-                  <button class="btn btn-orange ml-2 d-inline-flex justify-content-center align-items-center"
+                  <button class="btn btn-orange mt-2 ml-2 d-inline-flex justify-content-center align-items-center"
                     @click="$bvModal.show('addNewCustomerGroup')"><img src="../assets/plus.svg" alt="" class="pr-1">
                     Add
                   </button>
@@ -153,7 +153,7 @@
                   </div>
                 </template>
               </b-table>
-              <button class="btn btn-orange ml-2 d-inline-flex justify-content-center align-items-center"
+              <button class="btn btn-orange mt-2 ml-2 d-inline-flex justify-content-center align-items-center"
                 @click="$bvModal.show('addNewCustomerGroupRow')"><img src="../assets/plus.svg" alt="" class="pr-1">
                 Add
               </button>
@@ -251,7 +251,7 @@
                   </div>
                 </template>
               </b-table>
-              <button class="btn btn-orange ml-2 d-inline-flex justify-content-center align-items-center"
+              <button class="btn btn-orange ml-2 mt-2 d-inline-flex justify-content-center align-items-center"
                 @click="$bvModal.show('addNewDistributorGroupRow')"><img src="../assets/plus.svg" alt="" class="pr-1">
                 Add
               </button>
