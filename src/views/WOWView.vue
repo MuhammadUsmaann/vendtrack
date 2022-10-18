@@ -57,7 +57,7 @@
         </div>
       </v-col>
     </b-row>
-    <div class="font-20 font-weight-700 font-black mb-3">WOW Sales Perforance (cs)</div>
+    <div class="font-20 font-weight-700 font-black mb-3">WOW Sales Performance (cs)</div>
     <apexchart type="line" height="350" :options="wowchartOptions" :series="wowseries"></apexchart>
     <div class="font-20 font-weight-700 font-black mb-3">POP Sales Performance (CS)</div>
     <apexchart type="line" height="350" :options="popchartOptions" :series="popseries"></apexchart>

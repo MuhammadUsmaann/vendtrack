@@ -61,8 +61,8 @@
                       <p class="font-28 font-weight-700 font-red">{{ item.col1.profit }}</p>
                     </div>
                     <div class="d-flex justify-content-between align-items-center p-2 ">
-                      <p class="font-14 font-weight-700 font-light">{{ item.col1.profityear }}</p>
-                      <p class="font-14 font-weight-700 font-red">{{ item.col1.profitperc }}</p>
+                      <p class="font-14 font-weight-700 font-light">{{ item.col1.lossyear }}</p>
+                      <p class="font-14 font-weight-700 font-red">{{ item.col1.lossperc }}</p>
                     </div>
                   </div>
                 </div>
@@ -99,8 +99,8 @@
                       <p class="font-28 font-weight-700 font-red">{{ item.col2.profit }}</p>
                     </div>
                     <div class="d-flex justify-content-between align-items-center p-2 ">
-                      <p class="font-14 font-weight-700 font-light">{{ item.col2.profityear }}</p>
-                      <p class="font-14 font-weight-700 font-red">{{ item.col2.profitperc }}</p>
+                      <p class="font-14 font-weight-700 font-light">{{ item.col2.lossyear }}</p>
+                      <p class="font-14 font-weight-700 font-red">{{ item.col2.lossperc }}</p>
                     </div>
                   </div>
                 </div>
@@ -137,8 +137,8 @@
                       <p class="font-28 font-weight-700 font-red">{{ item.col2.profit }}</p>
                     </div>
                     <div class="d-flex justify-content-between align-items-center p-2 ">
-                      <p class="font-14 font-weight-700 font-light">{{ item.col2.profityear }}</p>
-                      <p class="font-14 font-weight-700 font-red">{{ item.col2.profitperc }}</p>
+                      <p class="font-14 font-weight-700 font-light">{{ item.col2.lossyear }}</p>
+                      <p class="font-14 font-weight-700 font-red">{{ item.col2.lossperc }}</p>
                     </div>
                   </div>
                 </div>
@@ -166,19 +166,19 @@ export default {
     search: '',
     items: [
       {
-        col1: { name: '2022 CS Sales', rate: '45,200', profit: '40,200', profitperc: '12,82%', profityear: '40,200', loss: '50,100', lossyear: '2020', lossperc: '-10,29' },
-        col2: { name: '2022 $ Sales', rate: '$1,225,300', profit: '40,200', profitperc: '12,82%', profityear: '40,200', loss: '50,100', lossyear: '2020', lossperc: '-10,29' },
-        col3: { name: '2022 Customers', rate: '45,200', profit: '40,200', profitperc: '12,82%', profityear: '40,200', loss: '50,100', lossyear: '2020', lossperc: '-10,29' },
+        col1: { name: '2022 CS Sales', rate: '45,200', profit: '40,200', profitperc: '12,82%', profityear: '2021', loss: '50,100', lossyear: '2020', lossperc: '-10,29' },
+        col2: { name: '2022 $ Sales', rate: '$1,225,300', profit: '40,200', profitperc: '12,82%', profityear: '2021', loss: '50,100', lossyear: '2020', lossperc: '-10,29' },
+        col3: { name: '2022 Customers', rate: '45,200', profit: '40,200', profitperc: '12,82%', profityear: '2021', loss: '50,100', lossyear: '2020', lossperc: '-10,29' },
       },
       {
-        col1: { name: 'Q3 CS Sales', rate: '45,200', profit: '40,200', profitperc: '12,82%', profityear: '40,200', loss: '50,100', lossyear: '2020', lossperc: '-10,29' },
-        col2: { name: 'Q3 $ Sales', rate: '$1,225,300', profit: '40,200', profitperc: '12,82%', profityear: '40,200', loss: '50,100', lossyear: '2020', lossperc: '-10,29' },
-        col3: { name: 'Q3 Customers', rate: '45,200', profit: '40,200', profitperc: '12,82%', profityear: '40,200', loss: '50,100', lossyear: '2020', lossperc: '-10,29' },
+        col1: { name: 'Q3 CS Sales', rate: '45,200', profit: '40,200', profitperc: '12,82%', profityear: 'Q3 2020', loss: '50,100', lossyear: 'Q3 2020', lossperc: '-10,29' },
+        col2: { name: 'Q3 $ Sales', rate: '$1,225,300', profit: '40,200', profitperc: '12,82%', profityear: 'Q3 2020', loss: '50,100', lossyear: 'Q3 2020', lossperc: '-10,29' },
+        col3: { name: 'Q3 Customers', rate: '45,200', profit: '40,200', profitperc: '12,82%', profityear: 'Q3 2020', loss: '50,100', lossyear: 'Q3 2020', lossperc: '-10,29' },
       },
       {
-        col1: { name: 'SEP 2022 CS Sale', rate: '45,200', profit: '40,200', profitperc: '12,82%', profityear: '40,200', loss: '50,100', lossyear: '2020', lossperc: '-10,29' },
-        col2: { name: 'SEP 2022  $ Sales', rate: '$1,225,300', profit: '40,200', profitperc: '12,82%', profityear: '40,200', loss: '50,100', lossyear: '2020', lossperc: '-10,29' },
-        col3: { name: 'SEP 2022  Customers', rate: '45,200', profit: '40,200', profitperc: '12,82%', profityear: '40,200', loss: '50,100', lossyear: '2020', lossperc: '-10,29' },
+        col1: { name: 'SEP 2022 CS Sale', rate: '45,200', profit: '40,200', profitperc: '12,82%', profityear: 'SEP 2020', loss: '50,100', lossyear: 'SEP 2020', lossperc: '-10,29' },
+        col2: { name: 'SEP 2022  $ Sales', rate: '$1,225,300', profit: '40,200', profitperc: '12,82%', profityear: 'SEP 2020', loss: '50,100', lossyear: 'SEP 2020', lossperc: '-10,29' },
+        col3: { name: 'SEP 2022  Customers', rate: '45,200', profit: '40,200', profitperc: '12,82%', profityear: 'SEP 2020', loss: '50,100', lossyear: 'SEP 2020', lossperc: '-10,29' },
       },
     ],
 

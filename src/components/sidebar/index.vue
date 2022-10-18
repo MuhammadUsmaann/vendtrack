@@ -25,7 +25,7 @@
                         </router-link>
                     </li>
                     <li>
-                        <router-link to="/filter-report-generator" class="waves-effect">
+                        <router-link to="/filter-comparison-generator" class="waves-effect">
                             <img src="../../assets/ReportGenerator.svg" alt="">
                             <span> Report Generator </span>
                         </router-link>

@@ -7,6 +7,18 @@
       <div class="col px-0 text-right">
         <span class="font-500 font-14 font-mono mr-1 w-md-100 d-inline-block mb-md-0 mb-2">Last Update:
           02/18/2022</span>
+        <b-dropdown id="dropdown-1" text="Frequency" variant="outline"
+          class="d-inline-block inner-border-light-gray ml-2 inner-font-14 font-weight-500 font-black shadow-sm bg-transparent">
+          <b-dropdown-item>First Action</b-dropdown-item>
+          <b-dropdown-item>Second Action</b-dropdown-item>
+          <b-dropdown-item>Third Action</b-dropdown-item>
+        </b-dropdown>
+        <b-dropdown id="dropdown-1" text="Timeframe" variant="outline"
+          class="d-inline-block inner-border-light-gray ml-2 inner-font-14 font-weight-500 font-black shadow-sm bg-transparent">
+          <b-dropdown-item>First Action</b-dropdown-item>
+          <b-dropdown-item>Second Action</b-dropdown-item>
+          <b-dropdown-item>Third Action</b-dropdown-item>
+        </b-dropdown>
         <b-dropdown id="dropdown-1" text="All Sales" variant="outline"
           class="d-inline-block inner-border-light-gray ml-2 inner-font-14 font-weight-500 font-black shadow-sm bg-transparent">
           <b-dropdown-item>First Action</b-dropdown-item>
@@ -46,7 +58,7 @@
     <v-data-table hide-default-footer :headers="marketSegmentSalesPerformanceHeader"
       :items="marketSegmentSalesPerformance" class="elevation-1">
     </v-data-table>
-    <div class="font-20 font-weight-700 font-black mt-3 mb-3">GPO Sales Perforance</div>
+    <div class="font-20 font-weight-700 font-black mt-3 mb-3">GPO Sales Performance</div>
     <apexchart type="line" height="350" :options="barlinechartOptions" :series="barlineseries"></apexchart>
 
     <div class="font-20 font-weight-700 font-black mt-4 mb-3">GPO Sales Performance</div>
@@ -118,8 +130,8 @@ export default {
   data: () => ({
     marketSegmentSalesPerformanceHeader: [
       { text: 'Market Segment', value: 'productCategory', },
-      { text: '2020 TD', value: 'TD2020', align: 'right' },
-      { text: '2021 TD', value: 'TD2021', align: 'right' },
+      { text: '2022 TD', value: 'TD2020', align: 'right' },
+      { text: '2022 TD', value: 'TD2021', align: 'right' },
       { text: '2022 TD', value: 'TD2022', align: 'right' },
       { text: 'CHG 2022 vs 2021', value: 'CHG2022vs2021', align: 'right' },
       { text: 'CHG 2022 vs 2020', value: 'CHG2022vs2020', align: 'right' },
@@ -130,7 +142,7 @@ export default {
       {
         productCategory: 'Devon Lane',
         CHG2022vs2020: '9,828',
-        TD2020: 'Tio Félix',
+        TD2020: '9,462',
         TD2021: '2022',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
@@ -141,7 +153,7 @@ export default {
       {
         productCategory: 'Devon Lane',
 
-        TD2020: 'Tio Félix',
+        TD2020: '9,462',
         TD2021: '2022',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
@@ -152,7 +164,7 @@ export default {
       {
         productCategory: 'Devon Lane',
 
-        TD2020: 'Tio Félix',
+        TD2020: '9,462',
         TD2021: '2022',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
@@ -163,7 +175,7 @@ export default {
       {
         productCategory: 'Devon Lane',
         CHG2022vs2020: '9,828',
-        TD2020: 'Tio Félix',
+        TD2020: '9,462',
         TD2021: '2022',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
@@ -174,7 +186,7 @@ export default {
       {
         productCategory: 'Devon Lane',
 
-        TD2020: 'Tio Félix',
+        TD2020: '9,462',
         TD2021: '2022',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
@@ -185,7 +197,7 @@ export default {
       {
         productCategory: 'Devon Lane',
 
-        TD2020: 'Tio Félix',
+        TD2020: '9,462',
         TD2021: '2022',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
@@ -196,7 +208,7 @@ export default {
       {
         productCategory: 'Devon Lane',
         CHG2022vs2020: '9,828',
-        TD2020: 'Tio Félix',
+        TD2020: '9,462',
         TD2021: '2022',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
@@ -207,7 +219,7 @@ export default {
       {
         productCategory: 'Devon Lane',
 
-        TD2020: 'Tio Félix',
+        TD2020: '9,462',
         TD2021: '2022',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
@@ -218,7 +230,7 @@ export default {
       {
         productCategory: 'Devon Lane',
 
-        TD2020: 'Tio Félix',
+        TD2020: '9,462',
         TD2021: '2022',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
@@ -229,7 +241,7 @@ export default {
       {
         productCategory: 'Devon Lane',
 
-        TD2020: 'Tio Félix',
+        TD2020: '9,462',
         TD2021: '2022',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
@@ -241,8 +253,8 @@ export default {
     ],
     GOPheaders: [
       { text: 'GOP', value: 'GOP', },
-      { text: '2020 TD', value: 'TD2020', align: 'right' },
-      { text: '2021 TD', value: 'TD2021', align: 'right' },
+      { text: '2022 TD', value: 'TD2020', align: 'right' },
+      { text: '2022 TD', value: 'TD2021', align: 'right' },
       { text: '2022 TD', value: 'TD2022', align: 'right' },
       { text: 'CHG 2022 vs 2021', value: 'CHG2022vs2021', align: 'right' },
       { text: 'CHG 2022 vs 2020', value: 'CHG2022vs2020', align: 'right' },
@@ -253,8 +265,8 @@ export default {
       {
         GOP: 'Devon Lane',
         CHG2022vs2020: '9,828',
-        TD2020: 'Tio Félix',
-        TD2021: '2022',
+        TD2020: '4,600',
+        TD2021: '4,600',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
         'CHG2022vs2021%': '5,948',
@@ -264,8 +276,8 @@ export default {
       {
         GOP: 'Devon Lane',
 
-        TD2020: 'Tio Félix',
-        TD2021: '2022',
+        TD2020: '4,600',
+        TD2021: '4,600',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
         'CHG2022vs2021%': '5,948',
@@ -275,8 +287,8 @@ export default {
       {
         GOP: 'Devon Lane',
 
-        TD2020: 'Tio Félix',
-        TD2021: '2022',
+        TD2020: '4,600',
+        TD2021: '4,600',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
         'CHG2022vs2021%': '5,948',
@@ -286,8 +298,8 @@ export default {
       {
         GOP: 'Devon Lane',
         CHG2022vs2020: '9,828',
-        TD2020: 'Tio Félix',
-        TD2021: '2022',
+        TD2020: '4,600',
+        TD2021: '4,600',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
         'CHG2022vs2021%': '5,948',
@@ -297,8 +309,8 @@ export default {
       {
         GOP: 'Devon Lane',
 
-        TD2020: 'Tio Félix',
-        TD2021: '2022',
+        TD2020: '4,600',
+        TD2021: '4,600',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
         'CHG2022vs2021%': '5,948',
@@ -308,8 +320,8 @@ export default {
       {
         GOP: 'Devon Lane',
 
-        TD2020: 'Tio Félix',
-        TD2021: '2022',
+        TD2020: '4,600',
+        TD2021: '4,600',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
         'CHG2022vs2021%': '5,948',
@@ -319,8 +331,8 @@ export default {
       {
         GOP: 'Devon Lane',
         CHG2022vs2020: '9,828',
-        TD2020: 'Tio Félix',
-        TD2021: '2022',
+        TD2020: '4,600',
+        TD2021: '4,600',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
         'CHG2022vs2021%': '5,948',
@@ -330,8 +342,8 @@ export default {
       {
         GOP: 'Devon Lane',
 
-        TD2020: 'Tio Félix',
-        TD2021: '2022',
+        TD2020: '4,600',
+        TD2021: '4,600',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
         'CHG2022vs2021%': '5,948',
@@ -341,8 +353,8 @@ export default {
       {
         GOP: 'Devon Lane',
 
-        TD2020: 'Tio Félix',
-        TD2021: '2022',
+        TD2020: '4,600',
+        TD2021: '4,600',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
         'CHG2022vs2021%': '5,948',
@@ -352,8 +364,8 @@ export default {
       {
         GOP: 'Devon Lane',
 
-        TD2020: 'Tio Félix',
-        TD2021: '2022',
+        TD2020: '4,600',
+        TD2021: '4,600',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
         'CHG2022vs2021%': '5,948',
@@ -790,32 +802,33 @@ export default {
     },
 
 
-    barlineseries: [{
-      name: '',
-      type: 'column',
-      data: [0, 0, 0, 0]
-    },
-    {
-      name: 'USG',
-      type: 'column',
-      data: [120000, 130000, 90000]
-    }, {
-      name: 'Canteen',
-      type: 'column',
-      data: [130000, 150000, 90000]
-    }, {
-      name: 'Aramark',
-      type: 'column',
-      data: [150000, 110000, 90000]
-    }, {
-      name: 'Sodexo',
-      type: 'column',
-      data: [110000, 130000, 90000]
-    }, {
-      name: 'Total Business',
-      type: 'line',
-      data: [370000, 210000, 200000]
-    }],
+    barlineseries: [
+      {
+        name: '',
+        type: 'column',
+        data: [0, 0, 0, 0]
+      },
+      {
+        name: 'USG',
+        type: 'column',
+        data: [120000, 130000, 90000]
+      }, {
+        name: 'Canteen',
+        type: 'column',
+        data: [130000, 150000, 90000]
+      }, {
+        name: 'Aramark',
+        type: 'column',
+        data: [150000, 110000, 90000]
+      }, {
+        name: 'Sodexo',
+        type: 'column',
+        data: [110000, 130000, 90000]
+      }, {
+        name: 'Total Business',
+        type: 'line',
+        data: [370000, 210000, 200000]
+      }],
     barlinechartOptions: {
       colors: ["#444444", "#FF7E1D", "#466ABB", "#873BD3", "#5BB878"],
 

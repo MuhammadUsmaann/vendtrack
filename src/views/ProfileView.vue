@@ -36,14 +36,13 @@
               </div>
               <div class="col-md-6 px-2 py-1">
                 <p class="mb-5px input-label">User Type</p>
-                <multiselect :searchable="false" placeholder="" v-model="usertypeselected" label="name" track-by="code"
-                  :options="usertype"></multiselect>
-
+                <div class="form-control">
+                </div>
               </div>
               <div class="col-md-6 px-2 py-1">
                 <p class="mb-5px input-label">Access Level</p>
-                <multiselect :searchable="false" placeholder="" v-model="accesslevelselected" label="name"
-                  track-by="code" :options="accesslevel"></multiselect>
+                <div class="form-control">
+                </div>
               </div>
             </div>
           </div>
@@ -119,7 +118,7 @@
                 <div class="col px-0 text-right">
 
                   <button class="btn btn-orange ml-2 d-inline-flex justify-content-center align-items-center"
-                  @click="$bvModal.show('addNewGroup')"><img src="../assets/plus.svg" alt="" class="pr-1">
+                    @click="$bvModal.show('addNewCustomerGroup')"><img src="../assets/plus.svg" alt="" class="pr-1">
                     Add
                   </button>
                 </div>
@@ -157,6 +156,19 @@
             </div>
 
             <div class="table-hhh-main pt-4">
+              <div class="row mx-0">
+                <div class="col px-0">
+                  <div class="font-20 font-weight-700 font-black mb-1"><img src="../assets/user.png" height="17px"
+                      class="mt-n1 mr-1" alt="">Product Group</div>
+                </div>
+                <div class="col px-0 text-right">
+
+                  <button class="btn btn-orange ml-2 d-inline-flex justify-content-center align-items-center"
+                    @click="$bvModal.show('addNewProductGroup')"><img src="../assets/plus.svg" alt="" class="pr-1">
+                    Add
+                  </button>
+                </div>
+              </div>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="font-14 font-weight-700">My Product Group</p>
                 <p class="font-14 font-weight-700 pr-3">Action</p>
@@ -224,8 +236,33 @@
           <img src="../assets/check.svg" alt="" class="mr-2" /> Save
         </button>
       </div>
+
+      <!--add customer group-->
+      <b-modal id="addNewCustomerGroup" hide-footer size="md" centered>
+        <template #modal-title>
+          <span class="font-20 font-weight-700">Add New Group</span>
+        </template>
+        <div class="d-block">
+          <b-form>
+            <b-row class="mx-0  inner-font-black inner-font-14">
+              <v-col cols="12" md="12" class="p-1">
+                <b-form-group label="Enter group name" label-for="FirstName" class="mb-0 input-label">
+                  <b-form-input id="FirstName"></b-form-input>
+                </b-form-group>
+              </v-col>
+            </b-row>
+            <div class="text-center pt-2">
+              <button type="submit" @click="$bvModal.hide('addNewCustomerGroup')"
+                class="px-3 mt-3 btn btn-orange">Save</button>
+
+            </div>
+          </b-form>
+        </div>
+      </b-modal>
     </div>
-    <b-modal id="addNewGroup" hide-footer size="md" centered>
+
+    <!--add product group-->
+    <b-modal id="addNewProductGroup" hide-footer size="md" centered>
       <template #modal-title>
         <span class="font-20 font-weight-700">Add New Group</span>
       </template>
@@ -239,7 +276,8 @@
             </v-col>
           </b-row>
           <div class="text-center pt-2">
-            <button type="submit" @click="$bvModal.hide('addNewGroup')" class="px-3 mt-3 btn btn-orange">Save</button>
+            <button type="submit" @click="$bvModal.hide('addNewProductGroup')"
+              class="px-3 mt-3 btn btn-orange">Save</button>
 
           </div>
         </b-form>
@@ -252,14 +290,12 @@
 // @ is an alias to /src
 import CHeading from '@/components/heading.vue';
 import ImgPreviewerPicker from '@/components/ImgPreviewerPicker.vue';
-import Multiselect from 'vue-multiselect'
 
 export default {
   name: 'ProfileView',
   components: {
     CHeading,
     ImgPreviewerPicker,
-    Multiselect
   },
   computed: {
     editableFields() {
@@ -291,16 +327,7 @@ export default {
     usertypeselected: null,
     accesslevelselected: null,
 
-    usertype: [
-      { name: 'MFG', code: 'cs' },
-      { name: 'MFG', code: 'ds' },
-      { name: 'MFG', code: 'os' }
-    ],
-    accesslevel: [
-      { name: 'All Sales', code: 'cs' },
-      { name: 'All Sales', code: 'ds' },
-      { name: 'All Sales', code: 'os' }
-    ],
+
     MyVTFeaturesheaders: [
       { text: 'Name', value: 'name' },
       { text: 'Action', value: 'action', align: 'right', sortable: false },
