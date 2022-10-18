@@ -19,7 +19,7 @@
                         </router-link>
                     </li>
                     <li>
-                        <router-link to="/whos-reported" class="waves-effect">
+                        <router-link to="/saved-reports" class="waves-effect">
                             <img src="../../assets/SavedReports.svg" alt="">
                             <span> Saved Reports </span>
                         </router-link>
@@ -32,7 +32,7 @@
                     </li>
                    
                     <li>
-                        <router-link to="/rapid-reports" class="waves-effect">
+                        <router-link to="/select-rapid-reports" class="waves-effect">
                             <img src="../../assets/RapidReports.svg" alt="">
                             <span> Rapid Reports </span>
                         </router-link>
@@ -56,7 +56,7 @@
                         </router-link>
                     </li>
                     <li>
-                        <router-link to="/client-VT" class="waves-effect">
+                        <router-link to="/''" class="waves-effect">
                             <img src="../../assets/WarehouseWithdrawal.svg" alt="">
                             <span> Warehouse Withdrawal </span>
                         </router-link>

@@ -152,52 +152,52 @@ export default {
     distributorDetails: [
       {
         productCategory: 'Some Placeholder Text',
-        YTDCS: '6025',
-        PYTDCS: '6025',
-        CHGCS: '6025',
-        CHG: '6025'
+        YTDCS: '6,025',
+        PYTDCS: '6,025',
+        CHGCS: '6,025',
+        CHG: '6,025'
       },
       {
         productCategory: 'Some Placeholder Text',
-        YTDCS: '6025',
-        PYTDCS: '6025',
-        CHGCS: '6025',
-        CHG: '6025'
+        YTDCS: '6,025',
+        PYTDCS: '6,025',
+        CHGCS: '6,025',
+        CHG: '6,025'
       },
       {
         productCategory: 'Some Placeholder Text',
-        YTDCS: '6025',
-        PYTDCS: '6025',
-        CHGCS: '6025',
-        CHG: '6025'
+        YTDCS: '6,025',
+        PYTDCS: '6,025',
+        CHGCS: '6,025',
+        CHG: '6,025'
       },
       {
         productCategory: 'Some Placeholder Text',
-        YTDCS: '6025',
-        PYTDCS: '6025',
-        CHGCS: '6025',
-        CHG: '6025'
+        YTDCS: '6,025',
+        PYTDCS: '6,025',
+        CHGCS: '6,025',
+        CHG: '6,025'
       },
       {
         productCategory: 'Some Placeholder Text',
-        YTDCS: '6025',
-        PYTDCS: '6025',
-        CHGCS: '6025',
-        CHG: '6025'
+        YTDCS: '6,025',
+        PYTDCS: '6,025',
+        CHGCS: '6,025',
+        CHG: '6,025'
       },
       {
         productCategory: 'Some Placeholder Text',
-        YTDCS: '6025',
-        PYTDCS: '6025',
-        CHGCS: '6025',
-        CHG: '6025'
+        YTDCS: '6,025',
+        PYTDCS: '6,025',
+        CHGCS: '6,025',
+        CHG: '6,025'
       },
       {
         productCategory: 'Some Placeholder Text',
-        YTDCS: '6025',
-        PYTDCS: '6025',
-        CHGCS: '6025',
-        CHG: '6025'
+        YTDCS: '6,025',
+        PYTDCS: '6,025',
+        CHGCS: '6,025',
+        CHG: '6,025'
       },
 
     ],
@@ -214,82 +214,82 @@ export default {
       {
         CustomerName: 'Vidal Plantas',
         OperatorID: '4,600',
-        YTDCS: '6025',
-        PYTDCS: '6025',
-        CHGCS: '6025',
-        CHG: '6025'
+        YTDCS: '6,025',
+        PYTDCS: '6,025',
+        CHGCS: '6,025',
+        CHG: '6,025'
       },
       {
         CustomerName: 'Vidal Plantas',
         OperatorID: '4,600',
-        YTDCS: '6025',
-        PYTDCS: '6025',
-        CHGCS: '6025',
-        CHG: '6025'
+        YTDCS: '6,025',
+        PYTDCS: '6,025',
+        CHGCS: '6,025',
+        CHG: '6,025'
       },
       {
         CustomerName: 'Vidal Plantas',
         OperatorID: '4,600',
-        YTDCS: '6025',
-        PYTDCS: '6025',
-        CHGCS: '6025',
-        CHG: '6025'
+        YTDCS: '6,025',
+        PYTDCS: '6,025',
+        CHGCS: '6,025',
+        CHG: '6,025'
       },
       {
         CustomerName: 'Vidal Plantas',
         OperatorID: '4,600',
-        YTDCS: '6025',
-        PYTDCS: '6025',
-        CHGCS: '6025',
-        CHG: '6025'
+        YTDCS: '6,025',
+        PYTDCS: '6,025',
+        CHGCS: '6,025',
+        CHG: '6,025'
       },
       {
         CustomerName: 'Vidal Plantas',
         OperatorID: '4,600',
-        YTDCS: '6025',
-        PYTDCS: '6025',
-        CHGCS: '6025',
-        CHG: '6025'
+        YTDCS: '6,025',
+        PYTDCS: '6,025',
+        CHGCS: '6,025',
+        CHG: '6,025'
       },
       {
         CustomerName: 'Vidal Plantas',
         OperatorID: '4,600',
-        YTDCS: '6025',
-        PYTDCS: '6025',
-        CHGCS: '6025',
-        CHG: '6025'
+        YTDCS: '6,025',
+        PYTDCS: '6,025',
+        CHGCS: '6,025',
+        CHG: '6,025'
       },
       {
         CustomerName: 'Vidal Plantas',
         OperatorID: '4,600',
-        YTDCS: '6025',
-        PYTDCS: '6025',
-        CHGCS: '6025',
-        CHG: '6025'
+        YTDCS: '6,025',
+        PYTDCS: '6,025',
+        CHGCS: '6,025',
+        CHG: '6,025'
       },
       {
         CustomerName: 'Vidal Plantas',
         OperatorID: '4,600',
-        YTDCS: '6025',
-        PYTDCS: '6025',
-        CHGCS: '6025',
-        CHG: '6025'
+        YTDCS: '6,025',
+        PYTDCS: '6,025',
+        CHGCS: '6,025',
+        CHG: '6,025'
       },
       {
         CustomerName: 'Vidal Plantas',
         OperatorID: '4,600',
-        YTDCS: '6025',
-        PYTDCS: '6025',
-        CHGCS: '6025',
-        CHG: '6025'
+        YTDCS: '6,025',
+        PYTDCS: '6,025',
+        CHGCS: '6,025',
+        CHG: '6,025'
       },
       {
         CustomerName: 'Vidal Plantas',
         OperatorID: '4,600',
-        YTDCS: '6025',
-        PYTDCS: '6025',
-        CHGCS: '6025',
-        CHG: '6025'
+        YTDCS: '6,025',
+        PYTDCS: '6,025',
+        CHGCS: '6,025',
+        CHG: '6,025'
       },
     ],
 
@@ -303,73 +303,73 @@ export default {
     distributorMarketSegment: [
       {
         MarketSegment: 'Some Placeholder Text',
-        YTDCS: '6025',
-        PYTDCS: '6025',
-        CHGCS: '6025',
-        CHG: '6025'
+        YTDCS: '6,025',
+        PYTDCS: '6,025',
+        CHGCS: '6,025',
+        CHG: '6,025'
       },
       {
         MarketSegment: 'Some Placeholder Text',
-        YTDCS: '6025',
-        PYTDCS: '6025',
-        CHGCS: '6025',
-        CHG: '6025'
+        YTDCS: '6,025',
+        PYTDCS: '6,025',
+        CHGCS: '6,025',
+        CHG: '6,025'
       },
       {
         MarketSegment: 'Some Placeholder Text',
-        YTDCS: '6025',
-        PYTDCS: '6025',
-        CHGCS: '6025',
-        CHG: '6025'
+        YTDCS: '6,025',
+        PYTDCS: '6,025',
+        CHGCS: '6,025',
+        CHG: '6,025'
       },
       {
         MarketSegment: 'Some Placeholder Text',
-        YTDCS: '6025',
-        PYTDCS: '6025',
-        CHGCS: '6025',
-        CHG: '6025'
+        YTDCS: '6,025',
+        PYTDCS: '6,025',
+        CHGCS: '6,025',
+        CHG: '6,025'
       },
       {
         MarketSegment: 'Some Placeholder Text',
-        YTDCS: '6025',
-        PYTDCS: '6025',
-        CHGCS: '6025',
-        CHG: '6025'
+        YTDCS: '6,025',
+        PYTDCS: '6,025',
+        CHGCS: '6,025',
+        CHG: '6,025'
       },
       {
         MarketSegment: 'Some Placeholder Text',
-        YTDCS: '6025',
-        PYTDCS: '6025',
-        CHGCS: '6025',
-        CHG: '6025'
+        YTDCS: '6,025',
+        PYTDCS: '6,025',
+        CHGCS: '6,025',
+        CHG: '6,025'
       },
       {
         MarketSegment: 'Some Placeholder Text',
-        YTDCS: '6025',
-        PYTDCS: '6025',
-        CHGCS: '6025',
-        CHG: '6025'
+        YTDCS: '6,025',
+        PYTDCS: '6,025',
+        CHGCS: '6,025',
+        CHG: '6,025'
       },
       {
         MarketSegment: 'Some Placeholder Text',
-        YTDCS: '6025',
-        PYTDCS: '6025',
-        CHGCS: '6025',
-        CHG: '6025'
+        YTDCS: '6,025',
+        PYTDCS: '6,025',
+        CHGCS: '6,025',
+        CHG: '6,025'
       },
       {
         MarketSegment: 'Some Placeholder Text',
-        YTDCS: '6025',
-        PYTDCS: '6025',
-        CHGCS: '6025',
-        CHG: '6025'
+        YTDCS: '6,025',
+        PYTDCS: '6,025',
+        CHGCS: '6,025',
+        CHG: '6,025'
       },
       {
         MarketSegment: 'Some Placeholder Text',
-        YTDCS: '6025',
-        PYTDCS: '6025',
-        CHGCS: '6025',
-        CHG: '6025'
+        YTDCS: '6,025',
+        PYTDCS: '6,025',
+        CHGCS: '6,025',
+        CHG: '6,025'
       },
     ],
     CYTDseries: [44, 55, 13, 43, 22],

@@ -108,7 +108,7 @@
           </div>
         </div>
         <div class="col-md-6 p-2">
-          <div class="bg-light-grayish px-3 pt-3 h-100 rounded  pb-5">
+          <div class="bg-light-grayish px-3 pt-3 h-100 rounded  pb-5 table-height-profile">
             <div class="table-hhh-main">
               <div class="row mx-0">
                 <div class="col px-0">
@@ -153,6 +153,10 @@
                   </div>
                 </template>
               </b-table>
+              <button class="btn btn-orange ml-2 d-inline-flex justify-content-center align-items-center"
+                @click="$bvModal.show('addNewCustomerGroupRow')"><img src="../assets/plus.svg" alt="" class="pr-1">
+                Add
+              </button>
             </div>
 
             <div class="table-hhh-main pt-4">
@@ -198,7 +202,61 @@
                   </div>
                 </template>
               </b-table>
+              <button class="btn btn-orange ml-2 d-inline-flex justify-content-center align-items-center"
+                @click="$bvModal.show('addNewProductGroupRow')"><img src="../assets/plus.svg" alt="" class="pr-1">
+                Add
+              </button>
             </div>
+
+            <div class="table-hhh-main pt-4">
+              <div class="row mx-0">
+                <div class="col px-0">
+                  <div class="font-20 font-weight-700 font-black mb-1"><img src="../assets/user.png" height="17px"
+                      class="mt-n1 mr-1" alt="">Distributor Group</div>
+                </div>
+                <div class="col px-0 text-right">
+
+                  <button class="btn btn-orange ml-2 d-inline-flex justify-content-center align-items-center"
+                    @click="$bvModal.show('addNewDistributorGroup')"><img src="../assets/plus.svg" alt="" class="pr-1">
+                    Add
+                  </button>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="font-14 font-weight-700">My Distributor Group</p>
+                <p class="font-14 font-weight-700 pr-3">Action</p>
+              </div>
+              <b-table :fields="MyDistributorGroupheaders" :items="MyDistributorGroup" class="elevation-1 mt-2"
+                thead-class="hidden_header" dense>
+                <template v-for="field in editableFields" v-slot:[`cell(${field.key})`]="{ item ,value}">
+                  <span :key="field.key" v-if="!item.editing">
+                    {{ value }}
+                  </span>
+                  <b-input :key="field.index" v-else v-model="item.temp[field.key]"
+                    @keydown.enter.exact="doSave(item)" />
+                </template>
+
+                <template #cell(action)={item}>
+
+                  <div class=" d-flex align-items-center justify-content-end">
+                    <div small class="mr-3 cursor-pointer" v-if="!item.editing" @click="doEdit(item)">
+                      <img src="../assets/UserInterface.svg" alt="">
+                    </div>
+                    <span class="p-1 cursor-pointer" v-if="item.editing" @click="doCancel(item)" variant="danger">
+                      <img src="../assets/x-circle.svg" alt="">
+                    </span>
+                    <span class="p-1 cursor-pointer" v-if="item.editing" @click="doSave(item)" variant="success">
+                      <img src="../assets/check-circle.svg" alt="">
+                    </span>
+                  </div>
+                </template>
+              </b-table>
+              <button class="btn btn-orange ml-2 d-inline-flex justify-content-center align-items-center"
+                @click="$bvModal.show('addNewDistributorGroupRow')"><img src="../assets/plus.svg" alt="" class="pr-1">
+                Add
+              </button>
+            </div>
+
             <div class="select-main-hhh">
               <div class="font-weight-700 font-14 font-black my-3">Customer Group</div>
               <div class="row">
@@ -259,6 +317,29 @@
           </b-form>
         </div>
       </b-modal>
+      <!-- for row -->
+      
+      <b-modal id="addNewCustomerGroupRow" hide-footer size="md" centered>
+        <template #modal-title>
+          <span class="font-20 font-weight-700">Add New Row to Customer Group</span>
+        </template>
+        <div class="d-block">
+          <b-form>
+            <b-row class="mx-0  inner-font-black inner-font-14">
+              <v-col cols="12" md="12" class="p-1">
+                <b-form-group label="Enter row name" label-for="FirstName" class="mb-0 input-label">
+                  <b-form-input id="FirstName"></b-form-input>
+                </b-form-group>
+              </v-col>
+            </b-row>
+            <div class="text-center pt-2">
+              <button type="submit" @click="$bvModal.hide('addNewCustomerGroup')"
+                class="px-3 mt-3 btn btn-orange">Save</button>
+
+            </div>
+          </b-form>
+        </div>
+      </b-modal>
     </div>
 
     <!--add product group-->
@@ -283,6 +364,75 @@
         </b-form>
       </div>
     </b-modal>
+
+
+    <!-- for row -->
+    <b-modal id="addNewProductGroupRow" hide-footer size="md" centered>
+        <template #modal-title>
+          <span class="font-20 font-weight-700">Add New Row to Product Group</span>
+        </template>
+        <div class="d-block">
+          <b-form>
+            <b-row class="mx-0  inner-font-black inner-font-14">
+              <v-col cols="12" md="12" class="p-1">
+                <b-form-group label="Enter row name" label-for="FirstName" class="mb-0 input-label">
+                  <b-form-input id="FirstName"></b-form-input>
+                </b-form-group>
+              </v-col>
+            </b-row>
+            <div class="text-center pt-2">
+              <button type="submit" @click="$bvModal.hide('addNewCustomerGroup')"
+                class="px-3 mt-3 btn btn-orange">Save</button>
+
+            </div>
+          </b-form>
+        </div>
+      </b-modal>
+
+
+    <b-modal id="addNewDistributorGroup" hide-footer size="md" centered>
+      <template #modal-title>
+        <span class="font-20 font-weight-700">Add New Group</span>
+      </template>
+      <div class="d-block">
+        <b-form>
+          <b-row class="mx-0  inner-font-black inner-font-14">
+            <v-col cols="12" md="12" class="p-1">
+              <b-form-group label="Enter group name" label-for="FirstName" class="mb-0 input-label">
+                <b-form-input id="FirstName"></b-form-input>
+              </b-form-group>
+            </v-col>
+          </b-row>
+          <div class="text-center pt-2">
+            <button type="submit" @click="$bvModal.hide('addNewDistributorGroup')"
+              class="px-3 mt-3 btn btn-orange">Save</button>
+
+          </div>
+        </b-form>
+      </div>
+    </b-modal>
+    <!-- for row -->
+    <b-modal id="addNewDistributorGroupRow" hide-footer size="md" centered>
+        <template #modal-title>
+          <span class="font-20 font-weight-700">Add New Row to Distributor Group</span>
+        </template>
+        <div class="d-block">
+          <b-form>
+            <b-row class="mx-0  inner-font-black inner-font-14">
+              <v-col cols="12" md="12" class="p-1">
+                <b-form-group label="Enter row name" label-for="FirstName" class="mb-0 input-label">
+                  <b-form-input id="FirstName"></b-form-input>
+                </b-form-group>
+              </v-col>
+            </b-row>
+            <div class="text-center pt-2">
+              <button type="submit" @click="$bvModal.hide('addNewCustomerGroup')"
+                class="px-3 mt-3 btn btn-orange">Save</button>
+
+            </div>
+          </b-form>
+        </div>
+      </b-modal>
   </div>
 </template>
 
@@ -343,6 +493,25 @@ export default {
       { name: 'Report Generator' },
       { name: 'Report Generator' },
       { name: 'Report Generator' },
+      { name: 'Report Generator' },
+      { name: 'Report Generator' },
+      { name: 'Saved Reports' },
+      { name: 'Report Generator' },
+      { name: 'Report Generator' },
+      { name: 'Report Generator' },
+      { name: 'Report Generator' },
+      { name: 'Report Generator' },
+      { name: 'Saved Reports' },
+      { name: 'Report Generator' },
+      { name: 'Report Generator' },
+      { name: 'Report Generator' },
+      { name: 'Report Generator' },
+      { name: 'Report Generator' },
+      { name: 'Saved Reports' },
+      { name: 'Report Generator' },
+      { name: 'Report Generator' },
+      { name: 'Report Generator' },
+      
 
 
     ],
@@ -361,9 +530,18 @@ export default {
       { label: 'Action', key: 'action', class: 'text-end', sortable: false },
     ],
     MyProductGroup: [
-      { myProductGroup: 'Medium Customer Name', },
-      { myProductGroup: 'Second Medium Customer Name', },
-      { myProductGroup: 'Third Level Customer Name', },
+      { myProductGroup: 'Medium Product Name', },
+      { myProductGroup: 'Second Medium Product Name', },
+      { myProductGroup: 'Third Level Product Name', },
+    ],
+    MyDistributorGroupheaders: [
+      { label: 'My Distributor Group', key: 'myDistributorGroup', editable: true },
+      { label: 'Action', key: 'action', class: 'text-end', sortable: false },
+    ],
+    MyDistributorGroup: [
+      { myDistributorGroup: 'Medium Distributor Name', },
+      { myDistributorGroup: 'Second Medium Distributor Name', },
+      { myDistributorGroup: 'Third Level Distributor Name', },
     ],
     regions: ['A', 'B', 'C', 'D'],
     regionsValue: ['A', 'C'],
@@ -406,6 +584,10 @@ export default {
   cursor: pointer;
 }
 
+.table-height-profile{
+  height: 519px !important;
+    overflow-y: auto;
+}
 .cursor-pointer:hover {
   color: #FF7E1D !important;
 }

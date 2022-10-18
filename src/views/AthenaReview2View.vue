@@ -7,13 +7,13 @@
       <div class="col px-0 text-right">
         <span class="font-500 font-14 font-mono mr-1 w-md-100 d-inline-block mb-md-0 mb-2">Last Update:
           02/18/2022</span>
-        <b-dropdown id="dropdown-1" text="Frequency" variant="outline"
+        <b-dropdown id="dropdown-1" text="Period" variant="outline"
           class="d-inline-block inner-border-light-gray ml-2 inner-font-14 font-weight-500 font-black shadow-sm bg-transparent">
           <b-dropdown-item>First Action</b-dropdown-item>
           <b-dropdown-item>Second Action</b-dropdown-item>
           <b-dropdown-item>Third Action</b-dropdown-item>
         </b-dropdown>
-        <b-dropdown id="dropdown-1" text="Timeframe" variant="outline"
+        <b-dropdown id="dropdown-1" text="Frequency" variant="outline"
           class="d-inline-block inner-border-light-gray ml-2 inner-font-14 font-weight-500 font-black shadow-sm bg-transparent">
           <b-dropdown-item>First Action</b-dropdown-item>
           <b-dropdown-item>Second Action</b-dropdown-item>
@@ -130,8 +130,8 @@ export default {
   data: () => ({
     marketSegmentSalesPerformanceHeader: [
       { text: 'Market Segment', value: 'productCategory', },
-      { text: '2022 TD', value: 'TD2020', align: 'right' },
-      { text: '2022 TD', value: 'TD2021', align: 'right' },
+      { text: '2020 TD', value: 'TD2020', align: 'right' },
+      { text: '2021 TD', value: 'TD2021', align: 'right' },
       { text: '2022 TD', value: 'TD2022', align: 'right' },
       { text: 'CHG 2022 vs 2021', value: 'CHG2022vs2021', align: 'right' },
       { text: 'CHG 2022 vs 2020', value: 'CHG2022vs2020', align: 'right' },
@@ -143,7 +143,7 @@ export default {
         productCategory: 'Devon Lane',
         CHG2022vs2020: '9,828',
         TD2020: '9,462',
-        TD2021: '2022',
+        TD2021: '9,122',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
         'CHG2022vs2021%': '5,948',
@@ -154,7 +154,7 @@ export default {
         productCategory: 'Devon Lane',
 
         TD2020: '9,462',
-        TD2021: '2022',
+        TD2021: '9,122',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
         'CHG2022vs2021%': '5,948',
@@ -165,7 +165,7 @@ export default {
         productCategory: 'Devon Lane',
 
         TD2020: '9,462',
-        TD2021: '2022',
+        TD2021: '9,122',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
         'CHG2022vs2021%': '5,948',
@@ -176,7 +176,7 @@ export default {
         productCategory: 'Devon Lane',
         CHG2022vs2020: '9,828',
         TD2020: '9,462',
-        TD2021: '2022',
+        TD2021: '9,122',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
         'CHG2022vs2021%': '5,948',
@@ -187,7 +187,7 @@ export default {
         productCategory: 'Devon Lane',
 
         TD2020: '9,462',
-        TD2021: '2022',
+        TD2021: '9,122',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
         'CHG2022vs2021%': '5,948',
@@ -198,7 +198,7 @@ export default {
         productCategory: 'Devon Lane',
 
         TD2020: '9,462',
-        TD2021: '2022',
+        TD2021: '9,122',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
         'CHG2022vs2021%': '5,948',
@@ -209,7 +209,7 @@ export default {
         productCategory: 'Devon Lane',
         CHG2022vs2020: '9,828',
         TD2020: '9,462',
-        TD2021: '2022',
+        TD2021: '9,122',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
         'CHG2022vs2021%': '5,948',
@@ -220,7 +220,7 @@ export default {
         productCategory: 'Devon Lane',
 
         TD2020: '9,462',
-        TD2021: '2022',
+        TD2021: '9,122',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
         'CHG2022vs2021%': '5,948',
@@ -231,7 +231,7 @@ export default {
         productCategory: 'Devon Lane',
 
         TD2020: '9,462',
-        TD2021: '2022',
+        TD2021: '9,122',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
         'CHG2022vs2021%': '5,948',
@@ -242,7 +242,7 @@ export default {
         productCategory: 'Devon Lane',
 
         TD2020: '9,462',
-        TD2021: '2022',
+        TD2021: '9,122',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
         'CHG2022vs2021%': '5,948',
@@ -387,8 +387,8 @@ export default {
       {
         Territory: 'Devon Lane',
         CHG2022vs2020: '9,828',
-        TD2020: 'Tio Félix',
-        TD2021: '2022',
+        TD2020: '8,987',
+        TD2021: '6,782',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
         'CHG2022vs2021%': '5,948',
@@ -398,8 +398,8 @@ export default {
       {
         Territory: 'Devon Lane',
 
-        TD2020: 'Tio Félix',
-        TD2021: '2022',
+        TD2020: '8,987',
+        TD2021: '6,782',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
         'CHG2022vs2021%': '5,948',
@@ -409,8 +409,8 @@ export default {
       {
         Territory: 'Devon Lane',
 
-        TD2020: 'Tio Félix',
-        TD2021: '2022',
+        TD2020: '8,987',
+        TD2021: '6,782',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
         'CHG2022vs2021%': '5,948',
@@ -420,8 +420,8 @@ export default {
       {
         Territory: 'Devon Lane',
         CHG2022vs2020: '9,828',
-        TD2020: 'Tio Félix',
-        TD2021: '2022',
+        TD2020: '8,987',
+        TD2021: '6,782',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
         'CHG2022vs2021%': '5,948',
@@ -431,8 +431,8 @@ export default {
       {
         Territory: 'Devon Lane',
 
-        TD2020: 'Tio Félix',
-        TD2021: '2022',
+        TD2020: '8,987',
+        TD2021: '6,782',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
         'CHG2022vs2021%': '5,948',
@@ -442,8 +442,8 @@ export default {
       {
         Territory: 'Devon Lane',
 
-        TD2020: 'Tio Félix',
-        TD2021: '2022',
+        TD2020: '8,987',
+        TD2021: '6,782',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
         'CHG2022vs2021%': '5,948',
@@ -453,8 +453,8 @@ export default {
       {
         Territory: 'Devon Lane',
         CHG2022vs2020: '9,828',
-        TD2020: 'Tio Félix',
-        TD2021: '2022',
+        TD2020: '8,987',
+        TD2021: '6,782',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
         'CHG2022vs2021%': '5,948',
@@ -464,8 +464,8 @@ export default {
       {
         Territory: 'Devon Lane',
 
-        TD2020: 'Tio Félix',
-        TD2021: '2022',
+        TD2020: '8,987',
+        TD2021: '6,782',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
         'CHG2022vs2021%': '5,948',
@@ -475,8 +475,8 @@ export default {
       {
         Territory: 'Devon Lane',
 
-        TD2020: 'Tio Félix',
-        TD2021: '2022',
+        TD2020: '8,987',
+        TD2021: '6,782',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
         'CHG2022vs2021%': '5,948',
@@ -486,8 +486,8 @@ export default {
       {
         Territory: 'Devon Lane',
 
-        TD2020: 'Tio Félix',
-        TD2021: '2022',
+        TD2020: '8,987',
+        TD2021: '6,782',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
         'CHG2022vs2021%': '5,948',
@@ -511,7 +511,7 @@ export default {
         CustomerChainName: 'Devon Lane',
         CHG2022vs2020: '9,828',
         ID: '12121',
-        TD2020: 'Tio Félix',
+        TD2020: '9,898',
         TD2021: '2022',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
@@ -522,7 +522,7 @@ export default {
       {
         CustomerChainName: 'Devon Lane',
         ID: '12121',
-        TD2020: 'Tio Félix',
+        TD2020: '9,898',
         TD2021: '2022',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
@@ -533,7 +533,7 @@ export default {
       {
         CustomerChainName: 'Devon Lane',
         ID: '12121',
-        TD2020: 'Tio Félix',
+        TD2020: '9,898',
         TD2021: '2022',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
@@ -545,7 +545,7 @@ export default {
         CustomerChainName: 'Devon Lane',
         CHG2022vs2020: '9,828',
         ID: '12121',
-        TD2020: 'Tio Félix',
+        TD2020: '9,898',
         TD2021: '2022',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
@@ -556,7 +556,7 @@ export default {
       {
         CustomerChainName: 'Devon Lane',
         ID: '12121',
-        TD2020: 'Tio Félix',
+        TD2020: '9,898',
         TD2021: '2022',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
@@ -567,7 +567,7 @@ export default {
       {
         CustomerChainName: 'Devon Lane',
         ID: '12121',
-        TD2020: 'Tio Félix',
+        TD2020: '9,898',
         TD2021: '2022',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
@@ -579,7 +579,7 @@ export default {
         CustomerChainName: 'Devon Lane',
         CHG2022vs2020: '9,828',
         ID: '12121',
-        TD2020: 'Tio Félix',
+        TD2020: '9,898',
         TD2021: '2022',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
@@ -590,7 +590,7 @@ export default {
       {
         CustomerChainName: 'Devon Lane',
         ID: '12121',
-        TD2020: 'Tio Félix',
+        TD2020: '9,898',
         TD2021: '2022',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
@@ -601,7 +601,7 @@ export default {
       {
         CustomerChainName: 'Devon Lane',
         ID: '12121',
-        TD2020: 'Tio Félix',
+        TD2020: '9,898',
         TD2021: '2022',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
@@ -612,7 +612,7 @@ export default {
       {
         CustomerChainName: 'Devon Lane',
         ID: '12121',
-        TD2020: 'Tio Félix',
+        TD2020: '9,898',
         TD2021: '2022',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
@@ -637,7 +637,7 @@ export default {
         CustomerChainName: 'Devon Lane',
         CHG2022vs2020: '9,828',
         ID: '12121',
-        TD2020: 'Tio Félix',
+        TD2020: '9,898',
         TD2021: '2022',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
@@ -648,7 +648,7 @@ export default {
       {
         CustomerChainName: 'Devon Lane',
         ID: '12121',
-        TD2020: 'Tio Félix',
+        TD2020: '9,898',
         TD2021: '2022',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
@@ -659,7 +659,7 @@ export default {
       {
         CustomerChainName: 'Devon Lane',
         ID: '12121',
-        TD2020: 'Tio Félix',
+        TD2020: '9,898',
         TD2021: '2022',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
@@ -671,7 +671,7 @@ export default {
         CustomerChainName: 'Devon Lane',
         CHG2022vs2020: '9,828',
         ID: '12121',
-        TD2020: 'Tio Félix',
+        TD2020: '9,898',
         TD2021: '2022',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
@@ -682,7 +682,7 @@ export default {
       {
         CustomerChainName: 'Devon Lane',
         ID: '12121',
-        TD2020: 'Tio Félix',
+        TD2020: '9,898',
         TD2021: '2022',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
@@ -693,7 +693,7 @@ export default {
       {
         CustomerChainName: 'Devon Lane',
         ID: '12121',
-        TD2020: 'Tio Félix',
+        TD2020: '9,898',
         TD2021: '2022',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
@@ -705,7 +705,7 @@ export default {
         CustomerChainName: 'Devon Lane',
         CHG2022vs2020: '9,828',
         ID: '12121',
-        TD2020: 'Tio Félix',
+        TD2020: '9,898',
         TD2021: '2022',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
@@ -716,7 +716,7 @@ export default {
       {
         CustomerChainName: 'Devon Lane',
         ID: '12121',
-        TD2020: 'Tio Félix',
+        TD2020: '9,898',
         TD2021: '2022',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
@@ -727,7 +727,7 @@ export default {
       {
         CustomerChainName: 'Devon Lane',
         ID: '12121',
-        TD2020: 'Tio Félix',
+        TD2020: '9,898',
         TD2021: '2022',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',
@@ -738,7 +738,7 @@ export default {
       {
         CustomerChainName: 'Devon Lane',
         ID: '12121',
-        TD2020: 'Tio Félix',
+        TD2020: '9,898',
         TD2021: '2022',
         TD2022: '9,359',
         CHG2022vs2021: '4,152',

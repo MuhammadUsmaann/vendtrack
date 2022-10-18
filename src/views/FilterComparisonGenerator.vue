@@ -119,6 +119,55 @@
                                 aria-selected="false">Territories
                             </a>
 
+
+                            <a class="nav-item nav-link font-black font-14" id="nav-regions-tab" data-toggle="tab"
+                                href="#nav-regions" role="tab" aria-controls="nav-regions" aria-selected="true">Regions
+                            </a>
+
+                            <a class="nav-item nav-link font-black font-14" id="nav-states-tab" data-toggle="tab"
+                                href="#nav-states" role="tab" aria-controls="nav-states" aria-selected="false">States
+                            </a>
+
+                            <a class="nav-item nav-link font-black font-14" id="nav-chains-tab" data-toggle="tab"
+                                href="#nav-chains" role="tab" aria-controls="nav-chains"
+                                aria-selected="false">Chains/National Account
+                            </a>
+
+                            <a class="nav-item nav-link font-black font-14" id="nav-GPO-tab" data-toggle="tab"
+                                href="#nav-GPO" role="tab" aria-controls="nav-GPO" aria-selected="false">GPO/Buying
+                                Groups
+                            </a>
+
+                            <a class="nav-item nav-link font-black font-14" id="nav-market-tab" data-toggle="tab"
+                                href="#nav-market" role="tab" aria-controls="nav-market" aria-selected="false">Market
+                                Segments
+                            </a>
+                            <a class="nav-item nav-link font-black font-14" id="nav-brands-tab" data-toggle="tab"
+                                href="#nav-brands" role="tab" aria-controls="nav-brands" aria-selected="false">Brands
+                            </a>
+                            <a class="nav-item nav-link font-black font-14" id="nav-product-category-tab"
+                                data-toggle="tab" href="#nav-product-category" role="tab"
+                                aria-controls="nav-product-category" aria-selected="false">Product Category
+                            </a>
+                            <a class="nav-item nav-link font-black font-14" id="nav-product-sub-category-tab"
+                                data-toggle="tab" href="#nav-product-sub-category" role="tab"
+                                aria-controls="nav-product-sub-category" aria-selected="false">Product Sub-Category
+                            </a>
+                            <a class="nav-item nav-link font-black font-14" id="nav-product-tab" data-toggle="tab"
+                                href="#nav-product" role="tab" aria-controls="nav-product" aria-selected="false">Product
+                            </a>
+                            <a class="nav-item nav-link font-black font-14" id="nav-customergroups-tab"
+                                data-toggle="tab" href="#nav-customergroups" role="tab"
+                                aria-controls="nav-customergroups" aria-selected="false">My Customer Groups
+                            </a>
+                            <a class="nav-item nav-link font-black font-14" id="nav-productgroups-tab" data-toggle="tab"
+                                href="#nav-productgroups" role="tab" aria-controls="nav-productgroups"
+                                aria-selected="false">My Product Groups
+                            </a>
+                            <a class="nav-item nav-link font-black font-14" id="nav-distributorgroups-tab"
+                                data-toggle="tab" href="#nav-distributorgroups" role="tab"
+                                aria-controls="nav-distributorgroups" aria-selected="false">My Distributor Groups
+                            </a>
                         </div>
 
                     </nav>
@@ -148,7 +197,6 @@
                                 value="McDonald's">
                             </v-checkbox>
                         </div>
-
                         <div class="tab-pane fade" id="nav-distributors" role="tabpanel"
                             aria-labelledby="nav-distributors-tab">
                             <v-checkbox v-model="selecteddistributers" label="Facebook" value="Facebook">
@@ -225,6 +273,316 @@
                             </v-checkbox>
                         </div>
 
+
+                        <div class="tab-pane fade show " id="nav-regions" role="tabpanel"
+                            aria-labelledby="nav-regions-tab">
+                            <v-checkbox class="checkbox" v-model="selectedregion" label="Facebook" value="Facebook">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedregion" label="Bank of America"
+                                value="Bank of America"></v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedregion" label="Johnson & Johnson"
+                                value="Johnson & Johnson"></v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedregion" label="Starbucks" value="Starbucks">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedregion" label="MasterCard"
+                                value="MasterCard">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedregion" label="Ferrari" value="Ferrari">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedregion" label="DebitCard" value="DebitCard">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedregion" label="Fortuner" value="Fortuner">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedregion" label="Linkedin" value="Linkedin">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedregion" label="McDonald's"
+                                value="McDonald's">
+                            </v-checkbox>
+                        </div>
+                        <div class="tab-pane fade" id="nav-states" role="tabpanel"
+                            aria-labelledby="nav-states-tab">
+                            <v-checkbox v-model="selectedstates" label="Facebook" value="Facebook">
+                            </v-checkbox>
+                            <v-checkbox v-model="selectedstates" label="Bank of America" value="Bank of America">
+                            </v-checkbox>
+                            <v-checkbox v-model="selectedstates" label="Johnson & Johnson"
+                                value="Johnson & Johnson"></v-checkbox>
+                            <v-checkbox v-model="selectedstates" label="Starbucks" value="Starbucks">
+                            </v-checkbox>
+                            <v-checkbox v-model="selectedstates" label="MasterCard" value="MasterCard">
+                            </v-checkbox>
+                            <v-checkbox v-model="selectedstates" label="Ferrari" value="Ferrari">
+                            </v-checkbox>
+                            <v-checkbox v-model="selectedstates" label="DebitCard" value="DebitCard">
+                            </v-checkbox>
+                            <v-checkbox v-model="selectedstates" label="Fortuner" value="Fortuner">
+                            </v-checkbox>
+                            <v-checkbox v-model="selectedstates" label="Linkedin" value="Linkedin">
+                            </v-checkbox>
+                            <v-checkbox v-model="selectedstates" label="McDonald's" value="McDonald's">
+                            </v-checkbox>
+                        </div>
+                        <div class="tab-pane fade" id="nav-chains" role="tabpanel"
+                            aria-labelledby="nav-chains-tab">
+                            <v-checkbox class="checkbox" v-model="selectedchain" label="Facebook" value="Facebook">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedchain" label="Bank of America"
+                                value="Bank of America"></v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedchain" label="Johnson & Johnson"
+                                value="Johnson & Johnson"></v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedchain" label="Starbucks" value="Starbucks">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedchain" label="MasterCard"
+                                value="MasterCard">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedchain" label="Ferrari" value="Ferrari">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedchain" label="DebitCard" value="DebitCard">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedchain" label="Fortuner" value="Fortuner">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedchain" label="Linkedin" value="Linkedin">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedchain" label="McDonald's"
+                                value="McDonald's">
+                            </v-checkbox>
+                        </div>
+                        <div class="tab-pane fade" id="nav-GPO" role="tabpanel"
+                            aria-labelledby="nav-GPO-tab">
+                            <v-checkbox class="checkbox" v-model="selectedgpo" label="Facebook" value="Facebook">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedgpo" label="Bank of America"
+                                value="Bank of America"></v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedgpo" label="Johnson & Johnson"
+                                value="Johnson & Johnson"></v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedgpo" label="Starbucks"
+                                value="Starbucks">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedgpo" label="MasterCard"
+                                value="MasterCard">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedgpo" label="Ferrari" value="Ferrari">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedgpo" label="DebitCard"
+                                value="DebitCard">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedgpo" label="Fortuner" value="Fortuner">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedgpo" label="Linkedin" value="Linkedin">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedgpo" label="McDonald's"
+                                value="McDonald's">
+                            </v-checkbox>
+                        </div>
+
+                        <div class="tab-pane fade show " id="nav-market" role="tabpanel"
+                            aria-labelledby="nav-market-tab">
+                            <v-checkbox class="checkbox" v-model="selectedmarktetseg" label="Facebook" value="Facebook">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedmarktetseg" label="Bank of America"
+                                value="Bank of America"></v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedmarktetseg" label="Johnson & Johnson"
+                                value="Johnson & Johnson"></v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedmarktetseg" label="Starbucks" value="Starbucks">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedmarktetseg" label="MasterCard"
+                                value="MasterCard">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedmarktetseg" label="Ferrari" value="Ferrari">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedmarktetseg" label="DebitCard" value="DebitCard">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedmarktetseg" label="Fortuner" value="Fortuner">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedmarktetseg" label="Linkedin" value="Linkedin">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedmarktetseg" label="McDonald's"
+                                value="McDonald's">
+                            </v-checkbox>
+                        </div>
+                        <div class="tab-pane fade" id="nav-brands" role="tabpanel"
+                            aria-labelledby="nav-brands-tab">
+                            <v-checkbox v-model="selectedbrands" label="Facebook" value="Facebook">
+                            </v-checkbox>
+                            <v-checkbox v-model="selectedbrands" label="Bank of America" value="Bank of America">
+                            </v-checkbox>
+                            <v-checkbox v-model="selectedbrands" label="Johnson & Johnson"
+                                value="Johnson & Johnson"></v-checkbox>
+                            <v-checkbox v-model="selectedbrands" label="Starbucks" value="Starbucks">
+                            </v-checkbox>
+                            <v-checkbox v-model="selectedbrands" label="MasterCard" value="MasterCard">
+                            </v-checkbox>
+                            <v-checkbox v-model="selectedbrands" label="Ferrari" value="Ferrari">
+                            </v-checkbox>
+                            <v-checkbox v-model="selectedbrands" label="DebitCard" value="DebitCard">
+                            </v-checkbox>
+                            <v-checkbox v-model="selectedbrands" label="Fortuner" value="Fortuner">
+                            </v-checkbox>
+                            <v-checkbox v-model="selectedbrands" label="Linkedin" value="Linkedin">
+                            </v-checkbox>
+                            <v-checkbox v-model="selectedbrands" label="McDonald's" value="McDonald's">
+                            </v-checkbox>
+                        </div>
+                        <div class="tab-pane fade" id="nav-product-category" role="tabpanel"
+                            aria-labelledby="nav-product-category-tab">
+                            <v-checkbox class="checkbox" v-model="selectedprodcat" label="Facebook" value="Facebook">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedprodcat" label="Bank of America"
+                                value="Bank of America"></v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedprodcat" label="Johnson & Johnson"
+                                value="Johnson & Johnson"></v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedprodcat" label="Starbucks" value="Starbucks">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedprodcat" label="MasterCard"
+                                value="MasterCard">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedprodcat" label="Ferrari" value="Ferrari">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedprodcat" label="DebitCard" value="DebitCard">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedprodcat" label="Fortuner" value="Fortuner">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedprodcat" label="Linkedin" value="Linkedin">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedprodcat" label="McDonald's"
+                                value="McDonald's">
+                            </v-checkbox>
+                        </div>
+                        <div class="tab-pane fade" id="nav-product-sub-category" role="tabpanel"
+                            aria-labelledby="nav-product-sub-category-tab">
+                            <v-checkbox class="checkbox" v-model="selectedprod" label="Facebook" value="Facebook">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedprod" label="Bank of America"
+                                value="Bank of America"></v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedprod" label="Johnson & Johnson"
+                                value="Johnson & Johnson"></v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedprod" label="Starbucks"
+                                value="Starbucks">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedprod" label="MasterCard"
+                                value="MasterCard">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedprod" label="Ferrari" value="Ferrari">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedprod" label="DebitCard"
+                                value="DebitCard">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedprod" label="Fortuner" value="Fortuner">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedprod" label="Linkedin" value="Linkedin">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedprod" label="McDonald's"
+                                value="McDonald's">
+                            </v-checkbox>
+                        </div>
+
+
+                        <div class="tab-pane fade show " id="nav-product" role="tabpanel"
+                            aria-labelledby="nav-product-tab">
+                            <v-checkbox class="checkbox" v-model="selectedprod" label="Facebook" value="Facebook">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedprod" label="Bank of America"
+                                value="Bank of America"></v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedprod" label="Johnson & Johnson"
+                                value="Johnson & Johnson"></v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedprod" label="Starbucks" value="Starbucks">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedprod" label="MasterCard"
+                                value="MasterCard">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedprod" label="Ferrari" value="Ferrari">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedprod" label="DebitCard" value="DebitCard">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedprod" label="Fortuner" value="Fortuner">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedprod" label="Linkedin" value="Linkedin">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedprod" label="McDonald's"
+                                value="McDonald's">
+                            </v-checkbox>
+                        </div>
+
+
+                        <div class="tab-pane fade" id="nav-customergroups" role="tabpanel"
+                            aria-labelledby="nav-customergroups-tab">
+                            <v-checkbox v-model="selectedcustgrp" label="Facebook" value="Facebook">
+                            </v-checkbox>
+                            <v-checkbox v-model="selectedcustgrp" label="Bank of America" value="Bank of America">
+                            </v-checkbox>
+                            <v-checkbox v-model="selectedcustgrp" label="Johnson & Johnson"
+                                value="Johnson & Johnson"></v-checkbox>
+                            <v-checkbox v-model="selectedcustgrp" label="Starbucks" value="Starbucks">
+                            </v-checkbox>
+                            <v-checkbox v-model="selectedcustgrp" label="MasterCard" value="MasterCard">
+                            </v-checkbox>
+                            <v-checkbox v-model="selectedcustgrp" label="Ferrari" value="Ferrari">
+                            </v-checkbox>
+                            <v-checkbox v-model="selectedcustgrp" label="DebitCard" value="DebitCard">
+                            </v-checkbox>
+                            <v-checkbox v-model="selectedcustgrp" label="Fortuner" value="Fortuner">
+                            </v-checkbox>
+                            <v-checkbox v-model="selectedcustgrp" label="Linkedin" value="Linkedin">
+                            </v-checkbox>
+                            <v-checkbox v-model="selectedcustgrp" label="McDonald's" value="McDonald's">
+                            </v-checkbox>
+                        </div>
+                        <div class="tab-pane fade" id="nav-productgroups" role="tabpanel"
+                            aria-labelledby="nav-productgroups-tab">
+                            <v-checkbox class="checkbox" v-model="selectedprodgrp" label="Facebook" value="Facebook">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedprodgrp" label="Bank of America"
+                                value="Bank of America"></v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedprodgrp" label="Johnson & Johnson"
+                                value="Johnson & Johnson"></v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedprodgrp" label="Starbucks" value="Starbucks">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedprodgrp" label="MasterCard"
+                                value="MasterCard">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedprodgrp" label="Ferrari" value="Ferrari">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedprodgrp" label="DebitCard" value="DebitCard">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedprodgrp" label="Fortuner" value="Fortuner">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedprodgrp" label="Linkedin" value="Linkedin">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selectedprodgrp" label="McDonald's"
+                                value="McDonald's">
+                            </v-checkbox>
+                        </div>
+                        <div class="tab-pane fade" id="nav-distributorgroups" role="tabpanel"
+                            aria-labelledby="nav-distributorgroups-tab">
+                            <v-checkbox class="checkbox" v-model="selecteddistgrp" label="Facebook" value="Facebook">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selecteddistgrp" label="Bank of America"
+                                value="Bank of America"></v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selecteddistgrp" label="Johnson & Johnson"
+                                value="Johnson & Johnson"></v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selecteddistgrp" label="Starbucks"
+                                value="Starbucks">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selecteddistgrp" label="MasterCard"
+                                value="MasterCard">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selecteddistgrp" label="Ferrari" value="Ferrari">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selecteddistgrp" label="DebitCard"
+                                value="DebitCard">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selecteddistgrp" label="Fortuner" value="Fortuner">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selecteddistgrp" label="Linkedin" value="Linkedin">
+                            </v-checkbox>
+                            <v-checkbox class="checkbox" v-model="selecteddistgrp" label="McDonald's"
+                                value="McDonald's">
+                            </v-checkbox>
+                        </div>
+
+
+
+
                     </div>
                 </div>
 
@@ -277,6 +635,129 @@
                         </span>
                     </div>
                 </div>
+                <div class="pt-4">
+                    <p class="input-label pb-1">Region</p>
+                    <div>
+                        <span v-for="(list, index) in selectedregion" :key="index">
+                            <span class="multiselect__tag"><span>{{ list }}</span> <i aria-hidden="true" tabindex="1"
+                                    class="multiselect__tag-icon"></i></span><span
+                                v-if="index+1 < selectedterritory.length">
+                            </span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="pt-4">
+                    <p class="input-label pb-1">States</p>
+                    <div>
+                        <span v-for="(list, index) in selectedstates" :key="index">
+                            <span class="multiselect__tag"><span>{{ list }}</span> <i aria-hidden="true" tabindex="1"
+                                    class="multiselect__tag-icon"></i></span><span
+                                v-if="index+1 < selectedterritory.length">
+                            </span>
+                        </span>
+                    </div>
+                </div>
+
+
+                <!-- <div class="pt-4">
+                    <p class="input-label pb-1">Chains/National Account</p>
+                    <div>
+                        <span v-for="(list, index) in selectedchain" :key="index">
+                            <span class="multiselect__tag"><span>{{ list }}</span> <i aria-hidden="true" tabindex="1"
+                                    class="multiselect__tag-icon"></i></span><span
+                                v-if="index+1 < selectedterritory.length">
+                            </span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="pt-4">
+                    <p class="input-label pb-1">GPO</p>
+                    <div>
+                        <span v-for="(list, index) in selectedgpo" :key="index">
+                            <span class="multiselect__tag"><span>{{ list }}</span> <i aria-hidden="true" tabindex="1"
+                                    class="multiselect__tag-icon"></i></span><span
+                                v-if="index+1 < selectedterritory.length">
+                            </span>
+                        </span>
+                    </div>
+                </div>
+
+
+
+
+                <div class="pt-4">
+                    <p class="input-label pb-1">Market Segment</p>
+                    <div>
+                        <span v-for="(list, index) in selectedmarktetseg" :key="index">
+                            <span class="multiselect__tag"><span>{{ list }}</span> <i aria-hidden="true" tabindex="1"
+                                    class="multiselect__tag-icon"></i></span><span
+                                v-if="index+1 < selectedterritory.length">
+                            </span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="pt-4">
+                    <p class="input-label pb-1">Brands</p>
+                    <div>
+                        <span v-for="(list, index) in selectedbrands" :key="index">
+                            <span class="multiselect__tag"><span>{{ list }}</span> <i aria-hidden="true" tabindex="1"
+                                    class="multiselect__tag-icon"></i></span><span
+                                v-if="index+1 < selectedterritory.length">
+                            </span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="pt-4">
+                    <p class="input-label pb-1">Product Sub-Category</p>
+                    <div>
+                        <span v-for="(list, index) in selectedsubcateg" :key="index">
+                            <span class="multiselect__tag"><span>{{ list }}</span> <i aria-hidden="true" tabindex="1"
+                                    class="multiselect__tag-icon"></i></span><span
+                                v-if="index+1 < selectedterritory.length">
+                            </span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="pt-4">
+                    <p class="input-label pb-1">Product</p>
+                    <div>
+                        <span v-for="(list, index) in selectedprod" :key="index">
+                            <span class="multiselect__tag"><span>{{ list }}</span> <i aria-hidden="true" tabindex="1"
+                                    class="multiselect__tag-icon"></i></span><span
+                                v-if="index+1 < selectedterritory.length">
+                            </span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="pt-4">
+                    <p class="input-label pb-1">Product Category</p>
+                    <div>
+                        <span v-for="(list, index) in selectedprodcat" :key="index">
+                            <span class="multiselect__tag"><span>{{ list }}</span> <i aria-hidden="true" tabindex="1"
+                                    class="multiselect__tag-icon"></i></span><span
+                                v-if="index+1 < selectedterritory.length">
+                            </span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="pt-4">
+                    <p class="input-label pb-1">My Customer Group</p>
+                    <div>
+                        <span v-for="(list, index) in selectedcustgrp" :key="index">
+                            <span class="multiselect__tag"><span>{{ list }}</span> <i aria-hidden="true" tabindex="1"
+                                    class="multiselect__tag-icon"></i></span><span
+                                v-if="index+1 < selectedterritory.length">
+                            </span>
+                        </span>
+                    </div>
+                </div> -->
 
 
             </div>
@@ -320,6 +801,21 @@ export default {
             selecteddistrict: ["Starbucks"],
             selectedterritory: ["Fortuner"],
 
+            selectedregion: ["Starbucks", "Facebook", "Bank of America", "MasterCard"],
+            selectedstates: ["Facebook", "Bank of America", "MasterCard"],
+            selectedchain: ["Starbucks"],
+            selectedgpo: ["Fortuner"],
+
+            selectedmarktetseg: ["Starbucks", "Facebook", "Bank of America", "MasterCard"],
+            selectedbrands: ["Facebook", "Bank of America", "MasterCard"],
+            selectedsubcateg: ["Starbucks"],
+            selectedprod: ["Fortuner"],
+
+            selectedprodcat: ["Fortuner"],
+            selectedcustgrp: ["Starbucks", "Facebook", "Bank of America", "MasterCard"],
+            selectedprodgrp: ["Facebook", "Bank of America", "MasterCard"],
+            selecteddistgrp: ["Starbucks"],
+
             value1: {
                 groupDivision: 'Government',
                 name: 'Agriculture',
@@ -355,9 +851,14 @@ export default {
             header: [
                 { name: 'Customers', code: 'cu' },
                 { name: 'Distributors', code: 'ds' },
+                { name: 'Region', code: 'rgn' },
                 { name: 'States', code: 'sts' },
-                { name: 'States', code: 'sts' },
-                { name: 'Territories', code: 'trt' }
+                { name: 'Territories', code: 'trt' },
+                { name: 'GPO/Buing Groups', code: 'gpo' },
+                { name: 'Market Segment', code: 'mrktseg' },
+                { name: 'Product Category', code: 'proc' },
+                { name: 'Brand', code: 'brnd' },
+                { name: 'Product', code: 'prodct' }
 
             ],
 

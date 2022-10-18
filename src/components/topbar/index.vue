@@ -18,13 +18,13 @@
                         </a>
                         <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
                             <!-- item-->
-                            <router-link to="/profile" class="waves-effect dropdown-item">
-                                <i class="mdi mdi-account-circle"></i> Profile
+                            <router-link to="/profile" class="waves-effect dropdown-item font-14 ">
+                                <i class="mdi mdi-account-circle"></i> MyVT <sup class="font-10 font-weight-500 certical-align-revert">TM</sup>
                             </router-link>
 
-                            <router-link to="/profile" class="waves-effect dropdown-item">
-                                <span class="badge btn-orange float-right">11</span><i class="mdi mdi-settings"></i>
-                                Settings
+                            <router-link to="/client-VT" class="waves-effect dropdown-item font-14">
+                                <span class="badge btn-orange float-right">11</span><i class="mdi mdi-account-circle"></i>
+                                MyVT <sup class="font-10 font-weight-500 certical-align-revert">TM</sup>Admin
                             </router-link>
 
                             <div class="dropdown-divider"></div>

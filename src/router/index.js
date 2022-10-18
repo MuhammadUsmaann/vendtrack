@@ -6,8 +6,11 @@ import FilterSalesGenerator from '../views/FilterReportGenerator'
 import FilterComparisonGenerator from '../views/FilterComparisonGenerator'
 import ReportGeneratorComparisonView from '../views/ReportGeneratorViewComparison'
 import PromotionView from '../views/PromotionView.vue'
-
+import RepidReportSelect from '../views/RepidReportsSelect.vue'
 import WhosReported from '../views/WhosReportedView.vue'
+
+import SavedReports from '../views/SavedReportsView.vue'
+
 import YtdPurchase from '../views/PurchaseView.vue'
 
 import MyVTAdmin from '../views/MyVTAdminView.vue'
@@ -31,6 +34,11 @@ const routes = [
     path: '/promotion',
     name: 'Promotion',
     component: PromotionView
+  },
+  {
+    path: '/saved-reports',
+    name: 'SavedReports',
+    component: SavedReports
   },
   {
     path: '/report-generator',
@@ -116,6 +124,11 @@ const routes = [
     path: '/rapid-reports',
     name: 'rapid-reports',
     component: RapidReports
+  },
+  {
+    path: '/select-rapid-reports',
+    name: 'RapidReportSelect',
+    component: RepidReportSelect
   },
   
 

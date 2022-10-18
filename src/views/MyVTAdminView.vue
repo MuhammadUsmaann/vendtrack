@@ -19,23 +19,39 @@
             src="../assets/excel.svg" alt="" class="pr-1">
           <div class="d-md-inline-block d-none"> Export in Excel</div>
         </button>
-        <button class="btn btn-orange ml-2 d-inline-flex justify-content-center align-items-center" @click="$bvModal.show('addUser')"><img src="../assets/plus.svg" alt=""
-            class="pr-1"> <span>Add</span>
+        <button class="btn btn-orange ml-2 d-inline-flex justify-content-center align-items-center"
+          @click="$bvModal.show('addUser')"><img src="../assets/plus.svg" alt="" class="pr-1"> <span class = "pr-1">Add </span>
           <div class="d-md-inline-block d-none"> User</div>
         </button>
       </div>
     </div>
     <div class="overflow-auto">
 
+
       <b-table id="my-table" hover :fields="fields" :items="items" :per-page="perPage" :current-page="currentPage">
+
         <template v-for="field in editableField" v-slot:[`cell(${field.key})`]="{ item ,value}">
+
           <span :key="field.key" v-if="!item.editing">
             {{ value }}
           </span>
+
           <b-input :key="field.index" v-else v-model="item.temp[field.key]" @keydown.enter.exact="doSave(item)" />
+
         </template>
 
-        <template #cell(action)={item}>
+        
+        
+
+
+        <template #cell(action)>
+          <div class="d-flex justify-content-center align-items-center">
+            <div small class="mr-2 text-center cursor-pointer" @click="$bvModal.show('editUser')">
+              <img src="../assets/UserInterface.svg" alt="">
+            </div>
+          </div>
+        </template>
+        <!-- <template #cell(action)={item}>
           <div class="d-flex justify-content-center align-items-center">
             <div small class="mr-2 text-center cursor-pointer" v-if="!item.editing" @click="doEdit(item)">
               <img src="../assets/UserInterface.svg" alt="">
@@ -47,8 +63,13 @@
               <img src="../assets/check-circle.svg" alt="">
             </span>
           </div>
-        </template>
+        </template> -->
+
+
       </b-table>
+
+
+
     </div>
     <div class=" paginationclass pt-4">
       <div class="font-mono font-14 mb-3">
@@ -67,15 +88,29 @@
       <div class="d-block">
         <b-form v-if="show">
           <b-row class="mx-0  inner-font-black inner-font-14 pb-5">
+            
             <v-col cols="12" md="6" class="p-1">
               <b-form-group label="First Name" label-for="FirstName" class="mb-0 input-label">
-                <b-form-input id="FirstName"></b-form-input>
+                <b-form-input id="FirstName" type="text"></b-form-input>
               </b-form-group>
               <!-- <v-text-field label="First Name" outlined></v-text-field> -->
             </v-col>
             <v-col cols="12" md="6" class="p-1">
-              <b-form-group label="Last Name" label-for="FirstName" class="mb-0 input-label">
-                <b-form-input id="LastName"></b-form-input>
+              <b-form-group label="Last Name" label-for="LastName" class="mb-0 input-label">
+                <b-form-input id="LastName" type="text"></b-form-input>
+              </b-form-group>
+              <!-- <v-text-field label="Last Name" outlined></v-text-field> -->
+            </v-col>
+            <v-col cols="12" md="6" class="p-1">
+              <b-form-group label="Email" label-for="Email" class="mb-0 input-label">
+                <b-form-input id="Email" type="email"></b-form-input>
+              </b-form-group>
+              <!-- <v-text-field label="First Name" outlined></v-text-field> -->
+            </v-col>
+            <v-col cols="12" md="6" class="p-1">
+
+              <b-form-group label="Password" label-for="Password" class="mb-0 input-label">
+                <b-form-input id="Password" type="password"></b-form-input>
               </b-form-group>
               <!-- <v-text-field label="Last Name" outlined></v-text-field> -->
             </v-col>
@@ -91,7 +126,83 @@
             </v-col>
 
             <v-col cols="12" md="6" class="p-1">
+              <p class="input-label pb-1">Access Level</p>
+              <b-dropdown id="dropdown-1" text="Access Level" block variant="outline"
+                class="text-left custom-dropdown dropbtn rounded">
+                <b-dropdown-item>All Sales</b-dropdown-item>
+
+                <b-dropdown id="dropdown-2" text="Region " variant="outline" dropright class="">
+                  <div class="px-2">
+                    <b-form-checkbox value="me">Barcelona</b-form-checkbox>
+                    <b-form-checkbox value="me">Madrid</b-form-checkbox>
+                    <b-form-checkbox value="me">Alicante</b-form-checkbox>
+                  </div>
+
+                </b-dropdown>
+                <b-dropdown id="dropdown-2" text="Territory" variant="outline" dropright class="">
+                  <div class="px-2">
+                    <b-form-checkbox value="me">Barcelona</b-form-checkbox>
+                    <b-form-checkbox value="me">Madrid</b-form-checkbox>
+                    <b-form-checkbox value="me">Alicante</b-form-checkbox>
+                  </div>
+
+                </b-dropdown>
+              </b-dropdown>
+            </v-col>
+          </b-row>
+          <div class="text-center">
+            <b-button type="submit" @click="$bvModal.hide('addUser')" variant="orange"
+              class="  d-inline-flex justify-content-center align-items-center">
+              <img src="../assets/check.svg" alt="" class="mr-2" /> Save
+            </b-button>
+          </div>
+        </b-form>
+      </div>
+    </b-modal>
+
+
+
+
+    <b-modal id="editUser" hide-footer>
+      <template #modal-title>
+        <span class="font-20 font-weight-700"> Add New User</span>
+      </template>
+      <div class="d-block">
+        <b-form v-if="show">
+          <b-row class="mx-0  inner-font-black inner-font-14 pb-5">
+            
+            <v-col cols="12" md="6" class="p-1">
+              <b-form-group label="UserName" label-for="UserName" class="mb-0 input-label">
+                <b-form-input id="UserName" type="text"></b-form-input>
+              </b-form-group>
+              <!-- <v-text-field label="First Name" outlined></v-text-field> -->
+            </v-col>
+            <v-col cols="12" md="6" class="p-1">
+              <b-form-group label="Email" label-for="Email" class="mb-0 input-label">
+                <b-form-input id="Email" type="email"></b-form-input>
+              </b-form-group>
+              <!-- <v-text-field label="First Name" outlined></v-text-field> -->
+            </v-col>
+            <v-col cols="12" md="6" class="p-1">
+
+              <b-form-group label="Password" label-for="Password" class="mb-0 input-label">
+                <b-form-input id="Password" type="password"></b-form-input>
+              </b-form-group>
+              <!-- <v-text-field label="Last Name" outlined></v-text-field> -->
+            </v-col>
+            <v-col cols="12" md="6" class="p-1">
+              <p class="input-label pb-1">Active</p>
+              <b-form-select :options="active"></b-form-select>
+              <!-- <v-select :items="active" label="Active" outlined></v-select> -->
+            </v-col>
+            <v-col cols="12" md="6" class="p-1">
               <p class="input-label pb-1">User Type</p>
+              <b-form-select :options="userType"></b-form-select>
+              <!-- <v-select :items="userType" label="User Type"  outlined></v-select> -->
+            </v-col>
+
+            <v-col cols="12" md="6" class="p-1">
+              <p class="input-label pb-1">Access Level</p>
               <b-dropdown id="dropdown-1" text="Access Level" block variant="outline"
                 class="text-left custom-dropdown dropbtn rounded">
                 <b-dropdown-item>All Sales</b-dropdown-item>
@@ -148,17 +259,19 @@ export default {
     fields: [
       { label: 'Username', key: 'username', editable: true },
       { label: 'Email Address', key: 'emailAddress', editable: true },
+      { label: 'Password', key: 'password', editable: true },
       { label: 'User Type', key: 'userType', editable: true },
-      { label: 'Access Level', key: 'accessLevel', editable: true },
-      { label: 'Status', key: 'status', editable: true },
-      { label: 'CYTD Login Count', key: 'CYTDLoginCount', class: 'rightAligned', editable: true },
-      { label: 'Current Month Login Count', key: 'currentMonthLoginCount', class: 'rightAligned', editable: true },
+      { label: 'Access Level', key: 'accessLevel', editable: false },
+      { label: 'Status', key: 'status', editable: false },
+      { label: 'CYTD Login Count', key: 'CYTDLoginCount', class: 'rightAligned', editable: false },
+      { label: 'Current Month Login Count', key: 'currentMonthLoginCount', class: 'rightAligned', editable: false },
       { label: 'Action', key: 'action', align: 'center', width: '20%' },
     ],
     items: [
       {
         username: 'Devon Lane',
         emailAddress: 'dolores.chambers@example.com',
+        password: '@2323dsd@',
         userType: 'Admin',
         accessLevel: 'Admin',
         status: 'Active',
@@ -168,6 +281,7 @@ export default {
       {
         username: 'Devon Lane',
         emailAddress: 'dolores.chambers@example.com',
+        password: '@2323dsd@',
         userType: 'Admin',
         accessLevel: 'Admin',
         status: 'Active',
@@ -177,6 +291,7 @@ export default {
       {
         username: 'Devon Lane',
         emailAddress: 'dolores.chambers@example.com',
+        password: '@2323dsd@',
         userType: 'Admin',
         accessLevel: 'Admin',
         status: 'Active',
@@ -186,6 +301,7 @@ export default {
       {
         username: 'Devon Lane',
         emailAddress: 'dolores.chambers@example.com',
+        password: '@2323dsd@',
         userType: 'Admin',
         accessLevel: 'Admin',
         status: 'Active',
@@ -195,6 +311,7 @@ export default {
       {
         username: 'Devon Lane',
         emailAddress: 'dolores.chambers@example.com',
+        password: '@2323dsd@',
         userType: 'Admin',
         accessLevel: 'Admin',
         status: 'Active',
@@ -204,6 +321,7 @@ export default {
       {
         username: 'Devon Lane',
         emailAddress: 'dolores.chambers@example.com',
+        password: '@2323dsd@',
         userType: 'Admin',
         accessLevel: 'Admin',
         status: 'Active',
@@ -213,6 +331,7 @@ export default {
       {
         username: 'Devon Lane',
         emailAddress: 'dolores.chambers@example.com',
+        password: '@2323dsd@',
         userType: 'Admin',
         accessLevel: 'Admin',
         status: 'Active',
@@ -222,6 +341,7 @@ export default {
       {
         username: 'Devon Lane',
         emailAddress: 'dolores.chambers@example.com',
+        password: '@2323dsd@',
         userType: 'Admin',
         accessLevel: 'Admin',
         status: 'Active',
@@ -231,6 +351,7 @@ export default {
       {
         username: 'Devon Lane',
         emailAddress: 'dolores.chambers@example.com',
+        password: '@2323dsd@',
         userType: 'Admin',
         accessLevel: 'Admin',
         status: 'Active',
@@ -240,6 +361,7 @@ export default {
       {
         username: 'Devon Lane',
         emailAddress: 'dolores.chambers@example.com',
+        password: '@2323dsd@',
         userType: 'Admin',
         accessLevel: 'Admin',
         status: 'Active',
@@ -249,6 +371,7 @@ export default {
       {
         username: 'Devon Lane',
         emailAddress: 'dolores.chambers@example.com',
+        password: '@2323dsd@',
         userType: 'Admin',
         accessLevel: 'Admin',
         status: 'Active',
@@ -258,6 +381,7 @@ export default {
       {
         username: 'Devon Lane',
         emailAddress: 'dolores.chambers@example.com',
+        password: '@2323dsd@',
         userType: 'Admin',
         accessLevel: 'Admin',
         status: 'Active',
@@ -268,6 +392,7 @@ export default {
       {
         username: 'Devon Lane',
         emailAddress: 'dolores.chambers@example.com',
+        password: '@2323dsd@',
         userType: 'Admin',
         accessLevel: 'Admin',
         status: 'Active',
@@ -277,6 +402,7 @@ export default {
       {
         username: 'Devon Lane',
         emailAddress: 'dolores.chambers@example.com',
+        password: '@2323dsd@',
         userType: 'Admin',
         accessLevel: 'Admin',
         status: 'Active',
@@ -286,6 +412,7 @@ export default {
       {
         username: 'Devon Lane',
         emailAddress: 'dolores.chambers@example.com',
+        password: '@2323dsd@',
         userType: 'Admin',
         accessLevel: 'Admin',
         status: 'Active',
@@ -295,6 +422,7 @@ export default {
       {
         username: 'Devon Lane',
         emailAddress: 'dolores.chambers@example.com',
+        password: '@2323dsd@',
         userType: 'Admin',
         accessLevel: 'Admin',
         status: 'Active',
@@ -304,6 +432,7 @@ export default {
       {
         username: 'Devon Lane',
         emailAddress: 'dolores.chambers@example.com',
+        password: '@2323dsd@',
         userType: 'Admin',
         accessLevel: 'Admin',
         status: 'Active',
@@ -313,6 +442,7 @@ export default {
       {
         username: 'Devon Lane',
         emailAddress: 'dolores.chambers@example.com',
+        password: '@2323dsd@',
         userType: 'Admin',
         accessLevel: 'Admin',
         status: 'Active',
@@ -322,6 +452,7 @@ export default {
       {
         username: 'Devon Lane',
         emailAddress: 'dolores.chambers@example.com',
+        password: '@2323dsd@',
         userType: 'Admin',
         accessLevel: 'Admin',
         status: 'Active',
@@ -331,6 +462,7 @@ export default {
       {
         username: 'Devon Lane',
         emailAddress: 'dolores.chambers@example.com',
+        password: '@2323dsd@',
         userType: 'Admin',
         accessLevel: 'Admin',
         status: 'Active',
@@ -340,6 +472,7 @@ export default {
       {
         username: 'Devon Lane',
         emailAddress: 'dolores.chambers@example.com',
+        password: '@2323dsd@',
         userType: 'Admin',
         accessLevel: 'Admin',
         status: 'Active',
@@ -349,6 +482,7 @@ export default {
       {
         username: 'Devon Lane',
         emailAddress: 'dolores.chambers@example.com',
+        password: '@2323dsd@',
         userType: 'Admin',
         accessLevel: 'Admin',
         status: 'Active',
@@ -358,6 +492,7 @@ export default {
       {
         username: 'Devon Lane',
         emailAddress: 'dolores.chambers@example.com',
+        password: '@2323dsd@',
         userType: 'Admin',
         accessLevel: 'Admin',
         status: 'Active',
@@ -367,6 +502,7 @@ export default {
       {
         username: 'Devon Lane',
         emailAddress: 'dolores.chambers@example.com',
+        password: '@2323dsd@',
         userType: 'Admin',
         accessLevel: 'Admin',
         status: 'Active',
@@ -376,6 +512,7 @@ export default {
       {
         username: 'Devon Lane',
         emailAddress: 'dolores.chambers@example.com',
+        password: '@2323dsd@',
         userType: 'Admin',
         accessLevel: 'Admin',
         status: 'Active',
@@ -385,6 +522,7 @@ export default {
       {
         username: 'Devon Lane',
         emailAddress: 'dolores.chambers@example.com',
+        password: '@2323dsd@',
         userType: 'Admin',
         accessLevel: 'Admin',
         status: 'Active',
@@ -394,6 +532,7 @@ export default {
       {
         username: 'Devon Lane',
         emailAddress: 'dolores.chambers@example.com',
+        password: '@2323dsd@',
         userType: 'Admin',
         accessLevel: 'Admin',
         status: 'Active',
@@ -403,6 +542,7 @@ export default {
       {
         username: 'Devon Lane',
         emailAddress: 'dolores.chambers@example.com',
+        password: '@2323dsd@',
         userType: 'Admin',
         accessLevel: 'Admin',
         status: 'Active',
@@ -412,6 +552,7 @@ export default {
       {
         username: 'Devon Lane',
         emailAddress: 'dolores.chambers@example.com',
+        password: '@2323dsd@',
         userType: 'Admin',
         accessLevel: 'Admin',
         status: 'Active',
@@ -421,6 +562,7 @@ export default {
       {
         username: 'Devon Lane',
         emailAddress: 'dolores.chambers@example.com',
+        password: '@2323dsd@',
         userType: 'Admin',
         accessLevel: 'Admin',
         status: 'Active',
@@ -430,6 +572,7 @@ export default {
       {
         username: 'Devon Lane',
         emailAddress: 'dolores.chambers@example.com',
+        password: '@2323dsd@',
         userType: 'Admin',
         accessLevel: 'Admin',
         status: 'Active',
@@ -439,6 +582,7 @@ export default {
       {
         username: 'Devon Lane',
         emailAddress: 'dolores.chambers@example.com',
+        password: '@2323dsd@',
         userType: 'Admin',
         accessLevel: 'Admin',
         status: 'Active',
@@ -448,6 +592,7 @@ export default {
       {
         username: 'Devon Lane',
         emailAddress: 'dolores.chambers@example.com',
+        password: '@2323dsd@',
         userType: 'Admin',
         accessLevel: 'Admin',
         status: 'Active',
@@ -457,6 +602,7 @@ export default {
       {
         username: 'Devon Lane',
         emailAddress: 'dolores.chambers@example.com',
+        password: '@2323dsd@',
         userType: 'Admin',
         accessLevel: 'Admin',
         status: 'Active',
