@@ -5,12 +5,13 @@
                 <CHeading content="Report Generator" />
             </div>
             <div class="col-md col-sm-6 col-12 px-0 text-center">
-                <router-link to="/filter-report-generator">
-                    <button class="btn-light-orange btn font-20 font-weight-700">Sales</button>
-                </router-link>
                 <router-link to="/filter-comparison-generator">
                     <button class="btn text-black font-18 font-weight-500 ml-2 font-18">Comparison</button>
                 </router-link>
+                <router-link to="/filter-report-generator">
+                    <button class="btn-light-orange btn font-20 font-weight-700">Sales</button>
+                </router-link>
+                
             </div>
             <div class="col-md col-12 px-0 text-right">
                 <span class="font-500 font-14 font-mono">Last Update: 02/18/2022</span>

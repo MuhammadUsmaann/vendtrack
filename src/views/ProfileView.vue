@@ -153,10 +153,10 @@
                   </div>
                 </template>
               </b-table>
-              <button class="btn btn-orange mt-2 ml-2 d-inline-flex justify-content-center align-items-center"
+              <!-- <button class="btn btn-orange mt-2 ml-2 d-inline-flex justify-content-center align-items-center"
                 @click="$bvModal.show('addNewCustomerGroupRow')"><img src="../assets/plus.svg" alt="" class="pr-1">
                 Add
-              </button>
+              </button> -->
             </div>
 
             <div class="table-hhh-main pt-4">
@@ -202,10 +202,10 @@
                   </div>
                 </template>
               </b-table>
-              <button class="btn btn-orange ml-2 d-inline-flex justify-content-center align-items-center"
+              <!-- <button class="btn btn-orange ml-2 d-inline-flex justify-content-center align-items-center"
                 @click="$bvModal.show('addNewProductGroupRow')"><img src="../assets/plus.svg" alt="" class="pr-1">
                 Add
-              </button>
+              </button> -->
             </div>
 
             <div class="table-hhh-main pt-4">
@@ -251,13 +251,13 @@
                   </div>
                 </template>
               </b-table>
-              <button class="btn btn-orange ml-2 mt-2 d-inline-flex justify-content-center align-items-center"
+              <!-- <button class="btn btn-orange ml-2 mt-2 d-inline-flex justify-content-center align-items-center"
                 @click="$bvModal.show('addNewDistributorGroupRow')"><img src="../assets/plus.svg" alt="" class="pr-1">
                 Add
-              </button>
+              </button> -->
             </div>
 
-            <div class="select-main-hhh">
+            <!-- <div class="select-main-hhh">
               <div class="font-weight-700 font-14 font-black my-3">Customer Group</div>
               <div class="row">
                 <div class="col-md-6 ">
@@ -282,7 +282,7 @@
                   </v-menu>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>

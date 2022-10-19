@@ -5,17 +5,44 @@
         <CHeading content="Report Generator" />
       </div>
       <div class="col-md col-sm-6 col-12 px-0 text-center">
-        <router-link to="/report-generator">
-          <button class="btn-light-orange btn font-20 font-weight-700">Sales</button>
-        </router-link>
         <router-link to="/report-generator-comparison-view">
           <button class="btn text-black font-18 font-weight-500 ml-2 font-18">Comparison</button>
         </router-link>
+        <router-link to="/report-generator">
+          <button class="btn-light-orange btn font-20 font-weight-700">Sales</button>
+        </router-link>
+       
       </div>
-      <div class="col-md col-12 px-0 text-right">
+      <div class="col-md-5 col-12 px-0 text-right">
         <span class="font-500 font-14 font-mono">Last Update: 02/18/2022</span>
-        <!-- <button class="btn btn-orange ml-2 font-14"><i class="fa-solid fa-check"></i> Generate</button> -->
+        <button class=" btn border border-light-gray ml-2 font-14 font-weight-500 font-black shadow-sm"><img
+            src="../assets/excel.svg" alt="" class="pr-1">
+          <div class="d-md-inline-block d-none"> Export in Excel</div>
+        </button>
+        <button class="btn btn-orange ml-2 font-14" @click="$bvModal.show('saveReport')"> Save Report</button>
       </div>
+      <!-- popup -->
+      <b-modal id="saveReport" hide-footer size="md" centered>
+        <template #modal-title>
+          <span class="font-20 font-weight-700">Report Title</span>
+        </template>
+        <div class="d-block">
+          <b-form>
+            <b-row class="mx-0  inner-font-black inner-font-14">
+              <v-col cols="12" md="12" class="p-1">
+                <b-form-input id="FirstName" placeholder="Type Here"></b-form-input>
+              </v-col>
+            </b-row>
+            <div class="text-center pt-2">
+              <router-link to="/whos-reported">
+                <button type="submit" @click="$bvModal.hide('saveReport')"
+                  class="px-3 mt-3 btn btn-orange">Generate</button>
+              </router-link>
+            </div>
+          </b-form>
+        </div>
+      </b-modal>
+      <!--  -->
     </div>
     <div class="row">
       <div class="col-9">
@@ -52,7 +79,7 @@
       <div class="px-2 col-md-auto col-6 col-sm-4">
         <div class="input-label">Regions</div>
         <div class="font-13 font-weight-600 font-black mt-1 font-mono">A,D,G</div>
-        
+
       </div>
       <div class="px-2 col-md-auto col-6 col-sm-4">
         <div class="input-label">State</div>
@@ -71,7 +98,7 @@
       </div>
     </div>
     <div class="font-20 font-weight-700 font-black mt-4 mb-1">Results</div>
-    
+
 
     <div class="overflow-auto">
 
@@ -111,17 +138,17 @@ export default {
     currentPage: 1,
 
     fields: [
-      { label: 'Chain', key: 'chain'},
-      { label: 'Customer', key: 'customer',  },
+      { label: 'Chain', key: 'chain' },
+      { label: 'Customer', key: 'customer', },
       { label: 'Year', key: 'year' },
-      { label: 'Q1', key: 'q1',class:'rightAligned' },
-      { label: 'Q2', key: 'q2',class:'rightAligned' },
-      { label: 'Q3', key: 'q3', class:'rightAligned'},
-      { label: 'YTD Total', key: 'ytdTotal', align: 'right',class:'rightAligned' },
-      { label: 'Total', key: 'total', align: 'right', class:'rightAligned'},
+      { label: 'Q1', key: 'q1', class: 'rightAligned' },
+      { label: 'Q2', key: 'q2', class: 'rightAligned' },
+      { label: 'Q3', key: 'q3', class: 'rightAligned' },
+      { label: 'YTD Total', key: 'ytdTotal', align: 'right', class: 'rightAligned' },
+      { label: 'Total', key: 'total', align: 'right', class: 'rightAligned' },
 
     ],
-    
+
     items: [
       {
         chain: 'Louis Vuitton',
@@ -572,7 +599,7 @@ export default {
 }
 
 
-.rightAligned{
+.rightAligned {
   text-align: end;
 }
 </style>

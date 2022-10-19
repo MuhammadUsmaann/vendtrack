@@ -63,7 +63,7 @@
             <div class="text-center pt-2">
               <router-link to="/rapid-reports">
 
-                <button type="submit" @click="$bvModal.hide('addNewCustomerGroup')"
+                <button type="submit" @click="$bvModal.hide('selectCustomerModal1')"
                   class="px-3 mt-3 btn btn-orange">Generate</button>
               </router-link>
             </div>
@@ -85,7 +85,7 @@
             <div class="text-center pt-2">
               <router-link to="/rapid-reports">
 
-                <button type="submit" @click="$bvModal.hide('addNewCustomerGroup')"
+                <button type="submit" @click="$bvModal.hide('selectCustomerModal2')"
                   class="px-3 mt-3 btn btn-orange">Generate</button>
               </router-link>
             </div>
@@ -108,7 +108,7 @@
             <div class="text-center pt-2">
               <router-link to="/rapid-reports">
 
-                <button type="submit" @click="$bvModal.hide('addNewCustomerGroup')"
+                <button type="submit" @click="$bvModal.hide('selectCustomerModal3')"
                   class="px-3 mt-3 btn btn-orange">Generate</button>
               </router-link>
             </div>

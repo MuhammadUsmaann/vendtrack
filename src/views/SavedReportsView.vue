@@ -12,7 +12,7 @@
       <b-table id="my-table" hover :fields="fields" :items="items" :per-page="perPage" :current-page="currentPage">
         <template #cell(regenerate)>
           
-          <router-link to="/whos-reported" class="waves-effect">
+          <router-link to="/filter-comparison-generator" class="waves-effect">
           <p class="mb-0 font-weight-600 font-black font-13 text-right font-mono font-style-underline">Re-Generate
           </p>
         </router-link>
