@@ -15,36 +15,106 @@
 
 
     <div class=" pt-5 repid-reports-responsive">
+
       <div class="mx-lg-3 rapid-sub-div">
-        <router-link to="/rapid-reports">
-          <div class="blocks position-relative">
+        <!-- <router-link to="/rapid-reports"> -->
+        <div class="blocks position-relative cursor-pointer " @click="$bvModal.show('selectCustomerModal1')">
+          <img src="../assets/operator.svg" alt="" />
+          <p class="font-23 font-weight-700 pt-4 font-black linkstyle repidlink">Chain</p>
+        </div>
+        <!-- </router-link> -->
 
-            <img src="../assets/operator.svg" alt="" />
-
-            <p class="font-30 font-weight-700 pt-4 font-black linkstyle repidlink">Chain</p>
-          </div>
-        </router-link>
       </div>
       <div class="mx-lg-3 ">
-        <router-link to="/rapid-reports">
-          <div class="blocks position-relative">
+        <!-- <router-link to="/rapid-reports"> -->
+          <div class="blocks position-relative cursor-pointer" @click="$bvModal.show('selectCustomerModal2')">
 
             <img src="../assets/chain.svg" alt="" />
 
-            <p class="font-30 font-weight-700 pt-4 font-black linkstyle repidlink">Chain/National Account</p>
+            <p class="font-23 font-weight-700 pt-4 font-black linkstyle repidlink">Chain/National Account</p>
           </div>
-        </router-link>
+        <!-- </router-link> -->
       </div>
       <div class="mx-lg-3 rapid-sub-div">
-        <router-link to="/rapid-reports">
-          <div class="blocks position-relative">
+        <!-- <router-link to="/rapid-reports"> -->
+          <div class="blocks position-relative cursor-pointer" @click="$bvModal.show('selectCustomerModal3')">
 
             <img src="../assets/gpo.svg" alt="" />
 
-            <p class="font-30 font-weight-700 pt-4 font-black linkstyle repidlink">GPO</p>
+            <p class="font-23 font-weight-700 pt-4 font-black linkstyle repidlink">GPO</p>
           </div>
-        </router-link>
+        <!-- </router-link> -->
       </div>
+
+
+
+
+      <b-modal id="selectCustomerModal1" hide-footer size="md" centered>
+        <template #modal-title>
+          <span class="font-20 font-weight-700">Select Customer</span>
+        </template>
+        <div class="d-block">
+          <b-form>
+            <b-row class="mx-0  inner-font-black inner-font-14">
+              <v-col cols="12" md="12" class="p-1">
+                <b-form-input id="FirstName" placeholder="Type Here"></b-form-input>
+              </v-col>
+            </b-row>
+            <div class="text-center pt-2">
+              <router-link to="/rapid-reports">
+
+                <button type="submit" @click="$bvModal.hide('addNewCustomerGroup')"
+                  class="px-3 mt-3 btn btn-orange">Generate</button>
+              </router-link>
+            </div>
+          </b-form>
+        </div>
+      </b-modal>
+
+      <b-modal id="selectCustomerModal2" hide-footer size="md" centered>
+        <template #modal-title>
+          <span class="font-20 font-weight-700">Select Customer</span>
+        </template>
+        <div class="d-block">
+          <b-form>
+            <b-row class="mx-0  inner-font-black inner-font-14">
+              <v-col cols="12" md="12" class="p-1">
+                <b-form-input id="FirstName" placeholder="Type Here"></b-form-input>
+              </v-col>
+            </b-row>
+            <div class="text-center pt-2">
+              <router-link to="/rapid-reports">
+
+                <button type="submit" @click="$bvModal.hide('addNewCustomerGroup')"
+                  class="px-3 mt-3 btn btn-orange">Generate</button>
+              </router-link>
+            </div>
+          </b-form>
+        </div>
+      </b-modal>
+
+
+      <b-modal id="selectCustomerModal3" hide-footer size="md" centered>
+        <template #modal-title>
+          <span class="font-20 font-weight-700">Select Customer</span>
+        </template>
+        <div class="d-block">
+          <b-form>
+            <b-row class="mx-0  inner-font-black inner-font-14">
+              <v-col cols="12" md="12" class="p-1">
+                <b-form-input id="FirstName" placeholder="Type Here"></b-form-input>
+              </v-col>
+            </b-row>
+            <div class="text-center pt-2">
+              <router-link to="/rapid-reports">
+
+                <button type="submit" @click="$bvModal.hide('addNewCustomerGroup')"
+                  class="px-3 mt-3 btn btn-orange">Generate</button>
+              </router-link>
+            </div>
+          </b-form>
+        </div>
+      </b-modal>
 
     </div>
 
@@ -71,13 +141,12 @@ export default {
 }
 
 .blocks {
-
   background: #FFFFFF;
   border: 1px solid #E6E3E3;
   box-shadow: 0px 16px 50px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
-  width: 370px;
-  height: 350px;
+  width: 350px;
+  height: 343px;
   padding: 30px;
   display: flex;
   justify-content: center;
@@ -131,6 +200,7 @@ a:hover {
   .repid-reports-responsive {
     flex-direction: column !important;
   }
+
   .repid-reports-responsive .rapid-sub-div {
     margin: 10px 0 !important;
   }
