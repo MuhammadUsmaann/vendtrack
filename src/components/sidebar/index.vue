@@ -25,6 +25,12 @@
                         </router-link>
                     </li>
                     <li>
+                        <router-link to="/whos-reported" class="waves-effect">
+                            <!-- <img src="" alt=""> -->
+                            <span> Who’s Reported </span>
+                        </router-link>
+                    </li>
+                    <li>
                         <router-link to="/filter-comparison-generator" class="waves-effect">
                             <img src="../../assets/ReportGenerator.svg" alt="">
                             <span> Report Generator </span>
