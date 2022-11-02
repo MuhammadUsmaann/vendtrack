@@ -5,29 +5,30 @@
         <CHeading content="Promotions" />
       </div>
       <div class="col-lg-7 col-md-8 col-12">
-       <div class = "d-flex justify-content-xl-center justify-content-end align-items-center">
-        <span class="btn-light-orange py-2 rounded px-4 font-weight-700">
-          Delicious Reward
-        </span>
-        <div class = "pl-4 pr-5">
-          <p class = "font-weight-500 font-12 font-black">Theater Enrollment </p>
-          <p class = "font-weight-500 font-18 font-black">2021-2022</p>
+        <div class="d-flex justify-content-xl-center justify-content-end align-items-center">
+          <span class="btn-light-orange py-2 rounded px-4 font-weight-700">
+            Delicious Reward
+          </span>
+          <div class="pl-4 pr-5">
+            <p class="font-weight-500 font-12 font-black">Theater Enrollment </p>
+            <p class="font-weight-500 font-18 font-black">2021-2022</p>
+          </div>
+          <div>
+            <p class="font-weight-500 font-12 font-black">Theater Enrollment </p>
+            <p class="font-weight-500 font-18 font-black">2021-2022</p>
+          </div>
         </div>
-        <div>
-          <p class = "font-weight-500 font-12 font-black">Theater Enrollment </p>
-          <p class = "font-weight-500 font-18 font-black">2021-2022</p>
-        </div>
-       </div>
       </div>
       <div class="col-lg-3 col-12 px-0 text-right">
         <b-dropdown id="dropdown-1" text="All Application" variant="outline"
-          class="d-inline-block inner-border-light-gray ml-2 inner-font-14 font-weight-500 font-black shadow-sm bg-transparent">
+          class="d-inline-block inner-border-light-gray ml-2 inner-font-14 font-weight-500 font-black shadow-sm mb-md-0 mb-1 bg-transparent">
           <b-dropdown-item>First Action</b-dropdown-item>
           <b-dropdown-item>Second Action</b-dropdown-item>
           <b-dropdown-item>Third Action</b-dropdown-item>
         </b-dropdown>
 
-        <button class="btn border border-light-gray ml-2 bg-white font-14 font-weight-500 font-black shadow-sm"><img
+        <button
+          class="btn border border-light-gray ml-2 bg-white font-14 font-weight-500 font-black shadow-sm mb-md-0 mb-1"><img
             src="../assets/excel.svg" alt="" class="pr-1">
           <div class="d-md-inline-block d-none"> Export in Excel</div>
         </button>
@@ -35,13 +36,11 @@
     </div>
 
 
-    <b-table id="my-table" hover :fields="marketSegmentSalesPerformanceHeader" :items="marketSegmentSalesPerformance"
-      :per-page="perPage" :current-page="currentPage">
-
+    <div class="overflow-auto"><b-table id="my-table" hover :fields="marketSegmentSalesPerformanceHeader" :items="marketSegmentSalesPerformance">
       <template v-slot:cell(DownloadForm)>
         <img src="../assets/download.svg" alt="">
       </template>
-    </b-table>
+    </b-table></div>
 
   </div>
 </template>

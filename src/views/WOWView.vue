@@ -10,22 +10,22 @@
         <span class="font-500 font-14 font-mono mr-1 w-md-100 d-inline-block mb-md-0 mb-2">Last Update:
           02/18/2022</span>
         <b-dropdown id="dropdown-1" text="All Sales" variant="outline"
-          class=" d-inline-block inner-border-light-gray ml-md-2 inner-font-14 font-weight-500 font-black shadow-sm bg-transparent">
+          class=" d-inline-block inner-border-light-gray ml-md-2 inner-font-14 font-weight-500 font-black shadow-sm mb-md-0 mb-1 bg-transparent">
           <b-dropdown-item>First Action</b-dropdown-item>
           <b-dropdown-item>Second Action</b-dropdown-item>
           <b-dropdown-item>Third Action</b-dropdown-item>
         </b-dropdown>
         <b-dropdown id="dropdown-1" text="Cases" variant="outline"
-          class=" d-inline-block inner-border-light-gray ml-2 inner-font-14 font-weight-500 font-black shadow-sm bg-transparent">
+          class=" d-inline-block inner-border-light-gray ml-2 inner-font-14 font-weight-500 font-black shadow-sm mb-md-0 mb-1 bg-transparent">
           <b-dropdown-item>First Action</b-dropdown-item>
           <b-dropdown-item>Second Action</b-dropdown-item>
           <b-dropdown-item>Third Action</b-dropdown-item>
         </b-dropdown>
-        <button class=" btn border border-light-gray ml-2 font-14 font-weight-500 font-black shadow-sm"><img
+        <button class=" btn border border-light-gray ml-2 font-14 font-weight-500 font-black shadow-sm mb-md-0 mb-1"><img
             src="../assets/excel.svg" alt="" class="pr-1">
           <div class="d-md-inline-block d-none"> Export in Excel</div>
         </button>
-        <button class="btn border border-light-gray ml-2 bg-white font-14 font-weight-500 font-black shadow-sm"><img
+        <button class="btn border border-light-gray ml-2 bg-white font-14 font-weight-500 font-black shadow-sm mb-md-0 mb-1"><img
             src="../assets/pdf.svg" alt="" class="pr-1">
           <div class="d-md-inline-block d-none"> Export in PDF</div>
         </button>

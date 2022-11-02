@@ -10,17 +10,17 @@
         <span class="font-500 font-14 font-mono mr-1">Sales Data Available Up To: 02/18/2022</span>
         <div class="bg-white d-inline-block rounded ml-2">
           <b-dropdown id="dropdown-1" text="Cases" variant="outline"
-            class="d-inline-block inner-border-light-gray inner-font-14 font-weight-500 font-black shadow-sm bg-transparent">
+            class="d-inline-block inner-border-light-gray inner-font-14 font-weight-500 font-black shadow-sm mb-md-0 mb-1 bg-transparent">
             <b-dropdown-item>First Action</b-dropdown-item>
             <b-dropdown-item>Second Action</b-dropdown-item>
             <b-dropdown-item>Third Action</b-dropdown-item>
           </b-dropdown>
         </div>
-        <button class="btn border border-light-gray ml-2 bg-white font-14 font-weight-500 font-black shadow-sm"><img
+        <button class="btn border border-light-gray ml-2 bg-white font-14 font-weight-500 font-black shadow-sm mb-md-0 mb-1"><img
             src="../assets/print.svg" alt="" class="pr-1">
           <div class="d-md-inline-block d-none"> Print</div>
         </button>
-        <button class="btn border border-light-gray ml-2 bg-white font-14 font-weight-500 font-black shadow-sm"><img
+        <button class="btn border border-light-gray ml-2 bg-white font-14 font-weight-500 font-black shadow-sm mb-md-0 mb-1"><img
             src="../assets/pdf.svg" alt="" class="pr-1">
           <div class="d-md-inline-block d-none"> Export in PDF</div>
         </button>
