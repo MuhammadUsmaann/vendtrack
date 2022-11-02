@@ -35,7 +35,7 @@
               </v-col>
             </b-row>
             <div class="text-center pt-2">
-              <router-link to="/whos-reported-reports">
+              <router-link to="/whos-reported">
               <button type="submit" @click="$bvModal.hide('saveReport')"
                 class="px-3 mt-3 btn btn-orange">Generate</button>
               </router-link>

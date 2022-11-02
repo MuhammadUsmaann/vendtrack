@@ -26,7 +26,7 @@
                     </li>
                     <li>
                         <router-link to="/whos-reported" class="waves-effect">
-                            <!-- <img src="" alt=""> -->
+                            <img src="../../assets/whosreported.jpeg" class="whosreported-img" alt="">
                             <span> Who’s Reported </span>
                         </router-link>
                     </li>
@@ -131,4 +131,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.whosreported-img{
+    height: 17px;
+    width: 18px;
+}
 </style>

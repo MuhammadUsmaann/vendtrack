@@ -593,7 +593,7 @@ span.multiselect__option.multiselect__option--highlight::after {
 
 /* dashboard style */
 .dashboard-subheading {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
   color: #444444 !important;
 }

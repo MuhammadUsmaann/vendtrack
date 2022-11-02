@@ -165,7 +165,7 @@
 
     <b-modal id="editUser" hide-footer>
       <template #modal-title>
-        <span class="font-20 font-weight-700"> Add New User</span>
+        <span class="font-20 font-weight-700"> Edit User</span>
       </template>
       <div class="d-block">
         <b-form v-if="show">
@@ -227,7 +227,7 @@
             </v-col>
           </b-row>
           <div class="text-center">
-            <b-button type="submit" @click="$bvModal.hide('addUser')" variant="orange"
+            <b-button type="submit" @click="$bvModal.hide('editUser')" variant="orange"
               class="  d-inline-flex justify-content-center align-items-center">
               <img src="../assets/check.svg" alt="" class="mr-2" /> Save
             </b-button>
